@@ -1,0 +1,89 @@
+{
+  "localId": "c9ad6b5a-1462-460d-8033-b6c407db1290",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "0ea41da1f3620a649d529952e19d4186b43d74c3",
+  "platform": 12,
+  "size": 1112512,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "小米龍鱗纖維殼專屬",
+    "zh_TW": "小米龍鱗纖維殼專屬",
+    "bo_CN": "ཞའོ་མཱི་འབྲུག་ཁྲབ་ཚི་སྣའི་སྐོགས་ཀྱི་ཆེད་གཏོགས་།",
+    "en_US": "Dragon scale fiber",
+    "ug_CN": "شياۋمى لوڭلىڭ مەخسۇس",
+    "zh_CN": "小米龙鳞纤维壳专属",
+    "fallback": "小米龙鳞纤维壳专属"
+  },
+  "descriptions": {
+    "zh_HK": "科技質感，輕若無物，以龍鱗纖維之軀，無懼探索邊界",
+    "zh_TW": "科技質感，輕若無物，以龍鱗纖維之軀，無懼探索邊界",
+    "bo_CN": "ཚན་རྩལ་གྱི་རྒྱུ་སྤུས་ཚོར་བ། དངོས་པོ་ཅི་ཡང་མེད་པ། འབྲུག་ཁྲབ་ཚི་སྣའི་ལུས་ཕུང་། མཐའ་མཚམས་འཚོལ་ཞིབ་བྱེད་པར་མི་སྐྲག་པ།",
+    "en_US": "High-tech, light, and strong",
+    "ug_CN": "پەن-تېخنىكا سۈپەت تۇيغۇسى، خۇددى باشقا نەرسە يوقتەك يەڭگىل، ئەجدىھانىڭ قاسرىقى، تالالىرى ئارقىلىق چېگرا ئۈستىدە ئىزدىنىشتىن قورقمايدۇ",
+    "zh_CN": "科技质感，轻若无物，以龙鳞纤维之躯，无惧探索边界",
+    "fallback": "科技质感，轻若无物，以龙鳞纤维之躯，无惧探索边界"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "b4acb8a0-788a-471c-92e0-4e49245a9c6b",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/86bb686fdfc07912e5e7a3b79b87447a069ba75a.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "watch",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

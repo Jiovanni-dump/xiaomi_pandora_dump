@@ -1,0 +1,88 @@
+{
+  "localId": "56015b19-23c2-42a9-aa69-3a7906619a1c",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "8a5b12e3ab590edc4b975f06c928ddce913e92ca",
+  "platform": 15,
+  "size": 15096712,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "渦核時軌",
+    "zh_TW": "渦核時軌",
+    "bo_CN": "སྒྲོ་གཤོག་དུས་འཁོར་།",
+    "en_US": "Vortex core",
+    "ug_CN": "ۋاقىت ئوربىتىسى",
+    "zh_CN": "涡核时轨",
+    "fallback": "涡核时轨"
+  },
+  "descriptions": {
+    "zh_HK": "深灰色格紋肌理加入外緣暗紅色鉻鋼環形軌道與鏤空精密齒輪結構設計，突顯動力齒輪每1秒來回自轉一圈，動力體現時間的流逝",
+    "zh_TW": "深灰色格紋肌理加入外緣暗紅色鉻鋼環形軌道與鏤空精密齒輪結構設計，突顯動力齒輪每1秒來回自轉一圈，動力體現時間的流逝",
+    "bo_CN": "སྐྱ་མདོག་གི་ཀེ་རིས་ཤ་གནད་དེ་ཕྱི་རོལ་གྱི་མདོག་དམར་ནག་གི་ལུ་ངར་ལྕགས་སྒོར་དབྱིབས་འཁོར་ལམ་དང་ཚག་དཀྲོལ་ཞིབ་ཚགས་ཀྱི་འཁོར་ལོ་སོ་ཅན་གྱི་སྒྲིག་གཞི་ཇུས་འགོད་ནང་ཞུགས་པ་དང་། སྒུལ་ཤུགས་ཀྱི་འཁོར་ལོ་སོ་ཅན་སྐར་ཆ་1རེའི་ནང་ཕར་ཚུར་སྐོར་བ་གཅིག་རྒྱག་པ་དང་།་སྒུལ་ཤུགས་ཀྱིས་དུས་ཚོད་ཀྱི་བཞུར་རྒྱུན་མཚོན་པ་རེད།",
+    "en_US": "A gray checkered background is combined with a red chrome dial and precision gear design. The gear rotates 1 time every second to reflect the passage of time.",
+    "ug_CN": "قېنىق كۈل رەڭ كاتەكچە يوللۇق مۇسكۇللار سىرتقى گىرۋىكىدىكى تۇتۇق قىزىل رەڭلىك خىروم پولات ھالقىسىمان رېلىس ۋە تەشمە نەقىشلىك چىشلىق چاق قۇرۇلمىسىنى لايىھەلەشكە قوشۇلۇپ، ھەرىكەتلەندۈرگۈچ چىشلىق چاقنىڭ ھەر بىرىنى گەۋدىلەندۈرىدۇ.1 سېكۇنتتا بىر ئايلىنىپ، ھەرىكەتلەندۈرگۈچ كۈچ ۋاقىتنىڭ ئۆتۈپ كەتكەنلىكىنى ئىپادىلەيدۇ",
+    "zh_CN": "深灰色格纹肌理加入外缘暗红色铬钢环形轨道与镂空精密齿轮结构设计，凸显动力齿轮每1秒来回自转一圈，动力体现时间的流逝",
+    "fallback": "深灰色格纹肌理加入外缘暗红色铬钢环形轨道与镂空精密齿轮结构设计，凸显动力齿轮每1秒来回自转一圈，动力体现时间的流逝"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "119f090b-b625-4b3e-9ffd-107927c360c6",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/41c1c2837d508befad7a83fead8b842d35500f31.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "watch",
+  "isRearScreenEditable": true,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

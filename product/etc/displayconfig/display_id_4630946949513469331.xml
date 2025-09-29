@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+<displayConfiguration>
+    <densityMapping>
+        <density>
+            <height>2656</height>
+            <width>1220</width>
+            <density>520</density>
+        </density>
+    </densityMapping>
+    <!-- Global Brightness-Nit mapping -->
+    <screenBrightnessMap>
+        <point>
+            <value>0.000366256</value>
+            <nits>1.0</nits>
+        </point>
+        <point>
+            <value>0.002258576</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>0.006043218</value>
+            <nits>5.0</nits>
+        </point>
+        <point>
+            <value>0.010438286</value>
+            <nits>10.0</nits>
+        </point>
+        <point>
+            <value>0.017885484</value>
+            <nits>24.0</nits>
+        </point>
+        <point>
+            <value>0.03699182</value>
+            <nits>59.8</nits>
+        </point>
+        <point>
+            <value>0.499938957</value>
+            <nits>800.0</nits>
+        </point>
+        <point>
+            <value>0.824014162</value>
+            <nits>2000.0</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>3500.0</nits>
+        </point>
+    </screenBrightnessMap>
+    <!-- root node for HBM-->
+    <highBrightnessMode enabled="true">
+        <!-- Transition point brightness from normal to HBM mode -->
+        <transitionPoint>0.374862654</transitionPoint>
+        <!-- Minimum lux to enter HBM -->
+        <minimumLux>4475</minimumLux>
+        <!-- Time limitation for HBM-->
+        <timing>
+            <timeWindowSecs>0</timeWindowSecs>
+            <timeMaxSecs>0</timeMaxSecs>
+            <timeMinSecs>0</timeMinSecs>
+        </timing>
+        <!--Refresh rate limitation when the device is in HBM -->
+        <!-- <refreshRate>
+            <minimum>0</minimum>
+            <maximum>0</maximum>
+        </refreshRate> -->
+        <!-- Thermal limitation for HBM -->
+        <thermalStatusLimit>critical</thermalStatusLimit>
+        <!-- Low power mode limitation for HBM -->
+        <allowInLowPowerMode>true</allowInLowPowerMode>
+        <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.0</sdrNits>
+                <hdrRatio>8.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>1800.0</sdrNits>
+                <hdrRatio>8.0</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
+    </highBrightnessMode>
+    <lightSensor>
+        <type>android.sensor.light</type>
+        <name>tcs3760 Ambient Light Sensor Non-wakeup</name>
+    </lightSensor>
+    <ambientLightHorizonLong>3000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>1000</ambientLightHorizonShort>
+</displayConfiguration>

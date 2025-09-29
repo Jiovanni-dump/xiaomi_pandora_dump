@@ -1,0 +1,96 @@
+{
+  "localId": "93acd0c6-a10b-4d3b-afc9-ffd39aa6979d",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "99bcdcba59b79790d23441ab852828a7b4ade77d",
+  "platform": 15,
+  "size": 16687174,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "漸層",
+    "zh_TW": "漸層",
+    "bo_CN": "སྟེགས་རིམ།",
+    "en_US": "Gradient",
+    "ug_CN": "قاتلام",
+    "zh_CN": "渐层",
+    "fallback": "渐层"
+  },
+  "descriptions": {
+    "zh_HK": "輕快極致光影，如呼吸般自然，感受靜謐時光",
+    "zh_TW": "輕快極致光影，如呼吸般自然，感受靜謐時光",
+    "bo_CN": "ཡང་ཞིང་ལྡེམ་མྱུར་ལྡན་པའི་འོད་སྣང་།་དཔེར་ན་དབུགས་འབྱིན་རྔུབ་ལྟ་བུའི་རང་བྱུང་།་ལྷིང་འཇགས་ཀྱི་དུས་ཚོད་ཚོར་ཐུབ།",
+    "en_US": "Bright, natural, and tranquil",
+    "ug_CN": "سىپتا بولغان كۆرۈنۈش، نەپەستەك تەبىئىي، تىنچ تۇيغۇلاردىن ھوزۇرلىنىسىز",
+    "zh_CN": "轻快极致光影，如呼吸般自然，感受静谧时光",
+    "fallback": "轻快极致光影，如呼吸般自然，感受静谧时光"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_BK_0.png",
+      "preview_rearscreen_LG_0.png",
+      "preview_rearscreen_PU_0.png",
+      "preview_rearscreen_WH_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_BK_0.png",
+      "preview_rearscreen_LG_0.png",
+      "preview_rearscreen_PU_0.png",
+      "preview_rearscreen_WH_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "cc8f8283-037f-4608-a0fd-b4c0a9a7eb34",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/5fddf0f3501b63e6b4f5ac5fcbca9d74fc72d781.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "watch",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "supportAon": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

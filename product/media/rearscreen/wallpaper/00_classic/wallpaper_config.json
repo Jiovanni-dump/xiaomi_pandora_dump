@@ -1,0 +1,70 @@
+{
+  "title": "渐变壁纸",
+  "titleResId": "wallpaper_gradient_title",
+  "cardType": 1,
+  "count": 12,
+  "slideCount": 12,
+  "randomOrder": false,
+  "wallpapers": [
+    {
+      "thumbPath": "./A-1.png",
+      "originPath": "./A-1.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./A-2.png",
+      "originPath": "./A-2.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./A-3.png",
+      "originPath": "./A-3.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./A-4.png",
+      "originPath": "./A-4.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./B-1.png",
+      "originPath": "./B-1.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./B-2.png",
+      "originPath": "./B-2.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./B-3.png",
+      "originPath": "./B-3.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./B-4.png",
+      "originPath": "./B-4.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./C-1.png",
+      "originPath": "./C-1.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./C-2.png",
+      "originPath": "./C-2.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./C-3.png",
+      "originPath": "./C-3.png",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./C-4.png",
+      "originPath": "./C-4.png",
+      "type": "wallpaper"
+    }
+  ]
+}

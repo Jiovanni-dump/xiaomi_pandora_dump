@@ -1,0 +1,89 @@
+{
+  "localId": "c7722a3f-568f-4d28-87c4-a2a563c88a0e",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "327a02c918999002d246752088672618905e5f5c",
+  "platform": 15,
+  "size": 15073343,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "黑仔",
+    "zh_TW": "黑仔",
+    "bo_CN": "ཧེ་ཙེ་།",
+    "en_US": "Coco",
+    "ug_CN": "قاراۋاي",
+    "zh_CN": "黑仔",
+    "fallback": "黑仔"
+  },
+  "descriptions": {
+    "zh_HK": "雖然天生臉黑，但實際並不愛「黑臉」",
+    "zh_TW": "雖然天生臉黑，但實際並不愛「黑臉」",
+    "bo_CN": "ལྷན་སྐྱེས་ནས་གདོང་ནག་པོ་ཡིན་མོད་་འོན་ཀྱང་དོན་དངོས་སུ་“གདོང་ནག་པོ་”ལ་མི་དགའ།",
+    "en_US": "Soft and sweet baby harp seal",
+    "ug_CN": "گەرچە تۇغما يۈزى قارا بولسىمۇ، لېكىن ئەمەلىيەتتە «قارا يۈزلۈك» قىلىشنى ياخشى كۆرمەيدۇ",
+    "zh_CN": "虽然天生脸黑，但实际并不爱“黑脸”",
+    "fallback": "虽然天生脸黑，但实际并不爱“黑脸”"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "dd1639ed-306d-4f73-8f78-d26ed6dda77f",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/1d253287566b82b336860578e32d872e630e7fbf.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "cutePet",
+  "isRearScreenEditable": false,
+  "isThirdParties": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

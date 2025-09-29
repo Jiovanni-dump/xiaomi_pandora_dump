@@ -1,0 +1,89 @@
+{
+  "localId": "7184ed79-5959-4410-8e7d-3bb4f78dbdbe",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "3b7d4424462eac567c843b0cf5b8b85cc496bf4e",
+  "platform": 15,
+  "size": 2779768,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "運動步計",
+    "zh_TW": "運動步計",
+    "bo_CN": "འགུལ་སྐྱོད་ཀྱི་གོམ་འགྲོས་།",
+    "en_US": "Step count",
+    "ug_CN": "ھەرىكەت قەدەم سانى",
+    "zh_CN": "运动步计",
+    "fallback": "运动步计"
+  },
+  "descriptions": {
+    "zh_HK": "時間步數雙顯，健康時刻掌握",
+    "zh_TW": "時間步數雙顯，健康時刻掌握",
+    "bo_CN": "དུས་ཚོད་ཀྱི་གོམ་གྲངས་གཉིས་མངོན་པ་དང་། བདེ་ཐང་གི་དུས་ཚོད་ཁོང་དུ་ཆུད་པ།",
+    "en_US": "Display workout time and step count to keep track of your health",
+    "ug_CN": "ۋاقىت قەدەم سانىنى تەڭ كۆرسىتىدۇ، ساغلاملىقنى كۆرەلەيسىز",
+    "zh_CN": "时间步数双显，健康时刻掌握",
+    "fallback": "时间步数双显，健康时刻掌握"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "3adb17eb-f46b-4270-8a26-670c1e71d08f",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/ee2ced7606a44d6e2ea741acdf13aa27e17cf59f.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "watch",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}
