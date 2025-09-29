@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cust_features>
+    <cust_feature>
+        <bool name="config_support_operator_qos_accelerate">true</bool>
+        <bool name="config_support_hypercomm">true</bool>
+        <bool name="config_support_telephony_cdc">true</bool>
+        <bool name="config_support_telephony_xiaoai">true</bool>
+        <bool name="config_support_limit_4g_5g_ping_ping_in_night">true</bool>
+        <bool name="support_ai_hd_icon">true</bool>
+        <bool name="support_cellbroadcast">true</bool>
+        <integer-array name="lte_rsrp_report_thresholds">
+            <item>-125</item>
+            <item>-115</item>
+            <item>-110</item>
+            <item>-105</item>
+            <item>-100</item>
+        </integer-array>
+        <integer-array name="nr_rsrp_report_thresholds">
+            <item>-125</item>
+            <item>-115</item>
+            <item>-110</item>
+            <item>-105</item>
+            <item>-100</item>
+        </integer-array>
+        <bool name="battery_manager_4.0">true</bool>
+        <bool name="gnss_skip_delete_aiding_data">true</bool>
+        <bool name="battery_emergency_strategy">true</bool>
+        <bool name="support_special_sim_do_action">true</bool>
+        <bool name="config_support_special_network_opt_for_cn">true</bool>
+        <bool name="config_support_smart_network_autonomy">true</bool>
+        <bool name="config_modem_utils_supported">true</bool>
+        <integer-array name="satellite_rssi_thresholds_for_cn">
+            <item>-127</item>
+            <item>-125</item>
+            <item>-123</item>
+            <item>-121</item>
+        </integer-array>
+        <string-array name="is_always_set_nitz_name_mtk">
+            <item>62124</item>
+            <item>41406</item>
+            <item>405840</item>
+            <item>405854</item>
+            <item>405855</item>
+            <item>405856</item>
+            <item>405857</item>
+            <item>405858</item>
+            <item>405859</item>
+            <item>405860</item>
+            <item>405861</item>
+            <item>405862</item>
+            <item>405863</item>
+            <item>405864</item>
+            <item>405865</item>
+            <item>405866</item>
+            <item>405867</item>
+            <item>405868</item>
+            <item>405869</item>
+            <item>405870</item>
+            <item>405871</item>
+            <item>405872</item>
+            <item>405873</item>
+            <item>405874</item>
+            <item>50212</item>
+            <item>62120</item>
+            <item>71610</item>
+        </string-array>
+        <string-array name="key_qos_optimization_white_list_default">
+            <item>com.ss.android.ugc.aweme</item>
+            <item>com.ss.android.ugc.aweme.lite</item>
+            <item>com.duowan.kiwi</item>
+            <item>com.smile.gifmaker</item>
+            <item>tv.danmaku.bili</item>
+            <item>com.xingin.xhs</item>
+            <item>com.ss.android.article.news</item>
+            <item>com.sina.weibo</item>
+            <item>com.tencent.wemeet.app</item>
+            <item>com.ss.android.lark</item>
+            <item>com.alibaba.android.rimet</item>
+            <item>com.ss.android.lark.kami</item>
+            <item>com.tencent.mm</item>
+            <item>com.autonavi.minimap</item>
+            <item>com.baidu.BaiduMap</item>
+            <item>com.tencent.map</item>
+            <item>com.sdu.didi.psnger</item>
+        </string-array>
+        <string-array name="modem_perception_optimization_white_list_default">
+            <item>com.ss.android.ugc.aweme</item>
+            <item>tv.danmaku.bili</item>
+            <item>com.duowan.kiwi</item>
+        </string-array>
+        <string-array name="config_video_app_packages">
+            <item>com.ss.android.ugc.aweme</item>
+            <item>com.ss.android.ugc.aweme.lite</item>
+            <item>com.kuaishou.nebula</item>
+            <item>com.smile.gifmaker</item>
+            <item>tv.danmaku.bili</item>
+            <item>com.tencent.qqlive</item>
+            <item>com.ss.android.article.video</item>
+            <item>com.huya.kiwi</item>
+            <item>air.tv.douyu.android</item>
+            <item>com.duowan.kiwi</item>
+            <item>com.google.android.youtube</item>
+            <item>com.zhiliaoapp.musically</item>
+            <item>com.ss.android.ugc.trill</item>
+        </string-array>
+        <string-array name="ai_congestion_website_white_list_default">
+            <item>com.ss.android.ugc.aweme.search.activity.SearchResultActivity</item>
+            <item>com.bytedance.ies.ugc.aweme.photos.detail.flow.page.FlowPageActivity</item>
+            <item>com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity</item>
+            <item>com.bytedance.locallife.page.poi.LifePoiActivity</item>
+            <item>com.xingin.matrix.notedetail.NoteDetailActivity</item>
+            <item>com.xingin.xhs.index.v2.IndexActivityV2</item>
+            <item>com.xingin.commercial.goodsdetail.v2.activity.GoodsDetailActivityV2</item>
+        </string-array>
+        <string-array name="ai_congestion_short_video_white_list_default">
+            <item>com.ss.android.ugc.aweme.detail.ui.DetailActivity</item>
+            <item>com.ss.android.ugc.aweme.main.MainActivity</item>
+            <item>com.ss.android.ugc.aweme.splash.SplashActivity</item>
+            <item>com.xingin.matrix.detail.activity.DetailFeedActivity</item>
+            <item>com.xingin.alpha.audience.AlphaAudienceActivity</item>
+            <item>com.xingin.alpha.audience.v2.AlphaAudienceActivityV2</item>
+        </string-array>
+        <string-array name="ai_congestion_live_stream_white_list_default">
+            <item>com.ss.android.ugc.aweme.live.LivePlayActivity</item>
+        </string-array>
+        <string-array name="profession_mode_opt_white_list_default">
+            <item>com.sankuai.meituan.dispatch.crowdsource</item>
+            <item>me.ele.crowdsource</item>
+            <item>com.sankuai.meituan.dispatch.homebrew</item>
+            <item>com.dada.mobile.android</item>
+            <item>com.ishansong</item>
+            <item>com.sfexpress.knight</item>
+            <item>com.slkj.paotui.worker</item>
+        </string-array>
+        <string-array name="rtt_opt_white_list_default">
+            <item>com.ss.android.ugc.aweme.lite</item>
+            <item>com.ss.android.ugc.aweme</item>
+            <item>com.xingin.xhs</item>
+            <item>com.duowan.kiwi</item>
+        </string-array>
+        <string-array name="config_social_app_packages">
+            <item>com.tencent.mm</item>
+            <item>com.tencent.mobileqq</item>
+            <item>com.sina.weibo</item>
+            <item>com.xingin.xhs</item>
+            <item>com.snapchat.android</item>
+        </string-array>
+        <string-array name="config_shopping_app_packages">
+            <item>com.xunmeng.pinduoduo</item>
+            <item>com.taobao.taobao</item>
+            <item>com.jingdong.app.mall</item>
+            <item>com.alibaba.aliexpresshd</item>
+        </string-array>
+        <bool name="support_device_auto_roaming">true</bool>
+        <string-array name="config_need_modify_plmns">
+            <item>CHINA MOBILE</item>
+            <item>CHN-UNICOM</item>
+            <item>CHN-CT</item>
+            <item>China Telecom</item>
+            <item>China Unicom</item>
+            <item>China Mobile</item>
+            <item>CMCC</item>
+            <item>CU</item>
+            <item>CT</item>
+            <item>中国移动</item>
+            <item>中国联通</item>
+            <item>中国电信</item>
+            <item>移动</item>
+            <item>联通</item>
+            <item>电信</item>
+        </string-array>
+        <bool name="config_intl_telephony_stat_supported">true</bool>
+        <bool name="config_is_mievent_supported">true</bool>
+        <bool name="config_is_modem_dfs_supported">true</bool>
+        <integer-array name="lte_rsrp_thresholds_for_cutest">
+            <item>-120</item>
+            <item>-118</item>
+            <item>-114</item>
+            <item>-105</item>
+        </integer-array>
+        <integer-array name="nr_rsrp_thresholds_for_cutest">
+            <item>-120</item>
+            <item>-118</item>
+            <item>-114</item>
+            <item>-105</item>
+        </integer-array>
+        <integer-array name="tdscdma_display_thresholds">
+            <item>-120</item>
+            <item>-110</item>
+            <item>-100</item>
+            <item>-90</item>
+        </integer-array>
+        <integer-array name="cdma_display_thresholds">
+            <item>-109</item>
+            <item>-101</item>
+            <item>-97</item>
+            <item>-93</item>
+        </integer-array>
+        <integer-array name="gsm_rssi_display_thresholds">
+            <item>-113</item>
+            <item>-103</item>
+            <item>-97</item>
+            <item>-91</item>
+        </integer-array>
+        <integer-array name="wcdma_rscp_display_thresholds">
+            <item>-113</item>
+            <item>-105</item>
+            <item>-99</item>
+            <item>-91</item>
+        </integer-array>
+        <integer-array name="lte_rsrp_report_thresholds_for_hiking_mode">
+            <item>-125</item>
+            <item>-115</item>
+            <item>-110</item>
+            <item>-105</item>
+            <item>-100</item>
+            <item>-95</item>
+            <item>-90</item>
+        </integer-array>
+        <integer-array name="lte_rsrp_display_thresholds">
+            <item>-125</item>
+            <item>-115</item>
+            <item>-110</item>
+            <item>-105</item>
+        </integer-array>
+        <integer-array name="nr_rsrp_report_thresholds_for_hiking_mode">
+            <item>-125</item>
+            <item>-115</item>
+            <item>-110</item>
+            <item>-105</item>
+            <item>-100</item>
+            <item>-95</item>
+            <item>-90</item>
+        </integer-array>
+        <integer-array name="nr_rsrp_display_thresholds">
+            <item>-125</item>
+            <item>-115</item>
+            <item>-110</item>
+            <item>-105</item>
+        </integer-array>
+        <bool name="unsupport_global_power_guide">true</bool>
+        <bool name="unsupport_launch_google_search">true</bool>
+        <bool name="config_album_support_share">true</bool>
+        <string-array name="screenshot_sound_enabled_regions">
+            <item>KR</item>
+        </string-array>
+        <bool name="support_sleep_mode">true</bool>
+        <bool name="config_td_prestart_intercept">true</bool>
+        <string-array name="config_support_ussd_durring_apm_plmn">
+            <item>24007</item>
+            <item>26006</item>
+            <item>26201</item>
+            <item>26206</item>
+            <item>26002</item>
+            <item>20201</item>
+            <item>23001</item>
+            <item>21630</item>
+            <item>23203</item>
+            <item>23207</item>
+            <item>21901</item>
+            <item>20416</item>
+        </string-array>
+        <string-array name="config_cn_share_plmns">
+            <item>46021</item>
+            <item>46022</item>
+            <item>46031</item>
+            <item>46032</item>
+            <item>46050</item>
+            <item>46051</item>
+            <item>46060</item>
+            <item>46061</item>
+        </string-array>
+        <string-array name="config_send_sm_no_check_packages">
+            <item>android.permissionpolicy.cts</item>
+            <item>android.telephony.cts</item>
+        </string-array>
+        <string-array name="config_support_smart_dual_sim_by_region">
+            <item>TH</item>
+            <item>SG</item>
+            <item>ID</item>
+            <item>PH</item>
+            <item>MY</item>
+            <item>VN</item>
+            <item></item>
+        </string-array>
+        <string-array name="ignore_sms_storage_packages">
+            <item>com.xiaomi.xmsf</item>
+            <item>com.miui.cloudservice</item>
+            <item>com.miui.networkassistant</item>
+            <item>com.miui.yellowpage</item>
+            <item>com.miui.securitycenter</item>
+            <item>com.xiaomi.simactivate.service</item>
+            <item>com.android.mms</item>
+            <item>com.xiaomi.finddevice</item>
+        </string-array>
+        <string-array name="support_smart_dual_sim_region">
+            <item>TH</item>
+            <item>SG</item>
+            <item>ID</item>
+            <item>PH</item>
+            <item>MY</item>
+            <item>VN</item>
+        </string-array>
+        <string-array name="is_2g_disabled_for_network">
+            <item>23420</item>
+            <item>23594</item>
+            <item>45005</item>
+            <item>45006</item>
+            <item>45008</item>
+            <item>46001</item>
+            <item>46006</item>
+            <item>46009</item>
+            <item>46015</item>
+            <item>46601</item>
+            <item>46602</item>
+            <item>46603</item>
+            <item>46605</item>
+            <item>46611</item>
+            <item>46612</item>
+            <item>46689</item>
+            <item>46692</item>
+            <item>46697</item>
+            <item>52001</item>
+            <item>52003</item>
+        </string-array>
+        <string-array name="config_mcc_mnc_enforced_wifi">
+            <item>02F802</item>
+            <item>02F812</item>
+            <item>02F888</item>
+            <item>42F440</item>
+            <item>42F430</item>
+            <item>42F431</item>
+            <item>42F421</item>
+        </string-array>
+        <string-array name="config_spn_enforced_wifi">
+            <item>Bouygues Telecom</item>
+            <item>DNA</item>
+        </string-array>
+        <map name="config_operator_region_language_map">
+            <item name="es">es_ES</item>
+            <item name="in">en_IN</item>
+            <item name="us">en_US</item>
+            <item name="at">de_DE</item>
+            <item name="ie">en_GB</item>
+            <item name="pe">es_US</item>
+            <item name="cl">es_US</item>
+            <item name="fr">fr_FR</item>
+            <item name="pl">pl_PL</item>
+        </map>
+        <string-array name="config_show_datatraffic_dialog_countrycode">
+            <item>pl</item>
+        </string-array>
+        <string-array name="config_gnss_for_common_operator">
+            <item>25001</item>
+            <item>25002</item>
+            <item>25099</item>
+            <item>25020</item>
+            <item>25011</item>
+        </string-array>
+        <map name="config_disable_background_apps">
+            <item name="com.android.phone">true</item>
+            <item name="com.android.deskclock">true</item>
+            <item name="com.android.mms">true</item>
+            <item name="com.android.providers.downloads.ui">true</item>
+            <item name="com.controlmovil.telcel">true</item>
+            <item name="com.kddi.android.cmail">true</item>
+            <item name="com.payjoy.status">true</item>
+        </map>
+        <string-array name="config_bg_white_list">
+            <item>com.xiaomi.xmsf</item>
+            <item>com.miui.guardprovider</item>
+            <item>com.xiaomi.account</item>
+            <item>com.lbe.security.miui</item>
+            <item>com.miui.securityadd</item>
+            <item>com.trustonic.telecoms.xti.dpc</item>
+            <item>com.trustonic.telecoms.setup</item>
+            <item>com.trustonic.telecoms.standard.dpc</item>
+            <item>com.trustonic.telecoms.standard.dlc</item>
+            <item>com.trustonic.telecoms.client.standard.dlc.playground</item>
+            <item>com.miui.analytics</item>
+            <item>com.kistpay.finance</item>
+            <item>com.payjoy.status.df</item>
+            <item>com.payjoy.status</item>
+            <item>com.payjoy.access</item>
+            <item>com.airtelx.airtelkiosk</item>
+        </string-array>
+        <map name="plmn_network_display_rule">
+            <item name="network_display_config">5,26806,MEO</item>
+            <item name="45006">3</item>
+        </map>
+        <map name="enable_state_list">
+            <item name="com.xiaomi.mipicks">TH;PH;VN;MY;BR;MX;EG;CL;CO;SA;PE;MA;JP;MM;PK;ZA;IN;ID;RU;TR;ES</item>
+            <item name="com.mipay.wallet.in">IN</item>
+            <item name="com.miui.virtualsim">ID</item>
+            <item name="com.mi.globalTrendNews">""</item>
+            <item name="com.micredit.in">IN</item>
+            <item name="com.mi.global.shop">IN;TW;HK;ES;FR;ID;RU;IT;GB;DE;TR;JP;NL;PL;MX</item>
+            <item name="com.mi.global.pocostore">TW;HK;ES;FR;ID;RU;IT;GB;DE;NL</item>
+            <item name="com.boundax.koreapreloadappinstaller">KR</item>
+        </map>
+        <string-array name="config_process_secretly_protect_list">
+            <item>com.tencent.mm</item>
+            <item>com.google.android.gms</item>
+            <item>com.xiaomi.channel</item>
+            <item>com.xiaomi.channel:remote</item>
+        </string-array>
+    </cust_feature>
+</cust_features>

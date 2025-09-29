@@ -1,0 +1,10 @@
+system_ext/priv-app/Settings/Settings.apk.xz
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk.xz
+product/priv-app/GmsCore/GmsCore.apk.xz
+product/priv-app/NewCall/NewCall.apk.xz
+product/priv-app/MIUIBrowser/MIUIBrowser.apk.xz
+product/priv-app/MiuiCamera/MiuiCamera.apk.xz
+product/priv-app/MIUIAICR/MIUIAICR.apk.xz
+odm/etc/camera/ellc.bin.xz
+recovery.img.xz
+odm/firmware_qtvm/system.img.xz
