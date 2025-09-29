@@ -1,0 +1,4 @@
+<ports>
+    <port display="147" input="Xiaomi_Touch_Device_0" />
+    <port display="148" input="Xiaomi_Touch_Device_1" />
+</ports>

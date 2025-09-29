@@ -1,0 +1,119 @@
+{
+    "Description": "Xiaomi SmartAE config file - Arbitrator",
+    "phone_code": "Q200",
+    "jsonVersion": "SNSC-V2.0-20250509",
+
+    "QUICKSHOT_CHECK": {
+        "CHANGE_ALGO": {
+            "counts": 1,
+            "CONDITIONS": null
+        },
+        "CHANGE_CAPTURE_MODE": null,
+        "CHANGE_FRAMES": {
+            "min_ev0_cnt": [ 4 ],
+            "counts": 1,
+            "CONDITIONS": [
+                {
+                    "condition": "banding_detected",
+                    "operator": "=",
+                    "value": [ 0 ]
+                }
+            ]
+        },
+        "CHANGE_SENSOR": null
+
+    },
+
+    "AlgoType_SNSC": {
+        "CHECKER": {
+            "WIDE": {
+                "Description": "EV list",
+                "counts": 2,
+                "ev_index": [ 0, 1 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "camera_mode",
+                        "operator": "=",
+                        "value": [ 513, 513 ]
+                    },
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 5, 1024 ]
+                    }
+                ]
+            },
+            "ULTRATELE": {
+                "Description": "EV list",
+                "counts": 2,
+                "ev_index": [ 0, 1 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "camera_mode",
+                        "operator": "=",
+                        "value": [ 513, 513 ]
+                    },
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 1, 1024 ]
+                    }
+                ]
+            }
+
+        },
+        "LIST": [
+            {
+                "Description": "V_0 binning SSSSSSSS",
+                "frames": 8,
+                "ev_value": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                "capture_mode": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                "adrc_on": [ 1, 1, 1, 1, 1, 1, 1, 1 ],
+                "sensor_mode": [ -1, -1, -1, -1, -1, -1, -1, -1 ],
+                "ois_sync": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                "motion_exp_type": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                "min_exp_check": false,
+                "change_to_index": null,
+                "enable_slave": true,
+                "slave_evlist_index": 0
+            },
+            {
+                "Description": "V_1 LBMF SLSLSLSL",
+                "frames": 8,
+                "ev_value": [ -3, 0, -3, 0, -3, 0, -3, 0 ],
+                "capture_mode": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                "adrc_on": [ 1, 1, 1, 1, 1, 1, 1, 1 ],
+                "sensor_mode": [ -1, -1, -1, -1, -1, -1, -1, -1 ],
+                "ois_sync": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                "motion_exp_type": [ 0, 1, 0, 1, 0, 1, 0, 1],
+                "min_exp_check": false,
+                "change_to_index": null,
+                "enable_slave": true,
+                "slave_evlist_index": 0
+            }
+        ],
+        "SLAVE_LIST": [
+            {
+                "Description": "V_0: anchor , ev0 , ev0",
+                "frames": 3,
+                "ev_value": [ 2, 0, 0 ],
+                "capture_mode": [ 0, 0, 0 ],
+                "adrc_on": [ 1, 1, 1 ],
+                "sensor_mode": [ -1, -1, -1 ],
+                "motion_exp_type": [ -1, -1, -1 ]
+            }
+        ]
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

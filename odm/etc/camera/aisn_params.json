@@ -1,0 +1,894 @@
+{
+    "ellc": {
+        "phone_version": "O1",
+        "model_version": "v1.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            512,
+            512
+        ],
+        "overlap": [
+            16,
+            16
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "isDebug": 0,
+            "dlcs": [
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_dxg_wide.minn",
+                    "dlc_desc": "jdd_quant_250217_dxg_baseline_o1w_qat",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            15
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_wide.minn",
+                    "dlc_desc": "jdd_quant_240926_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_wide_quad.minn",
+                    "dlc_desc": "jdd_quant_241125_O1_wide_quad_ft1",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259387510013767e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.522932780062547e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_wide.minn",
+                    "dlc_desc": "111304",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_wide_bokeh.minn",
+                    "dlc_desc": "090301",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_wide_quad.minn",
+                    "dlc_desc": "111304",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_wide_quad_bokeh.minn",
+                    "dlc_desc": "090301",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_wide_lofic.minn",
+                    "dlc_desc": "jdd_quant_250424_SC5A0XS_lofic_single",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_wide_full.minn",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_UW_100_tfqat3",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_uw.minn",
+                    "dlc_desc": "jdd_quant_ev0_p2uw_netv19_250730",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "overlap": [
+                        64,
+                        64
+                    ],
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evp_uw.minn",
+                    "dlc_desc": "jdd_quant_ev0_p2uw_netv19_patch1280_250730",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            14
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "overlap": [
+                        64,
+                        64
+                    ],
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evp_uw_high_gain.minn",
+                    "dlc_desc": "jdd_quant_ev0_p2uw_netv19_patch1280_250730",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            14
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "overlap": [
+                        64,
+                        64
+                    ],
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evp_wide.minn",
+                    "dlc_desc": "qy_0225_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            14
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_uw.minn",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_UW_100_tfqat3",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_uw_full.minn",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_UW_100_tfqat3",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_tele.minn",
+                    "dlc_desc": "jdd_quant_241021_O1_tele_distillft",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_tele.minn",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_TELE_100_tfqat4",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 4
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_tele_bokeh.minn",
+                    "dlc_desc": "090303",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 4
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_tele_full.minn",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_UW_100_tfqat3",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_st.minn",
+                    "dlc_desc": "jdd_quant_241017_O1_supertele_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_st_quad.minn",
+                    "dlc_desc": "jdd_quant_241128_O1_st_quad_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259387510013767e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.522932780062547e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_ev0_st_quad_8f.minn",
+                    "dlc_desc": "jdd_quant_241219_O1_st_quad_8f_73",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            25
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259387510013767e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.522932780062547e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_st.minn",
+                    "dlc_desc": "122601",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_st_bokeh.minn",
+                    "dlc_desc": "101601",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_st_quad.minn",
+                    "dlc_desc": "1122203",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1056,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_evnn_st_full.minn",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_UW_100_tfqat3",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "bin_name": "aisn.bin",
+                    "model_name": "jdd_merge_deflare_guide_rgb.minn",
+                    "dlc_desc": "jdd_merge_deflare_guide_rgb",
+                    "input": {
+                        "name": "input",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5,
+                    "overlap": [
+                        32,
+                        32
+                    ]
+                }
+            ]
+        },
+        "relight_setting": {
+            "range1_luxindex_start": 495.0,
+            "range1_luxindex_end": 520.0,
+            "range1_luxindex_start_ratio": 1.0,
+            "range1_luxindex_end_ratio": 1.0,
+            "range2_luxindex_start": 520.0,
+            "range2_luxindex_end": 540.0,
+            "range2_luxindex_start_ratio": 1.0,
+            "range2_luxindex_end_ratio": 1.0,
+            "range3_luxindex_start": 540.0,
+            "range3_luxindex_end": 550.0,
+            "range3_luxindex_start_ratio": 1.0,
+            "range3_luxindex_end_ratio": 1.0,
+            "range4_luxindex_start": 550.0,
+            "range4_luxindex_end": 580.0,
+            "range4_luxindex_start_ratio": 1.0,
+            "range4_luxindex_end_ratio": 1.0
+        },
+        "Threshold": {
+            "T_brightness": 150,
+            "T_dark_scene": 25000,
+            "T_motion_1": 15,
+            "T_motion_2": 50000000,
+            "T_over_expose_threshold": 3500,
+            "T_clip_ratio": 0.36,
+            "T_first_frame_luxindex": 260,
+            "T_merge_ratio": 0.95,
+            "T_pow_merge_ratio": [
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100
+            ]
+        }
+    }
+}
+

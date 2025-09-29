@@ -1,0 +1,22 @@
+{
+    "EDOF": {
+        "WIDE": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 100
+            },
+            "PROFILE_1": {}
+        },
+        "TELE_2": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 100
+            },
+            "PROFILE_1": {}
+        },
+        "REAR_MAIN_1": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 100
+            },
+            "PROFILE_1": {}
+        }
+    }
+}

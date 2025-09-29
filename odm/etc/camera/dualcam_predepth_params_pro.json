@@ -1,0 +1,281 @@
+{
+  "//": "Global parameters",
+  "StructGlobal": {
+    "StructMask": {
+      "paramSwitch": 2,
+      "paramaiMaskDownSample": 4,
+      "parammImaskW": 960,
+      "parammImaskH": 720,
+      "paramDetModel": "human_hair_detect",
+      "paramSegModel": "portrait_blur_mat"
+    },
+    "StructAiCalib": {
+      "paramUse": 0
+    },
+    "StructAiDepth": {
+      "paramSwitch": 1,
+	  "paramDepthW": 1024,
+	  "paramVer":"3.0",
+      "paramDepthM": 1036,
+	  "paramPlateform":1,
+	  "paramPerf":2, 
+	  "paramQuanWay":2,
+	  "paramQuanMix":1
+    },
+    "StructDenseNN": {
+      "paramSwitch": 1,
+      "paramDeploySwitchA": 0,
+      "paramDeploySwitchB": 1,
+      "paramDeploySwitchC": 1,
+      "paramDeploySwitchD": 1,
+      "paramSpDispScale": 4.0,
+      "StructModel1": {
+        "paramVer": "kd.28.250",
+        "paramDepthW": 1024,
+        "paramDepthH": 768
+      },
+      "StructModel2": {
+        "paramVer": "8.14",
+        "paramDepthW": 512,
+        "paramDepthH": 512
+      }
+    },
+    "StructMultiThread": {
+      "paramMaskThreadSwitch": 0,
+      "paramBgFilterSwitch": 0,
+      "paramAiDepthThreadSwitch": 0
+    },
+    "StructDspGpu": {
+      "paramBmDspSwitch": 1,
+      "paramMatteGpuSwitch": 1
+    },
+    "paramIsTrustAfCode": 1,
+    "paramRawDepthPassage": 1,
+    "paramRawDepthMode": 1,
+    "StructRawNNStereo": {
+      "paramVer": "0_0819_68",
+      "paramInputW": 1024,
+      "paramInputH": 768
+    },
+    "StructNNStereoRef": {
+      "paramVer": "1_0819_68",
+      "paramInputW": 1024,
+      "paramInputH": 768
+    },
+    "paramTruncSwitch": 0,
+    "paramValTruncL": 0.0,
+    "paramValTruncH": 50.0
+  },
+    "///": "det parameters",
+  "det_param": {
+      "Loader_param": {
+          "model_file_name": "human_det_quant_npu_320.minn"
+      },
+      "PreProcess": {
+          "inputs": [
+              {
+                  "name": "input",
+                  "shape": [1, 320, 320, 3]
+              }
+          ],
+          "outputs": [
+              {
+                  "name": "output_1",
+                  "layer": "Sigmoid_322",
+                  "shape": [1, 40, 40, 1]
+              },
+              {
+                  "name": "output_2",
+                  "layer": "Sigmoid_323",
+                  "shape": [1, 20, 20, 1]
+              },
+              {
+                  "name": "output_3",
+                  "layer": "Sigmoid_324",
+                  "shape": [1, 10, 10, 1]
+              },
+              {
+                  "name": "output_4",
+                  "layer": "Sigmoid_325",
+                  "shape": [1, 5, 5, 1]
+              },
+              {
+                  "name": "output_5",
+                  "layer": "Concat_347",
+                  "shape": [1, 40, 40, 32]
+              },
+              {
+                  "name": "output_6",
+                  "layer": "Concat_369",
+                  "shape": [1, 20, 20, 32]
+              },
+              {
+                  "name": "output_7",
+                  "layer": "Concat_391",
+                  "shape": [1, 10, 10, 32]
+              },
+              {
+                  "name": "output_8",
+                  "layer": "Concat_413",
+                  "shape": [1, 5, 5, 32]
+              },
+              {
+                  "name": "output_9",
+                  "layer": "Sigmoid_414",
+                  "shape": [1, 40, 40, 1]
+              },
+              {
+                  "name": "output_10",
+                  "layer": "Sigmoid_415",
+                  "shape": [1, 20, 20, 1]
+              },
+              {
+                  "name": "output_11",
+                  "layer": "Sigmoid_416",
+                  "shape": [1, 10, 10, 1]
+              },
+              {
+                  "name": "output_12",
+                  "layer": "Sigmoid_417",
+                  "shape": [1, 5, 5, 1]
+              },
+              {
+                  "name": "output_13",
+                  "layer": "Concat_439",
+                  "shape": [1, 40, 40, 32]
+              },
+              {
+                  "name": "output_14",
+                  "layer": "Concat_461",
+                  "shape": [1, 20, 20, 32]
+              },
+              {
+                  "name": "output_15",
+                  "layer": "Concat_483",
+                  "shape": [1, 10, 10, 32]
+              },
+              {
+                  "name": "output_16",
+                  "layer": "Concat_505",
+                  "shape": [1, 5, 5, 32]
+              }
+          ],
+          "resize_keep_ratio": true,
+          "image_mean": [
+              0.0,
+              0.0,
+              0.0
+          ],
+          "image_std": [
+              255.0,
+              255.0,
+              255.0
+          ],
+          "inputimage_format": "rgb"
+      },
+      "PostProcessList": {
+              "param": {
+                  "anchor_generator": {
+                      "anchor_strides": [
+                          8,
+                          16,
+                          32,
+                          64,
+                          8,
+                          16,
+                          32,
+                          64
+                      ]
+                  },
+                  "anchor_head": {
+                      "cls_output_name": [
+                          "output_1",
+                          "output_2",
+                          "output_3",
+                          "output_4",
+                          "output_9",
+                          "output_10",
+                          "output_11",
+                          "output_12"
+                      ],
+                      "reg_output_name": [
+                          "output_5",
+                          "output_6",
+                          "output_7",
+                          "output_8",
+                          "output_13",
+                          "output_14",
+                          "output_15",
+                          "output_16"
+                      ],
+                      "use_sigmoid_cls": true,
+                      "iou_thr": 0.4,
+                      "score_thr": 0.4,
+                      "num_class": 2
+                  }
+              }
+          }
+  },
+  "////": "seg parameters",
+  "seg_param": {
+	  "useTrimap": true,
+      "Loader_param": {
+          "model_file_name": "human_seg_bimap_quant_npu_768.minn",
+		  "model_file_name_trimap": "human_seg_trimap_quant_npu_768.minn"
+      },
+      "PreProcess": {
+          "inputs": [
+              {
+                  "name": "input",
+                  "shape": [1, 768, 768, 3]
+              }
+          ],
+          "outputs": [
+              {
+                  "name": "output",
+                  "shape": [1, 768, 768, 1]
+              },
+              {
+                  "name": "output_matting",
+                  "shape": [1, 768, 768, 1]
+              },
+              {
+                  "name": "output_trimap",
+                  "shape": [1, 768, 768, 3]
+              }
+          ],
+          "resize_keep_ratio": true,
+          "image_mean": [
+              0.0,
+              0.0,
+              0.0
+          ],
+          "image_std": [
+              1.0,
+              1.0,
+              1.0
+          ],
+          "inputimage_format": "bgr"
+      },
+      "PostProcessList": {
+        "param": {
+              "logit_map": true,
+              "output_channel": 0,
+              "scaler": 255,
+              "tensor_in": "output"
+        },
+	    "trimap_param_0": {
+            "logit_map": true,
+            "output_channel": 0,
+            "scaler": 255,
+            "tensor_in": "output_matting"
+        },
+		"trimap_param_1": {
+            "logit_map": true,
+            "output_channel": 0,
+            "scaler": 127,
+            "tensor_in": "output_trimap"
+        }
+      }
+  }
+}

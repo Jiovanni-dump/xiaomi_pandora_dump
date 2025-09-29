@@ -1,0 +1,56 @@
+{
+    "Description": "Xiaomi SmartAE config file - Arbitrator",
+    "phone_code": "O1",
+    "jsonVersion": "AINRLL-V2.0-20241011",
+
+    "AlgoType_AINR_LL": {
+        "CHECKER": {
+            "UW": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": null
+            },
+            "WIDE": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": null
+            },
+            "ULTRATELE": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": null
+            }
+
+        },
+        "LIST": [
+            {
+                "Description": "V_0",
+                "frames": 4,
+                "ev_value": [ 0, 0, 0, 0 ],
+                "capture_mode": [ 0, 0, 0, 0 ],
+                "adrc_on": [ 1, 1, 1, 1 ],
+                "sensor_mode": [ 0, 0, 0, 0 ],
+                "ois_sync": [ 0, 0, 0, 0 ],
+                "motion_exp_type": [ -1, -1, -1, -1 ],
+                "min_exp_check": false,
+                "change_to_index": null
+            }
+        ]
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

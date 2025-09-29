@@ -1,0 +1,112 @@
+{
+    "ellc": {
+        "phone_version": "Q200",
+        "model_version": "v1.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            800,
+            1056
+        ],
+        "overlap": [
+            32,
+            32
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "isDebug": 0,
+            "dlcs": [
+                {
+                    "bin_name": "snsc_minn.bin",
+                    "model_name": "SNSC_SC590XS_DXG_JDD_250820.minn",
+                    "model_desc": "jdd_quant_241119_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            15
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 0
+                },
+                {
+                    "bin_name": "snsc_minn.bin",
+                    "model_name": "SNSC_SC590XS_LBMF_JDD_250809.minn",
+                    "model_desc": "jdd_quant_241119_o1wide_distill",
+                    "input": {
+                        "name": "input",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "bin_name": "snsc_minn.bin",
+                    "model_name": "SNSC_JN5_LBMF_JDD_0818.minn",
+                    "model_desc": "jdd_quant_241119_o1wide_distill",
+                    "input": {
+                        "name": "input",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                }
+            ]
+        }
+    }
+}

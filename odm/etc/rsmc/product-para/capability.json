@@ -1,0 +1,41 @@
+﻿{
+    "support": 1,
+    "antennaAngle": [
+        [
+            4,
+            20
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "batteryValue": {
+        "warningValue": 5,
+        "unavailableValue": 0
+    },
+    "satelliteCfg": {
+        "searchTimer": 20,
+        "acqTimer": 20,
+        "receShortAcqTimer": 9,
+        "receLongAcqTimer": 28,
+        "foldTips": 0
+    },
+    "testConfig": {
+        "searchMode": 0,
+        "txFreqOffset": 0,
+        "maxPwrLevelSend": 0,
+        "supportAuth": 0,
+        "encrypIndication": 0,
+        "testUserId": "13520688957",
+        "location": [
+            121.630788,
+            31.263836,
+            40
+        ],
+        "periodSendTest": {
+            "sendCnt": 0,
+            "interval": 2000
+        }
+    }
+}

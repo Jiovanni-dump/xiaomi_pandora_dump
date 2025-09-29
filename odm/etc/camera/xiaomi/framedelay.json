@@ -1,0 +1,49 @@
+{
+    "settings" : {
+        "enableDynamicFrameDelay" : true,
+        "isExtraFrameDelay" : true,
+        "extraFrameDelaySettings" : {
+            "misFeatureHDR" : 15,
+            "misFeatureSuperEis" : 32,
+            "misFeatureDolby1080P" : 28,
+            "misFeatureDolby4k" : 25,
+            "HFRFrameDelay" : 28,
+            "maxHeight1080" : 40,
+            "maxHeight4k" : 32
+        },
+        "defaultFrameDelay" : 25,
+        "superEisFrameDelay" : 30,
+        "updateIntervalMs" : 0
+    },
+    "systemconfig" : {
+        "lowMem" : [
+            [8, 32]
+        ],
+        "mem_psi" : [
+            [10, 32],
+            [15, 25],
+            [20, 15],
+            [50, 15]
+        ],
+        "cpu_psi" : [
+            [60, 32],
+            [70, 30],
+            [80, 25]
+        ],
+        "thermal" : [
+            [40, 32],
+            [45, 30],
+            [48, 25],
+            [52, 15]
+        ]
+    },
+    "camerascenes" : [
+        {
+            "operationMode" : 32772,
+            "videoWidth" : 3840,
+            "videoHeight" : 2160,
+            "maxFps" : 60,
+            "maxFrameDelay" : 28
+        }
+    ]
+}

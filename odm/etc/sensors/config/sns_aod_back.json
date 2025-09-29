@@ -1,0 +1,26 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP", "Dragon", "Surf", "QRD"
+    ],
+    "soc_id": ["536", "557", "577", "660"]
+  },
+  "sns_aod_back": {
+    "owner": "sns_aod_back",
+    ".params":{
+      "owner": "sns_aod_back",
+        "param1": {
+          "ver": "0", "type": "flt", "data": "300"
+        },
+       "param2": {
+          "ver": "0", "type": "flt", "data": "2000"
+       },
+       "param3": {
+          "ver": "0", "type": "flt", "data": "3000"
+       },
+       "param4": {
+          "ver": "0", "type": "flt", "data": "0"
+       }
+    }
+  }
+}

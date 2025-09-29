@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+listeners is a statues set,if corresponding position is 1, that mean reg this listener.
+    Now, contain the listener is:
+    receiver,wifi_spot,bluetooth,bluetooth_pan,sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb
+    1: need to reg, 0 : don`t reg
+    like for J18 device, listeners that need to reg is:  11111111110
+    like for J3S device, listeners that need to reg is:  11111111100
+    like for J1/J2 device, listeners that need to reg is 11111011000
+dsiMap：
+    1. F mean NA,the other state is corresponding listener value.
+    2. wifi_spot,bluetooth,bluetooth_pan is one state: hotSpot.
+    receiver,hotSpot,sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb
+    like for J18 device:
+        DSI1: 10FF1F00
+        DSI2: 10FF2F00,10FF3F00 == 10FF4F00
+        DSI3: 0020FF00
+        DSI4: 00102F00,00103F00 == 00104F00
+        an so on
+-->
+<SarDsiConfig>
+    <!-- use for sar uncouple framework -->
+    <sarVersion>2</sarVersion>
+
+    <!-- only use for CN -->
+    <deviceSarConfig device_name="pandora">
+        <prop prop_name="ro.boot.hwc">CN</prop>
+        <!-- receiver,hotSpot(wifi_spot,(bluetooth,bluetooth_pan)),sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb,lab,wlist,hall2,sarsensor3,gpd,screen,land,simmcc,game,hst -->
+        <listeners>100010000001100000011</listeners>
+        <!-- receiver,sarsensor1,lab,wlist,game,hst -->
+        <dsimap value="FF01FF">0</dsimap>
+        <dsimap value="FF0FF1">0</dsimap>
+        <dsimap value="1F00F0">1</dsimap>
+        <dsimap value="010000">3</dsimap>
+        <dsimap value="0000F0">4</dsimap>
+        <dsimap value="FF1FFF">5</dsimap>
+        <dsimap value="010010">6</dsimap>
+    </deviceSarConfig>
+
+    <!-- default configuration -->
+    <deviceSarConfig device_name="pandora">
+        <prop prop_name="ro.boot.hwc">default</prop>
+        <!-- receiver,hotSpot(wifi_spot,(bluetooth,bluetooth_pan)),sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb,lab,wlist,hall2,sarsensor3,gpd,screen,land,simmcc,game,hst -->
+        <listeners>100010000001100000011</listeners>
+        <!-- receiver,sarsensor1,lab,wlist,game,hst -->
+        <dsimap value="FF01FF">0</dsimap>
+        <dsimap value="FF0FF1">0</dsimap>
+        <dsimap value="1F00F0">1</dsimap>
+        <dsimap value="010000">3</dsimap>
+        <dsimap value="0000F0">4</dsimap>
+        <dsimap value="FF1FFF">5</dsimap>
+        <dsimap value="010010">6</dsimap>
+    </deviceSarConfig>
+</SarDsiConfig>

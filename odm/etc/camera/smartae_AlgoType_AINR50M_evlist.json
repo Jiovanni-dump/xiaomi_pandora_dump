@@ -1,0 +1,43 @@
+{
+    "Description": "Xiaomi SmartAE config file - Arbitrator",
+    "phone_code": "O1",
+    "jsonVersion": "AINR-50M-V2.0-20241011",
+
+    "AlgoType_AINR50M": {
+        "CHECKER": {
+            "WIDE": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": null
+            }
+        },
+        "LIST": [
+            {
+                "Description": "V_0",
+                "frames": 3,
+                "ev_value": [ 0, 0, 0 ],
+                "capture_mode": [ 1, 1, 1 ],
+                "adrc_on": [ 1, 1, 1 ],
+                "sensor_mode": [ 7, 7, 7 ],
+                "motion_exp_type": [ 1, 1, 1 ],
+                "ois_sync": [ 0, 0, 0 ],
+                "min_exp_check": false,
+                "change_to_index": null
+            }
+        ]
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

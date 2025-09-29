@@ -1,0 +1,153 @@
+
+{
+    "config": {
+      "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+      "soc_id": ["519", "557", "536", "660"]
+    },
+    "stk6b9x_0_platform": {
+      ".rgb": {
+        "owner": "sns_stk6b9x",
+        ".fac_cal": {
+          "owner": "sns_stk6b9x",
+          "c_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "r_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "g_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "b_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "f_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          }
+        }
+      },
+      ".config": {
+        "owner": "sns_stk6b9x",
+        "bus_type":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "bus_instance":{ "type": "int", "ver": "0",
+          "data": "4"
+        },
+        "slave_config":{ "type": "int", "ver": "0",
+          "data": "0x47"
+        },
+        "min_bus_speed_khz":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "max_bus_speed_khz":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "reg_addr_type":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "dri_irq_num":{ "type": "int", "ver": "1",
+          "data": "67"
+        },
+        "irq_pull_type":{ "type": "int", "ver": "0",
+          "data": "3"
+        },
+        "irq_is_chip_pin":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "irq_drive_strength":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "irq_trigger_type":{ "type": "int", "ver": "0",
+          "data": "3"
+        },
+        "num_rail":{ "type": "int", "ver": "1",
+          "data": "2"
+        },
+        "rail_on_state":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "vddio_rail":{ "type": "str", "ver": "2",
+          "data": "L1B_E0"
+        },
+        "vdd_rail":{ "type": "str", "ver": "0",
+          "data": "L11B_E0"
+        },
+        "rigid_body_type":{ "type": "int", "ver": "0",
+        "data": "0"
+        }
+      },
+      ".als": {
+          "owner": "sns_stk6b9x",
+          ".fac_cal": {
+              "owner": "sns_stk6b9x",
+              "scale": {
+                  "ver": "0",
+                  "type": "flt",
+                  "data": "1.0"
+              },
+              "bias": {
+                  "ver": "0",
+                  "type": "flt",
+                  "data": "5000.0"
+              }
+          }
+      },
+      "owner": "sns_stk6b9x"
+    }, 
+    "stk6b9x_0": {
+        "owner": "sns_stk6b9x",
+        ".ambient_light": {
+            "owner": "sns_stk6b9x",
+            ".config": {
+                "owner": "sns_stk6b9x",
+                "hw_id": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "sync_stream": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "is_dri": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "res_idx": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                }
+            }
+        },
+        ".rgb": {
+            "owner": "sns_stk6b9x",
+            ".config": {
+                "owner": "sns_stk6b9x",
+                "hw_id": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "sync_stream": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "is_dri": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "res_idx": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "1"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "PipelineName": "PreAnchorMfnrSatSnapshot",
+    "NodesList": {
+        "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.anchor",
+            "NodeInstance": "PreAnchorInstance0",
+            "NodeProperty":[
+            {
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":1
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.dsac",
+            "NodeInstance": "DSACInstancePort0",
+            "NodeProperty":[
+            {
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":32785,
+                "comments": "HAL_MODE|SIGFRAME_MODE|INPLACE_MODE"
+            },
+            {
+                "NodePropertyName": "pluginMode",
+                "NodePropertyValue": 0,
+                "comments": "DSAC-collectBuffer"
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.dsac",
+            "NodeInstance": "DSACInstancePort1",
+            "NodeProperty":[
+            {
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":32785,
+                "comments": "HAL_MODE|SIGFRAME_MODE|INPLACE_MODE"
+            },
+            {
+                "NodePropertyName": "pluginMode",
+                "NodePropertyValue": 0,
+                "comments": "DSAC-collectBuffer"
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.dsac",
+            "NodeInstance": "DSACInstanceAnchor",
+            "NodeProperty":[
+            {
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":32785,
+                "comments": "HAL_MODE|SIGFRAME_MODE|INPLACE_MODE"
+            },
+            {
+                "NodePropertyName": "pluginMode",
+                "NodePropertyValue": 1,
+                "comments": "DSAC-collectAnchorMeta"
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.virtual",
+            "NodeInstance": "virtualInstanceDSACSplit",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 560
+                }
+            ]
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceDSACSplit",
+                "PortFollowType": 3,
+                "FollowPortId": 0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "virtualInstanceDSACSplit"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorInstance0",
+                "PortFollowType": 3,
+                "FollowPortId": 0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceDSACSplit"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "DSACInstancePort0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "DSACInstanceAnchor"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "SourceBuffer1"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "DSACInstancePort1"
+            }
+        }
+        ]
+    }
+}

@@ -1,0 +1,434 @@
+{
+    "Description": "Xiaomi SmartAE config file - Aggregation",
+    "phone_code": "P2",
+    "jsonVersion": "Agre_V2.0-20250324",
+
+    "APPLY_AERATIO": {
+        "need_apply": [
+            "AlgoType_HDR",
+            "AlgoType_HDRSR",
+            "AlgoType_SE",
+            "AlgoType_SN",
+            "AlgoType_SN_F",
+            "AlgoType_HDR_F"
+        ]
+    },
+    "BOKEH_OPERATION_MODE": {
+        "serial": [
+            "AlgoType_SE",
+            "AlgoType_SRSE",
+            "AlgoType_AINR",
+            "AlgoType_AINR_LL"
+        ],
+        "parallel": [
+            "AlgoType_HDR",
+            "AlgoType_SR",
+            "AlgoType_HDRSR"
+        ]
+    },
+
+    "CROP_SCALE": {
+
+        "PLATFORM": [
+            {
+                "algo_type": "AlgoType_AINR",
+                "CONDITIONS": null
+            },
+            {
+                "algo_type": "AlgoType_ELL",
+                "CONDITIONS": null
+            },
+            {
+                "algo_type": "AlgoType_SNSC",
+                "CONDITIONS": null
+            },
+            {
+                "algo_type": "AlgoType_HDR",
+                "CONDITIONS": null
+            },
+            {
+                "algo_type": "AlgoType_HDR_F",
+                "CONDITIONS": null
+            },
+            {
+                "algo_type": "AlgoType_SN_F",
+                "CONDITIONS": null
+            }
+        ]
+
+    },
+    "ADJUST_ADRC": {
+
+        "Description": "max adrc threshold",
+        "AlgoType_HDR": {
+            "WIDE": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "BinningNormal",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "BinningDXGT",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    }
+                ]
+            },
+            "UW": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "BinningNormal",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "lux": [ 400, 420 ],
+                        "value": [ 4.0, 2.5 ]
+                    }
+                ]
+            }
+
+        },
+        "AlgoType_HDRSR": {
+            "WIDE": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "BinningNormal",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "ISZQUAD",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "QuardBayerMode",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    }
+                ]
+            },
+            "ULTRATELE": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "BinningNormal",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "ISZQUAD",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "QuardBayerMode",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "QuardBayerMode",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "lux": [ 400, 420 ],
+                        "value": [ 3.5, 2.5 ]
+                    }
+                ]
+            }
+        },
+        "AlgoType_SE": {
+            "WIDE": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "ISZQUAD",
+                        "value": 2.5
+                    },
+                    {
+                        "sensor_mode": "QuardBayerMode",
+                        "value": 2.5
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "value": 3.0
+                    },
+                    {
+                        "sensor_mode": "BinningDXGC",
+                        "value": 16.0
+                    }
+
+                ]
+            },
+            "UW": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "value": 4.0
+                    },
+                    {
+                        "sensor_mode": "BinningDXGC",
+                        "value": 16.0
+                    }
+
+                ]
+            },
+            "ULTRATELE": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "ISZQUAD",
+                        "value": 2.5
+                    },
+                    {
+                        "sensor_mode": "QuardBayerMode",
+                        "value": 2.5
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "value": 2.5
+                    },
+                    {
+                        "sensor_mode": "BinningDXGC",
+                        "value": 16.0
+                    }
+
+                ]
+            }
+        },
+        "AlgoType_SN": {
+            "WIDE": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "BinningDXGC",
+                        "value": 16.0
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "value": 4.0
+                    }
+                ]
+            },
+            "UW": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "BinningDXGC",
+                        "value": 16.0
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "value": 4.0
+                    }
+                ]
+            },
+            "ULTRATELE": {
+                "ADJUST_VALUE": [
+                    {
+                        "sensor_mode": "BinningDXGC",
+                        "value": 16.0
+                    },
+                    {
+                        "sensor_mode": "RemainingMode",
+                        "value": 4.0
+                    }
+                ]
+            }
+        }
+    },
+
+    "LIMIT_EV": {
+
+        "ADRC_ON": {
+            "AlgoType_HDR": {
+                "short_cal_method": 0,
+                "fixed_ratio": 1.0
+            },
+            "AlgoType_HDRSR": {
+                "short_cal_method": 0,
+                "fixed_ratio": 1.0
+            }
+        },
+        "HCGLCG": {
+            "short_hcg_lcg_ratio": 4.0,
+            "ev0_lcg_max": -12,
+            "ev0_lcg_min": -24
+        }
+
+    },
+
+
+    "OUTPUT_CONFIG": {
+        "Description": "SmartAE output config",
+        "out_config_enable": false,
+        "algo_type": 0,
+        "evlist_num": 0,
+        "is_motionfix_Long": false,
+        "ev_meta": [
+            {
+                "Description": "EV[0]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[1]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[2]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[3]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[4]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[5]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[6]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[7]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[8]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[9]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[10]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[11]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[12]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[13]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            },
+            {
+                "Description": "EV[14]",
+                "ev_value": "null",
+                "adrc_enable": "null",
+                "motion_exposure_type": "null",
+                "dst_capture_mode": "null",
+                "dst_sensor_mode": "null"
+            }
+        ],
+        "algo_meta": {
+            "Description": "post processing config",
+            "is_white_plus": "null",
+            "is_black_sub": "null",
+            "EV_offset": "null",
+            "is_smartmotion": "null",
+            "banding_type": "null",
+            "is_bracket_exposure": "null",
+            "is_scene_bright": "null",
+            "bokeh_setting_type": "null",
+            "adj_adrc_gain": "null"
+        },
+        "feature_mode": {
+            "Description": "feature config",
+            "ae_mode": {
+                "Description": "AE mode",
+                "exposure_adjust": "null",
+                "is_bracketing": "null",
+                "is_lls": "null"
+            },
+            "isp_mode": "null"
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+}

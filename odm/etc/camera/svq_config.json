@@ -1,0 +1,100 @@
+{
+  "REAR_MAIN": {
+    "ModelAlgo4K": {
+      "lux_bypass_threshold": 340.0,
+      "sensor_gain_ranges": [
+        {
+          "sensor_gain_min": 0,
+          "sensor_gain_max": 36,
+          "model_index": "EHT_DENOISE_SVQ_MODEL_4K_1",
+          "denoise_strength": 0.63,
+          "motion_strength": 0.1,
+          "additional_ob_float": 0.0,
+          "bypass_all": false,
+          "bypass_alpha": false,
+          "drc_case_threshold": 4.0,
+          "drc_denoise_strength": 0.85,
+          "linear_scale": 1.5
+        },
+        {
+          "sensor_gain_min": 36,
+          "sensor_gain_max": 80,
+          "model_index": "EHT_DENOISE_SVQ_MODEL_4K_2",
+          "denoise_strength": 0.68,
+          "motion_strength": 0.1,
+          "additional_ob_float": 0.0,
+          "bypass_all": false,
+          "bypass_alpha": false,
+          "drc_case_threshold": 4.0,
+          "drc_denoise_strength": 0.95,
+          "linear_scale": 1.1
+        },
+        {
+          "sensor_gain_min": 80,
+          "sensor_gain_max": 140,
+          "model_index": "EHT_DENOISE_SVQ_MODEL_4K_3",
+          "denoise_strength": 0.73,
+          "motion_strength": 0.1,
+          "additional_ob_float": 0.0,
+          "bypass_all": false,
+          "bypass_alpha": false,
+          "drc_case_threshold": 4.0,
+          "drc_denoise_strength": 0.9,
+          "linear_scale": 1.6
+        },
+        {
+          "sensor_gain_min": 140,
+          "sensor_gain_max": 180,
+          "model_index": "EHT_DENOISE_SVQ_MODEL_4K_4",
+          "denoise_strength": 0.80,
+          "motion_strength": 0.1,
+          "additional_ob_float": 0.0,
+          "bypass_all": false,
+          "bypass_alpha": false,
+          "drc_case_threshold": 4.0,
+          "drc_denoise_strength": 0.75,
+          "linear_scale": 2.0
+        },
+        {
+          "sensor_gain_min": 180,
+          "sensor_gain_max": 220,
+          "model_index": "EHT_DENOISE_SVQ_MODEL_4K_5",
+          "denoise_strength": 0.83,
+          "motion_strength": 0.1,
+          "additional_ob_float": 0.0,
+          "bypass_all": false,
+          "bypass_alpha": false,
+          "drc_case_threshold": 4.0,
+          "drc_denoise_strength": 0.75,
+          "linear_scale": 2.0
+        },
+        {
+          "sensor_gain_min": 220,
+          "sensor_gain_max": 240,
+          "model_index": "EHT_DENOISE_SVQ_MODEL_4K_6",
+          "denoise_strength": 0.85,
+          "motion_strength": 0.1,
+          "additional_ob_float": 0.0,
+          "bypass_all": false,
+          "bypass_alpha": false,
+          "drc_case_threshold": 4.0,
+          "drc_denoise_strength": 0.75,
+          "linear_scale": 2.0
+        },
+        {
+          "sensor_gain_min": 240,
+          "sensor_gain_max": 256,
+          "model_index": "EHT_DENOISE_SVQ_MODEL_4K_7",
+          "denoise_strength": 0.88,
+          "motion_strength": 0.1,
+          "additional_ob_float": 0.0,
+          "bypass_all": false,
+          "bypass_alpha": false,
+          "drc_case_threshold": 4.0,
+          "drc_denoise_strength": 0.75,
+          "linear_scale": 2.0
+        }
+      ]
+    }
+  }
+}

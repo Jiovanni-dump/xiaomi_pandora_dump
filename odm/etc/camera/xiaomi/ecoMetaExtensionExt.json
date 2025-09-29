@@ -1,0 +1,217 @@
+/*
+说明：
+    ecoMetaExtension.json 的附加文件，不同项目需要不同配置的，放在这里，相同Signature同版本的选项会合并
+*/
+[
+    {
+        "Signature":"SATZoomRange",//set satZoomRatioRange static meta by sdk
+        "Source":{
+            "CameraRoleId": 60 // RoleIdRearSat
+        },
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt" : "Characteristics",
+                    "Name": "com.xiaomi.algo.satZoomRatioRange",//miui disuse this tag but sdk use
+                    "Value": ["0.7","120.0"],//0.7:ultra min zoom ratio,120.0:tele max zoom ratio
+                    "Size": 2,
+                    "Type" : "Float"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"FuncBokeh1xUpgraded",
+        "Source":{
+            "SdkOpMode": "0xff12", // StreamConfigModeEcoEngineBokeh1X
+            "Prop":
+            [
+                {
+                    "Name": "persist.vendor.camera.ecoengine.bokehVersion",
+                    "Value": ["", "0"]
+                }
+            ]
+        },
+        "Target":{
+            "Prop": [
+                {
+                    "Name": "persist.vendor.camera.ecoengine.bokehVersion",
+                    "Value": "1"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"FuncBokeh2xUpgraded",
+        "Source":{
+            "SdkOpMode": "0xff15", // StreamConfigModeEcoEngineBokeh2X
+            "Prop":
+            [
+                {
+                    "Name": "persist.vendor.camera.ecoengine.bokehVersion",
+                    "Value": ["", "0"]
+                }
+            ]
+        },
+        "Target":{
+            "Prop": [
+                {
+                    "Name": "persist.vendor.camera.ecoengine.bokehVersion",
+                    "Value": "1"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"FuncBokehFront",
+        "Source":{
+            "SdkOpMode": "0xff12", // StreamConfigModeEcoEngineBokeh1X
+            "CameraRoleId": 1 //RoleIdFront
+        },
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt":["Config","Preview","Capture"],
+                    "Name": "android.control.zoomRatio",
+                    "Value": "1.25",
+                    "Type" : "Float"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"FuncBokehRear",
+        "Source":{
+            "SdkOpMode": "0xff12", // StreamConfigModeEcoEngineBokeh1X
+            "CameraRoleId": [60, 64] //RoleIdRear
+        },
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt":["Config","Preview","Capture"],
+                    "Name": "android.control.zoomRatio",
+                    "Value": "1.00",
+                    "Type" : "Float"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"FuncBokehRear2X",
+        "Source":{
+            "SdkOpMode": "0xff15", // StreamConfigModeEcoEngineBokeh2X
+            "CameraRoleId": [60, 64] //RoleIdRear
+        },
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt":["Config","Preview","Capture"],
+                    "Name": "android.control.zoomRatio",
+                    "Value": "2.12",
+                    "Type" : "Float"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"SmartAeUpgraded",
+        "Source":{
+            "Prop":
+            [
+                {
+                    "Name": "persist.vendor.camera.ecoengine.smartAeVersion",
+                    "Value": ["", "0"]
+                }
+            ]
+        },
+        "Target":{
+            "Prop": [
+                {
+                    "Name": "persist.vendor.camera.ecoengine.smartAeVersion",
+                    "Value": "1"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"MiviThirdJpegr",
+        "Source":{
+            "Prop":
+            [
+                {
+                    "Name": "persist.vendor.camera.sdk.third.jpegr.enable",
+                    "Value": ["", "0"]
+                }
+            ]
+        },
+        "Target":{
+            "Prop": [
+                {
+                    "Name": "persist.vendor.camera.sdk.third.jpegr.enable",
+                    "Value": "1"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"GpuFlipEnabled",
+        "Source":{
+            "SdkOpMode": "0xff13", // StreamConfigModeEcoEngineBokeh2X
+            "CameraRoleId": 1
+        },
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt":["Config","Preview"],
+                    "Name": "xiaomi.flip.enabled",
+                    "Value": "1",
+                    "Type" : "Byte"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"_isSATVideo",
+        "IsPublish": false,
+        "Source":{
+            "CameraRoleId": 60,
+            "Meta": [
+                {
+                    "CamOpt":["Preview"],
+                    "Name": "com.xiaomi.sessionparams.operation",
+                    "Value": ["65293", "65296", "65299"],
+                    "Size": 3,
+                    "Type" : "Int",
+                    "MetaOpt": ["SrcFilter", "SrcPrint"]
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"SATZoomDisabled",
+        "Parents":["_isSATVideo"],
+        "Source":{
+            "SourceFlag" : 1,
+            "Meta": [
+                {
+                    "CamOpt":["Preview"],
+                    "Name": "android.control.zoomRatio",
+                    "Value": "1",      // Due to accuracy loss in metaRead, set 1.00 to 1
+                    "Size": 1,
+                    "Type" : "Float",
+                    "MetaOpt": ["SrcFilter", "SrcPrint"]
+                }
+            ]
+        },
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt":["Preview"],
+                    "Name": "xiaomi.satIsZooming.satIsZooming",
+                    "Value": "1",
+                    "Type" : "Int"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,15 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["557", "577", "660"]
+  },
+  "sns_nonui_back": {
+    "owner": "sns_nonui_back",
+    ".threshold":{
+      "owner": "sns_nonui_back",
+          "psensorThold1": {
+            "ver": "3", "type": "flt", "data": "200"
+          }
+    }
+  }
+}

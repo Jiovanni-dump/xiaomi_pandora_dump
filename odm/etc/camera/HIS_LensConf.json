@@ -1,0 +1,370 @@
+{
+    "phoneID": 200,
+    "version": "20250818 v1.3.8 q200",
+    "lensMap": {
+        "num": 4,
+        "lensMapIndex": [0,1,21,23],
+        "lensIdArr": [0,1,3,2]
+    },
+    "oisCheckMode": false,
+    "0": {
+        "name": "wideLensConf",
+        "switch": {
+            "debugEnableHIS": true,
+            "gridMTK_WPE": false,
+            "gridQCOM_ICA": true,
+            "debug_OPT_FixedOrientation": -1,
+            "debug_OPT_EnableBlackCornerLimit": true,
+            "useRecoverOISFilter": false,
+            "selfieMode": false,
+            "oisEnabled": true,
+            "ifovcEnabled": true,
+            "ifovcEnableScaling": true,
+            "accEnableLevelMode": true,
+            "SatEnableMode": true,
+            "disEnableMode": true,
+            "earlyCropMode": true,
+            "lowLightComp": true,
+            "frameBlurLimitforMarginEnable": false,
+            "dynamicZoomforMarginEnable": false
+        },
+        "frame": {
+            "enableAdaptiveLDC": true,
+            "frmWidth": 1920,
+            "frmHeight": 1080,
+            "frmWidthBefCrop": 1920,
+            "frmHeightBefCrop": 1440,
+            "gridCntH": 23,
+            "gridCntV": 23,
+            "gridCntHapi": 35,
+            "gridCntVapi": 27
+        },
+        "gyro": {
+            "gyroMinusShutter": 64837,
+            "gyroAvgInterval": 2034834,
+            "gyroXOnCamCord": 2,
+            "gyroYOnCamCord": 1,
+            "gyroZOnCamCord": 3,
+            "calGyroTSDelayVSFrm": 3442027
+        },
+        "hall": {
+            "hallSupplierNum": 2,
+            "1": {
+                "useFactoryCalibParams": true,
+                "oisHallTSAvgInterval": 1888038,
+                "oisHallTSDelay": -759619,
+                "oisHallXOnCamCord": -1,
+                "oisHallYOnCamCord": -2,
+                "oisPixelPerHallLSB_X": 0.02088806777098217,
+                "oisPixelPerHallLSB_Y": 0.02159830416263309,
+                "xGainTele5": -1.17,
+                "yGainTele5": -0.604,
+                "wOffsetTele5": 0,
+                "hOffsetTele5": 0,
+                "normalVectorTele5": [0,0.707106781,0.707106781]
+            },
+            "2": {
+                "useFactoryCalibParams": true,
+                "oisHallTSAvgInterval": 1888038,
+                "oisHallTSDelay": 1664395,
+                "oisHallXOnCamCord": -1,
+                "oisHallYOnCamCord": -2,
+                "oisPixelPerHallLSB_X": 0.020049287666722586,
+                "oisPixelPerHallLSB_Y": 0.016527821937757137,
+                "xGainTele5": -1.17,
+                "yGainTele5": -0.604,
+                "wOffsetTele5": 0,
+                "hOffsetTele5": 0,
+                "normalVectorTele5": [0,0.707106781,0.707106781]
+            }
+        },
+        "ldc": {
+            "calLDCD2UGrid": true,
+            "largeDistortionLens": true,
+            "calFocalLength": 1277.0366496650386,
+            "LDCGridSizeH": 49,
+            "LDCGridSizeV": 28,
+            "LDCCameraMatrix": [1277.697534702203, 0, 959.5, 0, 1277.697534702203, 719.5, 0, 0, 1],
+            "LDCDistCoeff": [15.28944923380283, 10.79962895204036, 0, 0, 0.07614634696001724, 14.82387539241455, 10.85172209978551, 0, 0, 0, 0, 0, 0, 0],
+            "LDCCameraMatrix_Near": [1386.966414661977, 0, 959.5, 0, 1386.966414661977, 719.5, 0, 0, 1],
+            "LDCDistCoeff_Near": [9.179975570439737, 0.6822918142704536, 0, 0, -0.8128796728703827, 9.254245977623695, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "fovc": {
+            "ifovcCalAfcode": [899, 800, 700, 600, 500, 400, 300, 200, 100, 0],
+            "ifovcCalScaleRation": [1.0138767092595589, 1.0, 0.9846648609070334, 0.9699672437249255, 0.9556702213877036, 0.940633515643015, 0.9259069537002823, 0.913112292462756, 0.8994802870134969, 0.8866655467514601],
+            "ifovcCalDelayVSFrm": -19559131,
+            "ifovcMaxCode": 899
+        },
+        "param": {
+            "disMinAfDistance": 0.30,
+            "disMaxAfVarance": 0.1,
+            "dynamicMarginFlag": 1,
+            "dynamicMarginEndZoom": 1,
+            "lowLightCompDarkStabRatio": 0.9,
+            "lowLightCompDarkExpoDur": 20000000
+        }
+    },
+    "1": {
+        "name": "FrontLensConf",
+        "switch": {
+            "debugEnableHIS": true,
+            "gridMTK_WPE": false,
+            "gridQCOM_ICA": true,
+            "debug_OPT_FixedOrientation": -1,
+            "debug_OPT_EnableBlackCornerLimit": true,
+            "useRecoverOISFilter": false,
+            "selfieMode": true,
+            "oisEnabled": false,
+            "ifovcEnabled": false,
+            "ifovcEnableScaling": false,
+            "accEnableLevelMode": false,
+            "SatEnableMode": false,
+            "disEnableMode": false,
+            "earlyCropMode": false,
+            "lowLightComp": false,
+            "frameBlurLimitforMarginEnable": false,
+            "dynamicZoomforMarginEnable": false
+        },
+        "frame": {
+            "enableAdaptiveLDC": true,
+            "frmWidth": 1920,
+            "frmHeight": 1080,
+            "frmWidthBefCrop": 1920,
+            "frmHeightBefCrop": 1440,
+            "gridCntH": 11,
+            "gridCntV": 11,
+            "gridCntHapi": 35,
+            "gridCntVapi": 27
+        },
+        "gyro": {
+            "gyroMinusShutter": 592216,
+            "gyroAvgInterval": 2034834,
+            "gyroXOnCamCord": -2,
+            "gyroYOnCamCord": 1,
+            "gyroZOnCamCord": -3,
+            "calGyroTSDelayVSFrm": 3442027
+        },
+        "hall": {
+            "oisHallTSAvgInterval": 1893675,
+            "oisHallTSDelay": -147061,
+            "oisHallXOnCamCord": 2,
+            "oisHallYOnCamCord": -1,
+            "oisPixelPerHallLSB_X": 0.015498674061858893,
+            "oisPixelPerHallLSB_Y": 0.015533616551987428,
+            "xGainTele5": -1.17,
+            "yGainTele5": -0.604,
+            "wOffsetTele5": 0,
+            "hOffsetTele5": 0,
+            "normalVectorTele5": [0,0.707106781,0.707106781]
+        },
+        "ldc": {
+            "calLDCD2UGrid": true,
+            "largeDistortionLens": false,
+            "calFocalLength": 1201.227487070446,
+            "LDCGridSizeH": 49,
+            "LDCGridSizeV": 28,
+            "LDCCameraMatrix": [1201.227487070446, 0, 959.5, 0, 1201.227487070446, 719.5, 0, 0, 1],
+            "LDCDistCoeff": [8.13592067011146, -0.199205871449246, 0, 0, 0.03700826123684769, 7.927766184456839, 0, 0, 0, 0, 0, 0, 0, 0],
+            "LDCCameraMatrix_Near": [1368.736393558478, 0, 959.5, 0, 1368.736393558478, 719.5, 0, 0, 1],
+            "LDCDistCoeff_Near": [-4.622668083115571, 11.94182815760164, 0, 0, -0.03198402936752202, -4.610977874697648, 11.93581778678492, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "fovc": {
+            "ifovcCalAfcode": [899, 800, 700, 600, 500, 400, 300, 200, 100, 0],
+            "ifovcCalScaleRation": [1.00587063,  0.99296247,  0.97917723,  0.96568471,  0.95009768, 0.93833675,  0.93070218,  0.91592146,  0.90513343,  0.89491617],
+            "ifovcCalDelayVSFrm": 9376162,
+            "ifovcMaxCode": 899
+        },
+        "param": {
+            "disMinAfDistance": 0.5,
+            "disMaxAfVarance": 0.5,
+            "dynamicMarginFlag": 0,
+            "dynamicMarginEndZoom": 1,
+            "lowLightCompDarkStabRatio": 0.9,
+            "lowLightCompDarkExpoDur": 20000000
+        }
+    },
+    "2": {
+        "name": "teleLensConf",
+        "switch": {
+            "debugEnableHIS": true,
+            "gridMTK_WPE": false,
+            "gridQCOM_ICA": true,
+            "debug_OPT_FixedOrientation": -1,
+            "debug_OPT_EnableBlackCornerLimit": true,
+            "useRecoverOISFilter": true,
+            "selfieMode": false,
+            "oisEnabled": true,
+            "ifovcEnabled": false,
+            "ifovcEnableScaling": false,
+            "accEnableLevelMode": true,
+            "SatEnableMode": true,
+            "disEnableMode": true,
+            "earlyCropMode": true,
+            "lowLightComp": true,
+            "frameBlurLimitforMarginEnable": false,
+            "dynamicZoomforMarginEnable": false,
+            "alignNormalIszMargin": true
+        },
+        "frame": {
+            "enableAdaptiveLDC": true,
+            "frmWidth": 1920,
+            "frmHeight": 1080,
+            "frmWidthBefCrop": 1920,
+            "frmHeightBefCrop": 1440,
+            "gridCntH": 11,
+            "gridCntV": 11,
+            "gridCntHapi": 35,
+            "gridCntVapi": 27
+        },
+        "gyro": {
+            "gyroMinusShutter": -566874,
+            "gyroAvgInterval": 2034834,
+            "gyroXOnCamCord": 2,
+            "gyroYOnCamCord": 1,
+            "gyroZOnCamCord": 3,
+            "calGyroTSDelayVSFrm": 3442027
+        },
+        "hall": {
+            "hallSupplierNum": 2,
+            "1": {
+                "oisHallTSAvgInterval": 1021766,
+                "oisHallTSDelay": -292604,
+                "oisHallXOnCamCord": 2,
+                "oisHallYOnCamCord": -1,
+                "oisPixelPerHallLSB_X": 108.87828628108363,
+                "oisPixelPerHallLSB_Y": 108.87828628108363,
+                "xGainTele5": -1.0115557,
+                "yGainTele5": -0.49104472,
+                "wOffsetTele5": 0.88933736,
+                "hOffsetTele5": 0.53290329,
+                "normalVectorTele5": [0.000000,0.707107,0.707107]
+            },
+            "2": {
+                "oisHallTSAvgInterval": 1021766,
+                "oisHallTSDelay": 14703,
+                "oisHallXOnCamCord": -2,
+                "oisHallYOnCamCord": 1,
+                "oisPixelPerHallLSB_X": 112.6797751835602,
+                "oisPixelPerHallLSB_Y": 110.4797751835602,
+                "xGainTele5": -1.0115557,
+                "yGainTele5": -0.49104472,
+                "wOffsetTele5": 0.88933736,
+                "hOffsetTele5": 0.53290329,
+                "normalVectorTele5": [0.000000,0.707107,0.707107]
+            }
+        },
+        "ldc": {
+            "calLDCD2UGrid": true,
+            "largeDistortionLens": false,
+            "calFocalLength": 6390.849519206445,
+            "LDCGridSizeH": 49,
+            "LDCGridSizeV": 28,
+            "LDCCameraMatrix": [6390.544731664745, 0, 959.5, 0, 6390.544731664745, 719.5, 0, 0, 1],
+            "LDCDistCoeff": [6.506474474095543, -3.286114858614567, 0, 0, 220.2993833302959, 5.849666561557537, 0, 0, 0, 0, 0, 0, 0, 0],
+            "LDCCameraMatrix_Near": [6390.544731664745, 0, 959.5, 0, 6390.544731664745, 719.5, 0, 0, 1],
+            "LDCDistCoeff_Near": [6.506474474095543, -3.286114858614567, 0, 0, 220.2993833302959, 5.849666561557537, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "fovc": {
+            "ifovcCalAfcode": [899, 800, 700, 600, 500, 400, 300, 200, 100, 0],
+            "ifovcCalScaleRation": [1.002404504494315, 1.0, 0.9978423122122225, 0.9959603397711074, 0.9939952035133934, 0.9917804790898709, 0.9893074854891217, 0.9878798823407494, 0.9856117735955636, 0.9834897308269596],
+            "ifovcCalDelayVSFrm": -13613921,
+            "ifovcMaxCode": 899
+        },
+        "param": {
+            "disMinAfDistance": 0.5,
+            "disMaxAfVarance": 0.5,
+            "dynamicMarginFlag": 3,
+            "dynamicMarginEndZoom": 1,
+            "lowLightCompDarkStabRatio": 0.9,
+            "lowLightCompDarkExpoDur": 20000000,
+            "binningMaxOFECropUserZoom": 17,
+            "teleOriginalZoom": 5.0
+        }
+    },
+    "3": {
+        "name": "UWLensConf",
+        "switch": {
+            "debugEnableHIS": true,
+            "gridMTK_WPE": false,
+            "gridQCOM_ICA": true,
+            "debug_OPT_FixedOrientation": -1,
+            "debug_OPT_EnableBlackCornerLimit": true,
+            "useRecoverOISFilter": false,
+            "selfieMode": true,
+            "oisEnabled": false,
+            "ifovcEnabled": true,
+            "ifovcEnableScaling": true,
+            "accEnableLevelMode": true,
+            "SatEnableMode": true,
+            "disEnableMode": false,
+            "earlyCropMode": true,
+            "lowLightComp": true,
+            "frameBlurLimitforMarginEnable": false,
+            "dynamicZoomforMarginEnable": false
+        },
+        "frame": {
+            "enableAdaptiveLDC": true,
+            "frmWidth": 1920,
+            "frmHeight": 1200,
+            "frmWidthBefCrop": 1920,
+            "frmHeightBefCrop": 1440,
+            "gridCntH": 11,
+            "gridCntV": 11,
+            "gridCntHapi": 35,
+            "gridCntVapi": 27
+        },
+        "gyro": {
+            "gyroMinusShutter": -247797,
+            "gyroAvgInterval": 2034834,
+            "gyroXOnCamCord": 2,
+            "gyroYOnCamCord": 1,
+            "gyroZOnCamCord": 3,
+            "calGyroTSDelayVSFrm": 3442027
+        },
+        "hall": {
+            "oisHallTSAvgInterval": 1873193,
+            "oisHallTSDelay": 311914,
+            "oisHallXOnCamCord": 2,
+            "oisHallYOnCamCord": -1,
+            "oisPixelPerHallLSB_X": 0.009125829091919987,
+            "oisPixelPerHallLSB_Y": 0.009125829091919987,
+            "xGainTele5": -1.17,
+            "yGainTele5": -0.604,
+            "wOffsetTele5": 0,
+            "hOffsetTele5": 0,
+            "normalVectorTele5": [0,0.707106781,0.707106781]
+        },
+        "ldc": {
+            "calLDCD2UGrid": true,
+            "largeDistortionLens": false,
+            "calFocalLength": 972.979897141459,
+            "LDCGridSizeH": 49,
+            "LDCGridSizeV": 28,
+            "LDCCameraMatrix": [958.321869459254, 0, 959.5, 0, 958.321869459254, 719.5, 0, 0, 1],
+            "LDCDistCoeff": [-0.5003525476552597, -0.001221302533023738, 0, 0, 0.0004440689295298238, -0.4996276716736642, 0, 0, 0, 0, 0, 0, 0, 0],
+            "LDCCameraMatrix_Near": [1003.310639114941, 0, 959.5, 0, 1003.310639114941, 719.5, 0, 0, 1],
+            "LDCDistCoeff_Near": [1.324824471335494, -0.8038630032221282, 0, 0, 0.006431755223691015, 1.298074549379214, -0.7699466737056403, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "fovc": {
+            "ifovcCalAfcode": [399, 350, 300, 250, 200, 150, 100, 50, 0],
+            "ifovcCalScaleRation": [1.0096858301365486, 1.0, 0.9898557108417951, 0.9790287691213909, 0.967911979685975, 0.9562418937922236, 0.9459345354253826, 0.9360560196255558, 0.9264821850719406],
+            "ifovcCalDelayVSFrm": -15150658,
+            "ifovcMaxCode": 399
+        },
+        "param": {
+            "disMinAfDistance": 0.5,
+            "disMaxAfVarance": 0.5,
+            "dynamicMarginFlag": 0,
+            "dynamicMarginEndZoom": 1,
+            "lowLightCompDarkStabRatio": 0.65,
+            "lowLightCompDarkExpoDur": 20000000
+        }
+    },
+    "second_screen": {
+        "inverseGyroXAxial": true,
+        "inverseGyroYAxial": false,
+        "inverseGyroZAxial": true,
+        "inverseHallXAxial": false,
+        "inverseHallYAxial": true
+    }
+}

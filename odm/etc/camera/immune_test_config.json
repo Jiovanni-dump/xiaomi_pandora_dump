@@ -1,0 +1,717 @@
+{
+    "version": "0.0.1",
+    "project": "pandora",
+    "valid_case_list": [
+        {
+            "name": "test_Immune_SensorProbeI2CError_Wide_SAT",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "SensorProbeI2CError", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["SensorProbeI2CError"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_SensorProbeI2CError_Tele_SAT",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "SensorProbeI2CError", "args": ["tele"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["SensorProbeI2CError"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_SensorProbeI2CError_Front_SAT",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "SensorProbeI2CError", "args": ["front"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["SensorProbeI2CError"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_SensorProbeI2CError_Ultra_SAT",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "SensorProbeI2CError", "args": ["ultra"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["SensorProbeI2CError"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_OISI2CError_Wide_SAT",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "OISI2CError", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["OISI2CError"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_OISI2CError_Tele_SAT",
+            "description": "",
+            "inject": [
+                {"type": "command", "name": "set_oisi2c_protection", "args": [], "expected_result": ""},
+                {"type": "dll", "name": "OISI2CError", "args": ["tele"], "expected_result": "Successfully hooked"},
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["OISI2CError"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ActuatorI2CError_Wide_SAT",
+            "description": "",
+            "inject": [
+                {"type": "command", "name": "set_actuatori2c_protection", "args": [], "expected_result": ""},
+                {"type": "dll", "name": "ActuatorI2CError", "args": ["wide"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ActuatorI2CError_Tele_SAT",
+            "description": "",
+            "inject": [
+                {"type": "command", "name": "set_actuatori2c_protection", "args": [], "expected_result": ""},
+                {"type": "dll", "name": "ActuatorI2CError", "args": ["tele"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ActuatorI2CError_Ultra_SAT",
+            "description": "",
+            "inject": [
+                {"type": "command", "name": "set_actuatori2c_protection", "args": [""], "expected_result": ""},
+                {"type": "dll", "name": "ActuatorI2CError", "args": ["ultra"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_FlashOnInitialize_AllMode_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "FlashOnInitializeFail", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_FlashOnInitialize_06x_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "FlashOnInitializeFail", "args": ["tele"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_FlashOnInitialize_5x_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "FlashOnInitializeFail", "args": ["ultra"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_1_Wide_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["gyro"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_1_Tele_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["gyro"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_1_Ultra_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["gyro"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_2_Wide_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["acc"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_2_Tele_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["acc"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_2_Ultra_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["acc"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_4_Wide_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["gravity"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_4_Tele_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["gravity"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_NCSSensorProbe_4_Ultra_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "NCSSensorProbeFail", "args": ["gravity"], "expected_result": "Successfully hooked"},
+                {"type": "command", "name": "killcam", "args": [""], "expected_result": ""}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["NCSSensorProbeFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_OISRegisterProvider_Video_Record_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "OisRegisterProviderFail", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["OisRegisterProviderFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_OISRegisterProvider_Tele2_Video_Record_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "OisRegisterProviderFail", "args": ["tele"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["OisRegisterProviderFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_PostGyroData_Video_Record_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "PostGyroDataFail", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["PostGyroDataFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_PostGyroData_Tele2_Video_Record_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "PostGyroDataFail", "args": ["tele"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["PostGyroDataFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ReadLensPositionData_Video_Record_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "ReadLensPositionDataFail", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["ReadLensPositionDataFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ReadLensPositionData_Tele2_Video_Record_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "ReadLensPositionDataFail", "args": ["tele"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["ReadLensPositionDataFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ProbeEEPROM_Wide_Tele_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "ProbeEEPROMFail", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["ProbeEEPROMFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ProbeEEPROM_Wide_Ultra_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "ProbeEEPROMFail", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["ProbeEEPROMFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ProbeEEPROM_Front_Wide_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "ProbeEEPROMFail", "args": ["front"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["ProbeEEPROMFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        },
+        {
+            "name": "test_Immune_ProbeEEPROM_Front_Wide_Capture_0",
+            "description": "",
+            "inject": [
+                {"type": "dll", "name": "ProbeEEPROMFail", "args": ["wide"], "expected_result": "Successfully hooked"}
+            ],
+            "sence": [
+                {"name": "SAT"}
+            ],
+            "query": [
+                {"type": "command", "name": "inject_status_query", "args": ["ProbeEEPROMFail"], "expected_result": "<executed>"}
+            ],
+            "clear": [
+                {"type": "dll", "args": [], "expected_result": "<Successfully cleared>"}
+            ]
+        }
+    ],
+    "set_environment_command_list": [
+        {"type": "command", "name": "set_modeswitch", "args": ["0xFFFFF"], "expected_result": ""},
+        {"type": "command", "name": "set_protection_mainswitch", "args": ["1"], "expected_result": ""},
+        {"type": "command", "name": "set_sensori2c_protection", "args": ["inject"], "expected_result": ""}
+    ],
+    "clear_environment_command_list": [
+        {"type": "command", "name": "set_modeswitch", "args": ["0x00000"], "expected_result": ""},
+        {"type": "command", "name": "set_protection_mainswitch", "args": ["0"], "expected_result": ""},
+        {"type": "command", "name": "set_sensori2c_protection", "args": ["0"], "expected_result": ""}
+    ],
+    "sence_list" : [
+        {
+            "name": "SAT",
+            "description": "1. SAT zoom 0.6x ~ 5x，并且拍照；2. SAT切录像，zoom，0.6x ~ 5x，录像，录像中拍3次照；3. 录像切换专业模式，wide、tele、ultra 切换并3次拍照；4. 专业模式切换人像模式并3次拍照。"
+        }
+    ],
+    "command_list" : [
+        {
+            "type": "dll",
+            "name": "SensorProbeI2CError",
+            "description": "Inject I2C error to {0} sensor probe",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject SensorProbeI2CError {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "OISI2CError",
+            "description": "Inject I2C error to {0} OIS",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject OISI2CError {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "ActuatorI2CError",
+            "description": "Inject I2C error to {0} actuator",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject ActuatorI2CError {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "FlashOnInitializeFail",
+            "description": "Inject  error to {0} flash",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject FlashOnInitializeFail {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "NCSSensorProbeFail",
+            "description": "Inject error to type {0} ncs sensor",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject NCSSensorProbeFail {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "OisRegisterProviderFail",
+            "description": "Inject error to type {0} ois",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject OisRegisterProviderFail {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "PostGyroDataFail",
+            "description": "Inject error to camera {0} post gyro data",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject PostGyroDataFail {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "ReadLensPositionDataFail",
+            "description": "Inject error to camera {0} read lens position data fail",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject ReadLensPositionDataFail {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "ProbeEEPROMFail",
+            "description": "Inject error to camera {0} probe eeprom fail",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject ProbeEEPROMFail {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "command",
+            "name": "set_modeswitch",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "setprop persist.vendor.camera.cloud.immunesystem.modswitch {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "command",
+            "name": "set_sensori2c_protection",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "setprop persist.vendor.camera.cloud.immunesystem.protection.SENSORI2C {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "command",
+            "name": "set_protection_mainswitch",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "setprop persist.vendor.camera.cloud.immunesystem.protection.mainswitch {0}",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "command",
+            "name":"inject_status_query",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject result {0}",
+            "get_result_command": "",
+            "expected_result": "0x00",
+            "after_command": ""
+        },
+        {
+            "type": "dll",
+            "name": "inject_status_clear",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "micdb immune --inject clear",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "command",
+            "name": "set_oisi2c_protection",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "setprop persist.vendor.camera.cloud.immunesystem.protection.OISI2C 1",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "command",
+            "name": "set_actuatori2c_protection",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "setprop persist.vendor.camera.cloud.immunesystem.protection.ACTUATORI2C 1",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": ""
+        },
+        {
+            "type": "command",
+            "name": "killcam",
+            "description": "",
+            "args": [],
+            "before_command": "",
+            "command": "pkill -f camera",
+            "get_result_command": "",
+            "expected_result": "",
+            "after_command": "sleep 5"
+        }
+    ]
+}

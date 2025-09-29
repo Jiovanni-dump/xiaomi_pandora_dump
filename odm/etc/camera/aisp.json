@@ -1,0 +1,233 @@
+{
+    "aisp": {
+        "dump_all": 0,
+        "dump": {
+            "txt": 1,
+            "input": 1,
+            "output": 1
+        },
+        "clone_input": 0,
+        "error_protect": 0,
+        "init_protect": 1,
+        "black_protect": 0,
+        "timeout": 15000,
+        "algo": {
+            "AISP_BYPASS": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "input_format_portrait": 1,
+                "output_format_portrait": 101,
+                "clone_input": 0,
+                "sync_mode": 1
+            },
+            "AISP_NR": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "clone_input": 0,
+                "sync_mode": 2,
+                "lib": "mialgo_ainr_ll"
+            },
+            "AISP_NR_LL": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "clone_input": 0,
+                "sync_mode": 2,
+                "lib": "mialgo_ainr_ll"
+            },
+            "AISP_HDR": {
+                "vendor_type": 1,
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "format_ur": 1,
+                "format_xdr": 0,
+                "clone_input": 0,
+                "sync_mode": 2,
+                "lib": "arc_aisp"
+            },
+            "AISP_HDR_LL": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "lib": "mi_supernight_raw"
+            },
+            "AISP_SE": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "clone_input": 0,
+                "sync_mode": 1,
+                "timeout": 7000,
+                "lib": "mi_supernight_raw"
+            },
+            "AISP_SN": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "format_ur": 1,
+                "format_xdr": 0,
+                "clone_input": 0,
+                "sync_mode": 1,
+                "timeout": 7000,
+                "lib": "mi_supernight_raw"
+            },
+            "AISP_SR": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "clone_input": 0,
+                "sync_mode": 2,
+                "lib": "mialgo_hdsr_sr"
+            },
+            "AISP_HDSR": {
+                "vendor_type": 1,
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "format_ur": 1,
+                "format_xdr": 0,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_ELL": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 1,
+                "lib": "mialgo_ellc"
+            },
+            "AISP_SNSC": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "clone_input": 0,
+                "sync_mode": 1,
+                "lib": "mialgo_snsc"
+            },
+            "AISP_NR_50M": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 1,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 1,
+                "lib": "mialgo_aiur"
+            },
+            "AISP_NR_LL_50M": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 1,
+                "lib": "mialgo_aiur"
+            },
+            "AISP_HDR_F": {
+                "vendor_type": 1,
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "format_ur": 1,
+                "format_xdr": 0,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_SN_F": {
+                "vendor_type": 1,
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "format_ur": 1,
+                "format_xdr": 0,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_SNSC_HDR": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 1,
+                "output_format": 101,
+                "clone_input": 0,
+                "sync_mode": 1,
+                "lib": "mialgo_snsc"
+            },
+            "AISP_DEPTH": {
+                "enable": 1,
+                "bypass": 0,
+                "lib": "miphone_capture_depth"
+            },
+            "AISP_SA": {
+                "enable": 1,
+                "bypass": 0,
+                "bypass_func": 1,
+                "input_format": 7,
+                "input_format_portrait": 7,
+                "lib": "mialgo_anchor_selection"
+            },
+            "AISP_SDSR": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,337 @@
+{
+    "description":" 版本信息",
+    "dictVersion":2,
+    "description":"Log 加密开关信息",
+    "encryption": 1,
+    "description":"Qcom平台信息",
+    "qcom":
+    [
+        {
+            "description": "预览/录像闪屏",
+            "tagid": 1,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "成像/取景方向错误",
+            "tagid": 2,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机无法进入相册",
+            "tagid": 3,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "自拍镜像无作用",
+            "tagid": 4,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "拍照后不保存照片或小图",
+            "tagid": 6,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "水印不显示/显示异常",
+            "tagid": 7,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "取景绿/红/蓝/黑/白/紫屏",
+            "tagid": 8,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "急速相机开启失败",
+            "tagid": 10,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机拍摄地点/时间不准",
+            "tagid": 11,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "成像黑图/绿图/紫图等纯色图片",
+            "tagid": 12,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"},
+                {"module": "MIVI_SNAP", "loglevel": 1, "modulemask": "1"},
+                {"module": "CAMX_LOG", "loglevel": 3, "modulemask": "6800002"}
+            ]
+        },
+        {
+            "description": "预览或拍照绿线/细线/条纹/绿斑",
+            "tagid": 13,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"},
+                {"module": "MIVI_SNAP", "loglevel": 1, "modulemask": "1"},
+                {"module": "CAMX_LOG", "loglevel": 3, "modulemask": "6800002"}
+            ]
+        },
+        {
+            "description": "拍照花图/半张图/裂图",
+            "tagid": 14,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"},
+                {"module": "MIVI_SNAP", "loglevel": 1, "modulemask": "1"},
+                {"module": "CAMX_LOG", "loglevel": 3, "modulemask": "6800002"}
+            ]
+        },
+        {
+            "description": "预览和成像FOV不一致（取景的范围和成像显示的范围不一致);成片与预览实际效果不一致",
+            "tagid": 15,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"},
+                {"module": "MIVI_SNAP", "loglevel": 1, "modulemask": "1"},
+                {"module": "CAMX_LOG", "loglevel":3, "modulemask":"0x6000002"}
+            ]
+        },
+        {
+            "description": "功能不可用/不生效",
+            "tagid": 16,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "证件照拍摄异常",
+            "tagid": 18,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "录像后视频未保存",
+            "tagid": 24,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description":"三方无法对焦/对焦模糊",
+            "tagid":1001,
+            "config": [
+               {"module":"CAMX_LOG", "loglevel":3, "modulemask":"0x8000002"}
+            ]
+        },
+        {
+            "description":"前置AE跳变(预览忽明忽暗的变化)",
+            "tagid":1003,
+            "config": [
+               {"module":"CAMX_LOG", "loglevel":3, "modulemask":"0x2000003"}
+            ]
+        },
+        {
+            "description": "前置成像清晰度差",
+            "tagid": 1006,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "前置预览/成像偏色;前置照片色彩",
+            "tagid": 1008,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"},
+                {"module": "MIVI_SNAP", "loglevel": 1, "modulemask": "1"},
+                {"module":"CAMX_LOG", "loglevel":3, "modulemask":"0x6000002"}
+            ]
+        },
+        {
+            "description":"后置AE跳变(预览忽明忽暗的变化)",
+            "tagid":1011,
+            "config": [
+               {"module":"CAMX_LOG", "loglevel":3, "modulemask":"0x2000003"}
+            ]
+        },
+        {
+            "description": "后置成像清晰度差",
+            "tagid": 1014,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "后置预览/成像偏色",
+            "tagid": 1016,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"},
+                {"module": "MIVI_SNAP", "loglevel": 1, "modulemask": "1"}
+            ]
+        },
+        {
+            "description":"对焦不清晰/对不上焦",
+            "tagid":1021,
+            "config": [
+               {"module":"CAMX_LOG", "loglevel":3, "modulemask":"0x8000002"}
+            ]
+        },
+        {
+            "description": "月亮模式成像差",
+            "tagid": 1023,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "美颜效果差",
+            "tagid": 1024,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description":"防抖效果差",
+            "tagid":1025,
+            "config": [
+               {"module":"CAMX_LOG", "loglevel":3, "modulemask":"0x8000002"}
+            ]
+        },
+        {
+            "description": "相机闪退",
+            "tagid": 2001,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机打不开/无法启动",
+            "tagid": 2002,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机卡死/无响应",
+            "tagid": 2003,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机故障/无法连接",
+            "tagid": 2004,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "打开相机黑屏",
+            "tagid": 2005,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "无法录像",
+            "tagid": 2006,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "点击拍照按钮后无反应",
+            "tagid": 2008,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机无法变焦",
+            "tagid": 2009,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机前后摄像头无法切换",
+            "tagid": 2010,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "拍照响应慢/有延迟",
+            "tagid": 3001,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机模式切换卡顿",
+            "tagid": 3002,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机启动/退出卡顿",
+            "tagid": 3003,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机预览卡顿/掉帧",
+            "tagid": 3004,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "相机录像卡顿/掉帧",
+            "tagid": 3005,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "照片处理时间长",
+            "tagid": 3006,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "三方打开相机失败",
+            "tagid": 4001,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "三方相机拍照图片显示异常",
+            "tagid": 4002,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"}
+            ]
+        },
+        {
+            "description": "三方相机预览异常",
+            "tagid": 4004,
+            "config": [
+                {"module": "MIVI_LOG", "loglevel": 3, "modulemask": "0xdeff"},
+                {"module": "CAMX_LOG", "loglevel": 3, "modulemask": "0x0800002"}
+            ]
+        }
+    ]
+}

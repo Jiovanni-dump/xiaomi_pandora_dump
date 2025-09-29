@@ -1,0 +1,48 @@
+{
+    "metaShareVersion" : 1,
+    "supportUpdateTuningModeInMivi" : 3, // 0: not support, 1: support snapshot, 2: support preview/video/3rd app
+    "EnableLowFpsForSATnNight": true,
+    "motionEffectDiffSupport": true,
+    "motionEffectThresholds": [30, 30, 40, 30],
+    "motionLuxThresholds": [540, 540, 440, 440],
+    "SatPipControlInfo": {
+        "isSatPipSupported": true,
+        "satPipZoomRatioStarted": 20.0
+    },
+    "VisibleNonFrameworkTags": [
+        "org.quic.camera.gtminfo.OfflineGTMInfo", 
+        "org.quic.camera.uvgammainfo.OfflineUVGammaInfo", 
+        "org.quic.camera.cvpMetaData.CVPMetaData", 
+        "org.quic.camera.GammaData.OfflineGammaOutput",
+        "org.quic.camera.ADRCData.TMCOutput",
+        "org.quic.camera.gme.GridTransformDisplay",
+        "org.quic.camera.gme.GridTransformVideo",
+        "org.quic.camera.gme.GridTransformAI",
+        "org.quic.camera2.properties_ife.ISPAECBHistConfig",
+        "org.quic.camera2.properties_sensor.SensorPDAFInfo",
+        "org.quic.camera2.ipeicaconfigs.ICAInGridOut2InTransform",
+        "org.quic.camera2.ipeicaconfigs.ICAInGridIn2OutTransform",
+        "org.quic.camera2.ipeicaconfigs.AltExpToAnchorExpAlignmentTransform",
+        "com.qti.camera.streamCropInfo.StreamCropInfo",
+        "com.qti.camera.streamMapMeta.StreamMap",
+        "com.qti.stats.internal.perFrame.AFDFrameControl",
+        "com.qti.stats.internal.perFrame.AFDFrameInfo",
+        "com.qti.stats.internal.perFrame.AFFrameInfo",
+        "com.qti.stats.internal.perFrame.ASDFrameInfo",
+        "com.qti.stats.internal.perFrame.PDLibInitInfo",
+        "com.qti.stats.internal.perFrame.AECInternal",
+        "com.qti.stats.internal.perFrame.statsControl.AECBFWConfig",
+        "com.qti.stats.internal.perFrame.statsControl.AFBAFConfig",
+        "com.qti.stats.internal.perFrame.statsControl.AFCAFConfig",
+        "com.qti.stats.internal.perFrame.statsControl.AFDFCGConfig",
+        "com.qti.stats.internal.perFrame.statsControl.PDHWConfig",
+        "com.qti.stats.internal.perFrame.statistics.AECBEStats",
+        "com.qti.stats.internal.perFrame.statistics.RSStats",
+        "org.codeaurora.qcamera3.tintless.stats",
+        "org.codeaurora.qcamera3.sensor_meta_data.sensor_mode_info",
+        "com.qualcomm.qti.spatialAlignmentTransform.RawOut2InSATGrid",
+        "xiaomi.hdr.longExposure.tintless.stats",
+        "xiaomi.hdr.shortExposure.tintless.stats"
+    ],
+    "enableEllPreaec": true
+}

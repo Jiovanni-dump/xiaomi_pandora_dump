@@ -1,0 +1,72 @@
+[
+    {
+        "TrdCloudType":"TrdCloud3rdDXGEnable",
+        "Mode": 1,
+        "ApkTable" :["com.tencent.mm",
+                     "com.eg.android.AlipayGphone",
+                     "com.ss.android.ugc.aweme",
+                     "com.ss.android.ugc.aweme.lite",
+                     "com.smile.gifmaker",
+                     "com.xingin.xhs",
+                     "com.jingyao.easybike",
+                     "com.sankuai.meituan",
+                     "com.qingqikeji.blackhorse.passenger",
+                     "com.instagram.android",
+                     "com.google.android.youtube"]
+    },
+    {
+        "TrdCloudType":"TrdCloudASDEnable",
+        "Mode": 1,
+        "ApkTable" :["com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+                     "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI",
+                     "com.tencent.mobileqq.olympic.activity.ScanTorchActivity",
+                     "com.tencent.av.ui.AVActivity",
+                     "com.tencent.aelight.camera.aebase.QIMCameraCaptureActivity",
+                     "com.xingin.matrix.v2.redscanner.scanner.QrCodeScannerActivityV2",
+                     "com.sina.weibo.qrcode.CaptureActivity",
+                     "com.sina.weibo.mediaproducer.activity.StoryCameraIndependentActivity",
+                     "com.yxcorp.plugin.qrcode.api.QRCodeScanActivity",
+                     "com.yxcorp.gifshow.camera.record.CameraActivity",
+                     "com.yxcorp.gifshow.camera.record.CameraActivity",
+                     "com.ss.android.ugc.aweme.qrcode.view.QRCodeScanActivity",
+                     "com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity",
+                     "com.xunmeng.pinduoduo.activity.NewPageActivity",
+                     "com.meituan.android.scan.NewArActivity",
+                     "com.sankuai.waimai.business.ugc.media.WmMediaActivity",
+                     "om.qingqikeji.blackhorse.BlackHorseActivity",
+                     "com.alipay.mobile.scan.as.main.MainCaptureActivity"]
+    },
+    {
+        "TrdCloudType":"TrdCloudForceEisEnable",
+        "Mode": 1,
+        "ApkTable" :["com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity",
+                     "com.ss.android.ugc.aweme.live.LiveBroadcastActivity",
+                     "com.kuaishou.live.anchor.basic.activity.LivePushActivity",
+                     "com.yxcorp.gifshow.camera.record.CameraActivity"]
+    },
+    {
+        "TrdCloudType":"TrdCloudEisEnable",
+        "Mode": 1,
+        "ApkTable" :[]
+    },
+    {
+        "TrdCloudType":"TrdCloud3rdAICameraEnable",
+        "Mode": 1,
+        "ApkTable" :[]
+    },
+    {
+        "TrdCloudType":"TrdCloud3rdMFNREnable",
+        "Mode": 1,
+        "ApkTable" :[]
+    },
+    {
+        "TrdCloudType":"TrdCloud3rdVIULLEnable",
+        "Mode": 1,
+        "ApkTable" :[]
+    },
+    {
+        "TrdCloudType":"TrdCloud3rdOpticalZoomEnable",
+        "Mode": 0,
+        "ApkTable" :[]
+    }
+]

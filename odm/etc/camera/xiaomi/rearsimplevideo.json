@@ -1,0 +1,94 @@
+{
+    "PipelineName": "RearSimpleVideo",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.virtual",
+                "NodeInstance": "virtualInstance",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":512
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.memcpy",
+                "NodeInstance": "MemcpyInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.arcskinbeautifierpreview",
+                "NodeInstance": "SkinBeautifierInstance0"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.asd",
+                "NodeInstance": "AsdAsyncInstance",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":1
+                  }
+                ]
+            }
+        ]
+    },
+      "PortLinkages": {
+          "Link": [
+              {
+                  "SrcPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SourceBuffer0"
+                  },
+                  "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "virtualInstance"
+                  }
+              },
+              {
+                  "SrcPort": {
+                      "PortId": 0,
+                      "NodeInstance": "virtualInstance"
+                  },
+                  "DstPort": {
+                      "PortId": 0,
+                      "NodeInstance": "MemcpyInstance"
+                  }
+              },
+              {
+                  "SrcPort": {
+                      "PortId": 0,
+                      "NodeInstance": "MemcpyInstance"
+                  },
+                  "DstPort": {
+                      "PortId": 0,
+                      "NodeInstance": "SkinBeautifierInstance0",
+                      "PortFormat": "YUV420_NV12",
+                      "BufferType": "Gralloc"
+                  }
+              },
+              {
+                  "SrcPort": {
+                      "PortId": 0,
+                      "NodeInstance": "SkinBeautifierInstance0",
+                      "PortFormat": "YUV420_NV12",
+                      "BufferType": "Gralloc"
+                  },
+                  "DstPort": {
+                      "PortId": 0,
+                      "NodeInstance": "SinkBuffer0"
+                  }
+              },
+              {
+                      "SrcPort": {
+                      "PortId": 1,
+                      "NodeInstance": "virtualInstance"
+                  },
+                      "DstPort": {
+                      "PortId": 0,
+                      "NodeInstance": "AsdAsyncInstance"
+                  }
+              }
+          ]
+      }
+  }
+  

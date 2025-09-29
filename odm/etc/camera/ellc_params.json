@@ -1,0 +1,154 @@
+{
+    "ellc": {
+		"phone_version":"Q200",
+		"model_version":"v2.3",
+		"hdr":"false",
+		"resize":"false",
+        "shape_patch":[784,1040],
+        "overlap": [32, 32],
+		"snpe":{
+			"runtime": "dsp",
+			"dlcs": [
+			{
+				"dlc_name": "ellc_p2_q200_stx9000u_24c_quantized.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,24],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				}
+			},
+            {
+				"dlc_name": "ellc_p2_q200_ov50m_24c_quantized.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,24],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				}
+			},
+            {
+				"dlc_name": "ellc_q200_jn5_24c_quantized.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,24],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				}
+			}]
+		},
+
+
+		"relight_setting": [
+			{
+				"camera_type": "UltraWide",
+				"range_luxindex": [550, 590, 600, 620, 650, 680, 700, 1500],
+				"range_ratio": [1.0, 0.8, 0.7, 0.4, 0.25, 0.05, 0.01, 0.01]
+			},
+			{
+				"camera_type": "Wide",
+				"range_luxindex": [580, 600, 610, 620, 650, 680, 700, 1500],
+				"range_ratio": [6.5, 5.5, 4.5, 3.5, 2.5, 2.0, 0.1, 0.01]
+			},
+			{
+				"camera_type": "Tele",
+				"range_luxindex": [530, 610, 620, 630, 680, 710, 750, 1500],
+				"range_ratio": [1.25, 1.2, 0.7, 0.3, 0.15, 0.05, 0.01, 0.01]
+			},
+			{
+				"camera_type": "Tele5x",
+				"range_luxindex": [530, 590, 600, 610, 630, 650, 1500],
+				"range_ratio": [1.45, 1.0, 0.8, 0.3, 0.2, 0.1, 0.01]
+			}
+
+		],
+
+		"after_relight_setting": [
+			{
+				"camera_type": "UltraWide",
+				"range_luxindex": [460, 540, 590, 620, 1500],
+				"range_ratio": [1.3, 1.3, 1.3, 1.3, 1.3]
+			},
+			{
+				"camera_type": "Wide",
+				"range_luxindex": [520, 540, 590, 620, 640, 1500],
+				"range_ratio": [1.1, 1.1, 1.1, 1.1, 1.1, 1.1]
+			},
+			{
+				"camera_type": "Tele",
+				"range_luxindex": [490, 510, 530, 560, 1500],
+				"range_ratio": [1.25, 1.25, 1.25, 1.25, 1.25]
+			},
+			{
+				"camera_type": "Tele5x",
+				"range_luxindex": [500, 525, 530, 550, 1500],
+				"range_ratio": [1.3, 1.3, 1.3, 1.3, 1.3]
+			}
+		],
+		"Threshold":{
+			"T_brightness":100,
+			"T_dark_scene":0,
+			"T_hdr_ratio_threshold": 0.00005,
+			"T_motion_1": 35000,
+			"T_motion_2": 100000000,
+			"T_over_expose_threshold": 2000,
+			"T_over_expose_ratio": 0.4,
+			"T_first_frame_luxindex": 800,
+			"T_apart_ratio_threshold": 60,
+			"T_apart_ratio_scale": 0.8,
+			"T_max_relight_ratio": 60,
+			"T_use_tm": 1,
+			"T_max_tm_ratio": 15,
+			"T_align_fallback": 630,
+			"T_use_merge": 1,
+			"T_merge_ratio": 0.87
+		},
+        "merge_scale": {
+            "lsc_merge_enable": "true",
+            "default": {
+                "range_luxindex": [500, 550, 575, 600, 625, 650, 700],
+				"range_scale": [0.15, 0.125, 0.1, 0.064, 0.048, 0.042, 0.028]
+            },
+            "Wide": {
+                "range_luxindex": [500, 550, 575, 600, 625, 650, 700],
+				"range_scale": [0.15, 0.125, 0.1, 0.064, 0.048, 0.042, 0.028]
+            },
+            "UltraWide": {
+                "range_luxindex": [500, 550, 575, 600, 625, 650, 700],
+				"range_scale": [0.1, 0.07, 0.05, 0.04, 0.03, 0.03, 0.028]
+            },
+            "Tele3X": {
+                "range_luxindex": [500, 550, 575, 600, 625, 650, 700],
+				"range_scale": [0.1, 0.04, 0.02, 0.017, 0.015, 0.01, 0.02]
+            },
+            "Tele5X": {
+                "range_luxindex": [500, 550, 575, 600, 625, 650, 700],
+				"range_scale": [0.1, 0.04, 0.02, 0.017, 0.015, 0.01, 0.02]
+            }
+        }
+	}
+}

@@ -1,0 +1,69 @@
+﻿{
+    "version": "v1",
+    "releaseTime": 1654658504,
+    "support": 1,
+    "phyParam": {
+        "maxPwrLevel": 100,
+        "maxRxChanNum": 8,
+        "loadType": 1
+    },
+    "protocolParam": {
+        "maxRetransNum": 1,
+        "blindRetransNum": 3,
+        "mulFrameInter": 2000,
+        "ackDelayMin": 2000,
+        "ackDelayMax": 7000
+    },
+    "applicationParam": {
+        "sendInterval": 60,
+        "receInterval": 60,
+        "recvAckDuration": 15,
+        "ackSupport": 1,
+        "rcvMsgSupport": 1,
+        "stopDelayTime": 5000,
+        "targetServerId": [{
+            "pkgName": "com.xiaomi.bdsms",
+            "id": 0
+        }]
+    },
+    "centerStationInfo": [
+        {
+            "svid": 59,
+            "lon": 116.23337039299624,
+            "lat": 40.086304023311548,
+            "hgt": 47.476913018152118
+        },
+        {
+            "svid": 60,
+            "lon": 116.23337039299624,
+            "lat": 40.086304023311548,
+            "hgt": 47.476913018152118
+        },
+        {
+            "svid": 61,
+            "lon": 116.23337039299624,
+            "lat": 40.086304023311548,
+            "hgt": 47.476913018152118
+        }
+    ],
+    "satelliteInfo": [
+        {
+            "svid": 59,
+            "lon": 140,
+            "lat": 0,
+            "hgt": 35786000
+        },
+        {
+            "svid": 60,
+            "lon": 80,
+            "lat": 0,
+            "hgt": 35786000
+        },
+        {
+            "svid": 61,
+            "lon": 110,
+            "lat": 0,
+            "hgt": 35786000
+        }
+    ]
+}
