@@ -1,0 +1,90 @@
+{
+  "localId": "91a23cd8-ad34-4bed-ab03-42e795816721",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "70536369ecf3905945ef1ad6efce517d7aab4ca0",
+  "platform": 15,
+  "size": 3335207,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "液態矽膠殼專屬",
+    "zh_TW": "液態矽膠殼專屬",
+    "bo_CN": "གཤེར་གཟུགས་སྭེལ་སྤྱིན་སྐོགས་ཆེད་གཏོགས་།",
+    "en_US": "Liquid silicone",
+    "ug_CN": "سۇيۇق سىلىتسىيلىق يېلىم قېپى مەخسۇس",
+    "zh_CN": "液态硅胶壳专属",
+    "fallback": "液态硅胶壳专属"
+  },
+  "descriptions": {
+    "zh_HK": "柔韌親膚質感，多彩隨屏悅動，簡約亦有個性",
+    "zh_TW": "柔韌親膚質感，多彩隨屏悅動，簡約亦有個性",
+    "bo_CN": "མཉེན་ཞིང་མཉེན་པའི་ངོ་གདོང་གི་ཚོར་བ། ཚོན་མདངས་རྣམ་པར་བཀྲ་བ། འཆར་ངོས་དང་བསྟུན་ནས་འགུལ་བ།་སྟབས་བདེ་ལ་རང་གཤིས་ཀྱང་ལྡན།",
+    "en_US": "Colorful, minimalist, and soft",
+    "ug_CN": "ئەۋرىشىم، تېرىگە يېقىشلىق سۈپەت تۇيغۇسى، رەڭدار رەڭ ئېكرانغا ئەگىشىپ يېقىملىق، ئاددىي ھەم خاسلىققا ئىگە",
+    "zh_CN": "柔韧亲肤质感，多彩随屏悦动，简约亦有个性",
+    "fallback": "柔韧亲肤质感，多彩随屏悦动，简约亦有个性"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "09cb4aa8-8e8d-4f2c-a6cd-2a7e2648d790",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/d90ee78a2a5873483685a216dc185d42eef95ccc.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "watch",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "supportAon": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

@@ -1,0 +1,92 @@
+{
+  "localId": "6eca3137-153e-4eed-827e-e8f89e51fb8a",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "c376f1282a2ec973ed5c4c360126351710c010b1",
+  "platform": 15,
+  "size": 7483601,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "蝴蝶鯉",
+    "zh_TW": "蝴蝶鯉",
+    "bo_CN": "ཕྱེ་ལེབ་ཉ་།",
+    "en_US": "Butterfly carp",
+    "ug_CN": "كىپىنەكسىمان بېلىق",
+    "zh_CN": "蝴蝶鲤",
+    "fallback": "蝴蝶鲤"
+  },
+  "descriptions": {
+    "zh_HK": "自由遊動的蝴蝶鯉，蘊含著對生命順遂、平安如意的美好期盼",
+    "zh_TW": "自由遊動的蝴蝶鯉，蘊含著對生命順遂、平安如意的美好期盼",
+    "bo_CN": "རང་དབང་གིས་རྐྱལ་བཞིན་པའི་ཕྱེ་ལེབ་ཉ་ལ་འཚོ་བ་བདེ་ལེགས་དང་བདེ་འཇགས་ཀྱི་མཛེས་སྡུག་ལྡན་པའི་རེ་བ་འདུས་ཡོད།",
+    "en_US": "The free-swimming butterfly carp represents hope for a calm and peaceful life.",
+    "ug_CN": "ئەركىن ئۈزىۋاتقان كىپىنەكسىمان بېلىق، تۇرمۇشقا بولغان راۋانلىق، تىنچلىققا بولغان ئارزۇسى مۇجەسسەملەنگەن",
+    "zh_CN": "自由游动的蝴蝶鲤，蕴含着对生活顺遂、平安如意的美好期盼",
+    "fallback": "自由游动的蝴蝶鲤，蕴含着对生活顺遂、平安如意的美好期盼"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "ddfbbf39-9dcf-4ba8-b079-375484fe7b24",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/4acd06ecf564d25306275d9e5bd06c360b232ef8.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "nature",
+  "isRearScreenEditable": false,
+  "isThirdParties": false,
+  "supportAon": false,
+  "wallpaperStyle": 0,
+  "isSingleResource": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

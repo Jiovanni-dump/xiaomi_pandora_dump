@@ -1,0 +1,90 @@
+{
+  "localId": "3796f192-70e1-40f2-b785-8dd03500b5b3",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "9fdedcc442a99d5afc991d27893f0f31b4de24b2",
+  "platform": 15,
+  "size": 15192,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "個性簽名",
+    "zh_TW": "個性簽名",
+    "bo_CN": "རང་གཤིས་མིང་འགོད།",
+    "en_US": "Signature",
+    "ug_CN": "خاس ئىمزا",
+    "zh_CN": "个性签名",
+    "fallback": "个性签名"
+  },
+  "descriptions": {
+    "zh_HK": "將喜歡的圖片設定在背螢幕顯示",
+    "zh_TW": "將喜歡的圖片設定在背螢幕顯示",
+    "bo_CN": "རང་ཉིད་དགའ་བའི་འདྲ་པར་རྒྱབ་ངོས་སུ་གཏན་འཁེལ་བྱས་ནས་འགྲེམ་སྟོན་བྱེད་དགོས།",
+    "en_US": "Use your favorite images on the rear display",
+    "ug_CN": "ياخشى كۆرىدىغان رەسىملەرنى ئارقا ئېكراندا كۆرسىتىش",
+    "zh_CN": "将喜欢的图片设定在背屏展示",
+    "fallback": "将喜欢的图片设定在背屏展示"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "ecaaf28c-8300-4fb4-aaf6-8ae5740a88f8",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/47b5c00e9fa37440524c9f440413e8578bca18f8.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "signature",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "supportAon": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

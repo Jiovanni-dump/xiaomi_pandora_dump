@@ -1,0 +1,92 @@
+{
+  "localId": "9a873f92-3e7a-4335-9001-5f7e51da03e9",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "dd455bf5c1e6c465763cb2cc9eb0289453227fc2",
+  "platform": 15,
+  "size": 5144491,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "團團",
+    "zh_TW": "團團",
+    "bo_CN": "ཐའོ་ཐའོ།",
+    "en_US": "Lola",
+    "ug_CN": "تۈەن-تۈەن",
+    "zh_CN": "团团",
+    "fallback": "团团"
+  },
+  "descriptions": {
+    "zh_HK": "軟乎乎的「糯米糰子」",
+    "zh_TW": "軟乎乎的「糯米糰子」",
+    "bo_CN": "མཉེན་སོབ་སོབ་ཀྱི་“ཆང་འབྲས་ཚོགས་པ”",
+    "en_US": "Decorate with a spunky little sheep",
+    "ug_CN": "يۇمشاق «يىلىم گۈرۈچ كومىلىچى»",
+    "zh_CN": "软乎乎的“糯米团子”",
+    "fallback": "软乎乎的“糯米团子”"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "073857c6-8c52-426f-8df0-84682cebdaa4",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/377a92250aa0f30436241514870ff0d3816826ac.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "cutePet",
+  "isRearScreenEditable": false,
+  "isThirdParties": false,
+  "supportAon": false,
+  "wallpaperStyle": 0,
+  "isSingleResource": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}
