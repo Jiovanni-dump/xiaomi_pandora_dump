@@ -1,0 +1,4 @@
+probecount=true
+SENSORI2C=true
+probestate=true
+OISI2C=true

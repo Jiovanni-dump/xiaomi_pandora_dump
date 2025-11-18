@@ -1,0 +1,22 @@
+{
+    "nvmePath": "/odm/lib64/libnvme.so",
+    "nvmeMethodName": "hqxnOperaNVWR",
+    "cfgFoldPath": "/data/vendor/gnss/rsmc/system_config",
+    "cfgFoldUsedPath": "/data/vendor/gnss/rsmc/system_config/used",
+    "cfgFoldUsingPath": "/data/vendor/gnss/rsmc/system_config/using",
+    "cfgFoldWillUsePath": "/data/vendor/gnss/rsmc/system_config/willuse",
+    "orbitsCfgUsingPath": "/data/vendor/gnss/rsmc/system_config/using/satellite_param.json",
+    "orbitsCfgUsingTempPath": "/data/vendor/gnss/rsmc/system_config/using/satellite_paramTemp.json",
+    "productCfgPath": "/data/vendor/gnss/rsmc/system_config/using/product.json",
+    "productCfgTempPath": "/data/vendor/gnss/rsmc/system_config/using/productTemp.json",
+    "phyLibPath": "/odm/lib64/libphy-x801.so",
+    "productParaCfgPath": "/odm/etc/rsmc/product-para/product.json",
+    "rfParaCfgPath": "/odm/etc/rsmc/product-para/rf.json",
+    "capParaCfgPath": "/odm/etc/rsmc/product-para/capability.json",
+    "fwFilePath": "/odm/lib64/rsmc_fw.bin",
+    "rnssDopplerPath": "/data/vendor/gnss/rsmc/system_config/rnssDoppler.txt",
+    "localSocketPath": "/data/vendor/gnss/rsmc/ctrl2adapter_eph",
+    "hwWriteSmcCmdPath": "/data/vendor/gnss/rsmc/hw_smc_wr",
+    "hwReadSmcCmdPath": "/data/vendor/gnss/rsmc/hw_smc_rd",
+    "smcdCmdPath": "/data/vendor/gnss/rsmc/higeo_cmd"
+}

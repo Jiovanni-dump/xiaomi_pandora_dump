@@ -1,0 +1,210 @@
+{
+    "PipelineName": "RearSimpleVideoWithEis",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.offlineyuvwarp",
+                "NodeInstance": "previewWarpInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.misv2",
+                "NodeInstance": "HISv2Instance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.misv3",
+                "NodeInstance": "HISv3Instance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        // HAL_MODE & VIDEOUP_MODE
+                        "NodePropertyValue": 40961
+                    },
+                    {
+                        "NodePropertyName": "isParticipatingInMetaDone",
+                        "NodePropertyValue": false
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlineyuvwarp",
+                "NodeInstance": "videoWarpInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 128
+                    },
+                    {
+                        "NodePropertyName": "isParticipatingInMetaDone",
+                        "NodePropertyValue": false
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.psmetasplit",
+                "NodeInstance": "previewPsMetaSplitInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    },
+                    {
+                        "NodePropertyName": "pluginMode",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.psmetasplit",
+                "NodeInstance": "videoPsMetaSplitInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    },
+                    {
+                        "NodePropertyName": "pluginMode",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.movieeffect",
+                "NodeInstance": "MovieEffectInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "isParticipatingInMetaDone",
+                        "NodePropertyValue": false
+                    },
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "",
+                "NodeInstance": "virtualSinkbuffer1",
+                "NodeProperty":[
+                    {
+                        "NodePropertyName": "isParticipatingInMetaDone",
+                        "NodePropertyValue": false
+                    },
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":1536
+                    }
+                ]
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewPsMetaSplitInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewPsMetaSplitInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISv2Instance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISv2Instance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewWarpInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewWarpInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SourceBuffer1"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "videoPsMetaSplitInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "videoPsMetaSplitInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISv3Instance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISv3Instance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "videoWarpInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "videoWarpInstance"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SinkBuffer1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "videoWarpInstance"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "virtualSinkbuffer1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualSinkbuffer1"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MovieEffectInstance0"
+                }
+            }
+        ]
+    }
+}

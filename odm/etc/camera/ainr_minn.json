@@ -1,0 +1,176 @@
+{
+    "ellc": {
+        "phone_version": "O1",
+        "model_version": "v1.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            512,
+            512
+        ],
+        "overlap": [
+            16,
+            16
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "isDebug": 0,
+            "dlcs": [
+                {
+                    "bin_name": "ainr_minn.bin",
+                    "model_name": "jdd_dxg_wide.minn",
+                    "model_desc": "jdd_quant_250620_p2wide_large10_dxg_ainrse_100_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            15
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "ainr_minn.bin",
+                    "model_name": "jdd_ev0_wide.minn",
+                    "model_desc": "jdd_quant_250620_p2wide_large10_binning_ainrse_100_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "ainr_minn.bin",
+                    "model_name": "jdd_ev0_uw.minn",
+                    "model_desc": "jdd_p2_uw_ev0_highISO_baseCNN_250627_distiall_baseMotion_2",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "overlap": [
+                        64,
+                        64
+                    ],
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "ainr_minn.bin",
+                    "model_name": "jdd_ev0_tele.minn",
+                    "model_desc": "jdd_ev0_250701_Q200_SE_jn5_distill_adrcloss",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "bin_name": "ainr_minn.bin",
+                    "model_name": "jdd_ev0_st.minn",
+                    "model_desc": "jdd_ev0_250701_Q200_SE_jn5_distill_adrcloss",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                }
+            ]
+        }
+    }
+}

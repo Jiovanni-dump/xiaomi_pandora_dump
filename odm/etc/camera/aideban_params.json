@@ -1,0 +1,124 @@
+{
+    "aideband": 
+    {
+		"phone_version":"P2P3",
+		"model_version":"v1.0",
+		"shape_patch":[3072, 4096],
+		"overlap": [32, 32],
+		"impl_types":
+		{
+            "downresize_impl_type": "CPP",
+			"guidemap_impl_type": "CPP",
+			"applygain_impl_type": "CPP",
+			"quan_impl_type": "CPP",
+			"applyslice_impl_type": "CPP",
+			"resultcheck_impl_type": "CPP"
+		},
+		"xnn":
+		{
+			"runtime": "npu",
+			"dlcs":[
+			{
+				"dlc_name":"SNSC_SC590XS_LBMF_Debanding.minn",
+				"bin_name":"SNSC_SC590XS_LBMF_Debanding.bin",
+				"decrypt_key": "snsc_jdd_5a5a",
+				"input": 
+				{
+					"name": "input",
+					"shape": [1,384,512,6],
+					"offset": 0,
+					"delta": 0.000015318628,
+					"encoding": "tf16"
+				},
+				"output":
+				{
+					"name": "output",
+					"shape": [1, 192, 128, 96],
+					"offset": -32197.0,
+					"delta": 0.000065008818,
+					"encoding": "tf16"
+				}
+			},
+			{
+				"dlc_name":"SNSC_OV50Q_LBMF_Debanding.minn",
+				"bin_name":"SNSC_OV50Q_LBMF_Debanding.bin",
+				"decrypt_key": "snsc_jdd_5a5a",
+				"input":
+				{
+					"name": "input",
+					"shape": [1,384,512,6],
+					"offset": 0,
+					"delta": 0.000015259021,
+					"encoding": "tf16"
+				},
+				"output":
+				{
+					"name": "output",
+					"shape": [1, 192, 128,96],
+					"offset": -27845.0,
+					"delta": 0.000034945853,
+					"encoding": "tf16"
+				}
+			}]
+		},
+		"Banding_Threshold":{
+            "P2_WIDE": {
+				"T_luxindex": 420,
+                "T_min_banding_ratio": 0.80
+            },
+            "P3_WIDE": {
+                "T_luxindex": 420,
+                "T_min_banding_ratio": 0.80
+            },
+            "Q200_WIDE": {
+                "T_luxindex": 420,
+                "T_min_banding_ratio": 0.80
+            }
+        },
+		"Color_Banding_Threshold":{
+            "P2_WIDE": {
+				"T_BlueBanding_min_banding_ratio_r_max": 0.80,
+				"T_BlueBanding_min_banding_ratio_r_min": 0.65,
+                "T_BlueBanding_min_banding_ratio_g_max": 0.88,
+				"T_BlueBanding_min_banding_ratio_g_min": 0.75,
+				"T_BlueBanding_min_banding_ratio_b_max": 1.15,
+				"T_BlueBanding_min_banding_ratio_b_min": 0.90,
+				"T_YellowBanding_min_banding_ratio_r_max": 1.10,
+				"T_YellowBanding_min_banding_ratio_r_min": 0.90,
+                "T_YellowBanding_min_banding_ratio_g_max": 0.90,
+				"T_YellowBanding_min_banding_ratio_g_min": 0.70,
+				"T_YellowBanding_min_banding_ratio_b_max": 0.91,
+				"T_YellowBanding_min_banding_ratio_b_min": 0.70
+            },
+            "P3_WIDE": {
+				"T_BlueBanding_min_banding_ratio_r_max": 0.80,
+				"T_BlueBanding_min_banding_ratio_r_min": 0.65,
+                "T_BlueBanding_min_banding_ratio_g_max": 0.88,
+				"T_BlueBanding_min_banding_ratio_g_min": 0.75,
+				"T_BlueBanding_min_banding_ratio_b_max": 1.15,
+				"T_BlueBanding_min_banding_ratio_b_min": 0.90,
+				"T_YellowBanding_min_banding_ratio_r_max": 1.10,
+				"T_YellowBanding_min_banding_ratio_r_min": 0.90,
+                "T_YellowBanding_min_banding_ratio_g_max": 0.90,
+				"T_YellowBanding_min_banding_ratio_g_min": 0.70,
+				"T_YellowBanding_min_banding_ratio_b_max": 0.91,
+				"T_YellowBanding_min_banding_ratio_b_min": 0.70
+            },
+            "Q200_WIDE": {
+				"T_BlueBanding_min_banding_ratio_r_max": 0.80,
+				"T_BlueBanding_min_banding_ratio_r_min": 0.65,
+                "T_BlueBanding_min_banding_ratio_g_max": 0.88,
+				"T_BlueBanding_min_banding_ratio_g_min": 0.75,
+				"T_BlueBanding_min_banding_ratio_b_max": 1.15,
+				"T_BlueBanding_min_banding_ratio_b_min": 0.90,
+				"T_YellowBanding_min_banding_ratio_r_max": 1.10,
+				"T_YellowBanding_min_banding_ratio_r_min": 0.90,
+                "T_YellowBanding_min_banding_ratio_g_max": 0.90,
+				"T_YellowBanding_min_banding_ratio_g_min": 0.70,
+				"T_YellowBanding_min_banding_ratio_b_max": 0.91,
+				"T_YellowBanding_min_banding_ratio_b_min": 0.70
+            }
+        }
+	}
+}
+

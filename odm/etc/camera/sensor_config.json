@@ -1,0 +1,31 @@
+{
+  "Description": "sensor information config file",
+  "jsonVersion": "V1.0-20250529",
+  "VERSION_CONFIG": {
+	  "_comment": "distinguish multi phone version use common SDK case",
+      "version_number":2,
+      "version_code":"Q200",
+      "version_list":["P2", "Q200"]
+  },
+  "SENSOR_CONFIG": {
+    "SENSOR_WIDE": {
+		"_comment": "distinguish multi vendor on Wide",
+        "sensor_number":1,
+        "sensor_code":"IMX06",
+        "sensor_list":["IMX06"]
+        
+    },
+    "SENSOR_ULTRAWIDE": {
+        "sensor_number":1,
+        "sensor_code":"JN5",
+        "sensor_list":["JN5"]
+        
+    },
+    "SENSOR_TELE": {
+        "sensor_number":2,
+        "sensor_code":"IMX858",
+        "sensor_list":["IMX858", "HP9"]
+        
+    }
+  }
+}

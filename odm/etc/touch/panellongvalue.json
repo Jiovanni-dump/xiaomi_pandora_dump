@@ -1,0 +1,62 @@
+{
+    "configurations": [
+      {
+        "touchId": 1,
+        "ValueLen": 96,
+        "orientations": {
+          "orientation_0": {
+            "ValueBuf": [
+                {
+                    // ZONE_TYPE_DEAD_ZONE
+                    "type": 2, "pos": 0, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    // ZONE_TYPE_DEAD_ZONE
+                    "type": 2, "pos": 1, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    // ZONE_TYPE_DEAD_ZONE
+                    "type": 2, "pos": 2, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    // ZONE_TYPE_DEAD_ZONE
+                    "type": 2, "pos": 3, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_EDGE_ZONE
+                    "type": 1, "pos": 0, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_EDGE_ZONE
+                    "type": 1, "pos": 1, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_EDGE_ZONE
+                    "type": 1, "pos": 2, "start_x": 0, "start_y": 0, "end_x": 35, "end_y": 571, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_EDGE_ZONE
+                    "type": 1, "pos": 3, "start_x": 868, "start_y": 0, "end_x": 903, "end_y": 571, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_CORNER_ZONE
+                    "type": 0, "pos": 0, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_CORNER_ZONE
+                    "type": 0, "pos": 1, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_CORNER_ZONE
+                    "type": 0, "pos": 2, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                },
+                {
+                    //ZONE_TYPE_CORNER_ZONE
+                    "type": 0, "pos": 3, "start_x": 0, "start_y": 0, "end_x": 0, "end_y": 0, "reserved_1": 0, "reserved_2": 0
+                }
+            ]
+          }
+        }
+      }
+    ]
+}

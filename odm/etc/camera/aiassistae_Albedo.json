@@ -1,0 +1,46 @@
+{
+    "Description": "Xiaomi AIAssistAE config file - Albedo",
+    "PhoneCode": "P2",
+    "JsonVersion": "V1.6.0-20250819",
+
+    "log_config": {
+        "log_output": 2,
+        "log_level": 0
+    },
+
+    "algo_enable": true,
+
+    "frame_interval": 0,
+
+    "basic_adjust": {
+        "albedo_node_ori": [ 0,    0.10, 0.20, 0.60, 0.75, 1.00, 2.00],
+        "albedo_node_new": [ 0.08, 0.12, 0.15, 0.18, 0.22, 0.33, 0.45]
+    },
+
+    "adjust_albedo_by_lux_index": {
+        "lux_index_node":[ 150 , 210 , 450 ],
+        "albedo_node_bright": [ 0.12, 0.15, 0.15, 0.21, 0.21, 0.27, 0.46 ],
+        "albedo_value_bright": [ 0.12, 0.15, 0.18, 0.18, 0.21, 0.27, 0.46 ],
+        "albedo_node_dark": [ 0.12, 0.15, 0.15, 0.21, 0.21, 0.27, 0.46 ],
+        "albedo_value_dark": [ 0.12, 0.15, 0.18, 0.18, 0.21, 0.27, 0.46 ]
+    },
+
+    "bypass_camera_mode_mask": [1, 2, 3, 4, 5, 6, 7],
+    "skip_sensor_mode_mask": [1, 2],
+
+    "skip_tof_thrd_mm": 200,
+
+    "map_bound_adjust": {
+        "bound_ratio_thrd": 0.2,
+        "bound_ratio_expand": 0.6,
+        "bound_ratio_shrink": 0.1,
+        "bound_ratio_smooth": 0.1
+    },
+
+    "alb_bound_adjust": {
+        "bound_ratio_thrd": 0.2,
+        "bound_ratio_expand": 0.6,
+        "bound_ratio_shrink": 0.3,
+        "bound_ratio_smooth": 0.1
+    }
+}

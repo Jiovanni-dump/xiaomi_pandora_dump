@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--MIUI ADD: GPS_BugFixUpstream-->
+<!--This XML file is only for domestic machines that support BDS preference to pass the VTS test item(SV blocklist).
+    Copy this file to /odm/etc/permissions/.-->
+<permissions>
+    <feature name="cn.google.services" />
+</permissions>
+<!--END GPS_BugFixUpstream-->

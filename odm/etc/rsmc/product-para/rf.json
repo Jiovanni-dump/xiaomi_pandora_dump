@@ -1,0 +1,96 @@
+﻿{
+    "UPC_cal_delta_128bit": [
+        3,
+        3
+    ],
+    "UPC_cal_delta_256bit": [
+        3,
+        3
+    ],
+    "UPC_cal_delta_512bit": [
+        3,
+        3
+    ],
+    "UPC_boost_128bit": [
+        0,
+        0
+    ],
+    "UPC_boost_256bit": [
+        5,
+        5
+    ],
+    "UPC_boost_512bit": [
+        5,
+        5
+    ],
+    "thermalTag": "tt_therm",
+    "T_fact": 35,
+    "UPC_temp_Lf1": [
+        -25,
+        -25,
+        -25,
+        -25,
+        -25,
+        -21,
+        -18,
+        -16,
+        -15,
+        -14,
+        -11,
+        -8,
+        -6,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        15,
+        18,
+        20
+    ],
+    "UPC_temp_Lf2": [
+        -60,
+        -55,
+        -50,
+        -45,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18
+    ],
+    "UPC_max": [
+        102,
+        102
+    ],
+    "batteryCapacityTag": "/sys/class/power_supply/battery/capacity",
+    "batteryThreshold": 5,
+    "batteryStep": 5,
+    "batteryTempTag": "/sys/class/power_supply/battery/capacity/temp",
+    "batteryTempThreshold": [
+        -10,
+        10
+    ],
+    "batteryTempStep": 5,
+    "UPC_backoff": [
+        -20,
+        -20,
+        -10
+    ]
+}

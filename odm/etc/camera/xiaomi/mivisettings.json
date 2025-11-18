@@ -1,0 +1,20 @@
+{
+    "offlinedebugmask" : 0,
+    "Soc" : "QCOM",
+    "SupportBinaryLog": false,
+    "SupportMiviD": false,
+    "MiviLogGroupsEnable": 49215, //0xc03f
+    "OpenLIFO" : 1,
+    "WatermarkDown": true,
+    "SrNodeHaveTwoOutPort" : false,
+    "NightBokehConcurrencyProcess" : false,
+    "MialgoEnginePreviewThreadNum" : 6,
+    "MialgoEngineCaptureThreadNum" : 12,
+    "AppBugHunterWhiteList": [],
+    "AppBugHunterBlackList": [0, 1023200, 1002300, 1002301, 1001002, 1003903, 1002904, 1002905, 1002906, 1043200, 3032301],
+    "PickZslFrameFromConsumer": true,
+    "EnableInputParamValidCheck": 16255,  //0x3F7F
+    "SupportMetaDone": true,
+    "snapDumpDeadline":1761033497,
+    "EnableBokehInputParamValidCheck": 16255 //0x3F7F
+}

@@ -1,0 +1,22 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["660"]
+  },
+  "dbtap":{
+    "owner": "sns_dbtap",
+    ".flag":{
+      "owner": "sns_dbtap",
+      "scpmFlag":{
+        "ver": "0", "type": "flt", "data": "1"
+      },
+      "acc": {
+        "ver": "0", "type": "flt", "data": "0.22"
+      },
+      "gyro": {
+        "ver": "0", "type": "flt", "data": "0.3"
+      }
+    }
+  }
+}

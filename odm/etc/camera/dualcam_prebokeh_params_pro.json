@@ -1,0 +1,65 @@
+{
+  "/": "Bokeh PreLaunch",
+  "StructPreLaunch": {
+    "isModelLaunch": 1,
+    "modelName": "headseg_1536_trimap",
+    "model_size": 1536,
+    "mask_size": 192,
+    "trimap_type": 2,
+    "matting_platform": 1,
+    "model_param": {
+      "model": {
+        "key": "dlc_minn_123"
+      },
+      "preproc": {
+        "inputs": [
+          {
+            "name": "image",
+            "shape": [1536, 1536, 3],
+            "pixel_shuffle": 2,
+            "param": {
+              "image_mean": [
+                123.67,
+                116.28,
+                103.53
+              ],
+              "image_std": [
+                58.39,
+                57.12,
+                57.37
+              ]
+            },
+            "quant": {
+              "quant_type": "uint8",
+              "encoding_min": -2.127063035965,
+              "encoding_max": 2.630841016769
+            }
+          },
+          {
+            "name": "mask",
+            "shape": [192, 192, 1],
+            "param": {
+              "mask_trimap": true,
+              "maskTh": [150, 220]
+            },
+            "quant": {
+              "quant_type": "uint8",
+              "encoding_min": 0.0,
+              "encoding_max": 1.0
+            }
+          }
+        ],
+        "img_fmt": "rgb",
+        "resize_keep_ratio": true
+      },
+      "postproc": [
+        {
+          "name": "output",
+          "param": {
+            "float_out": false     
+          }
+        }
+      ]
+    }
+  }
+}

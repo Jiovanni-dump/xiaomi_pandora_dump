@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MIUI ADD: Modem_ModemEnhance -->
+<MESubFeatureConfig>
+    <!--global -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="pandora">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="GL" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="17" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+    <!--cn -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="pandora">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="CN" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="2" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="3" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="4" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="5" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="6" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="7" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="8" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="9" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="10" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="11" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="12" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="13" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="14" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="15" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="16" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="17" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="18" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="19" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="20" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="21" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="22" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="23" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="24" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="25" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="26" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="27" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="28" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="29" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="30" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="31" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="36" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+         <!--sleep statistic -->
+        <feature feature_id="43" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="44" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="45" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <!--bitMask 0x31f==799 -->
+        <GestureModeMapConfigBitMask bitMask="276299551" />
+        <GestureModeMapConfig>
+        <!--uwb on -->
+            <!--Free Space -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="-1" orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="255" bt3 ="255" uwb="1" outMode="0" outMode1="1" />
+            <!--Both Hand && Game -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="12" orientState="255" distanceState="255" interferenceState="255" gameState="1"   whiteState="255" bt3 ="255" uwb="1" outMode="1" outMode1="1" />
+            <!--Right Head Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="1"   voice="255" gestureState="2"  orientState="255" distanceState="1"   interferenceState="255" gameState="255" whiteState="255" bt3 ="255" uwb="1" outMode="2" outMode1="1" />
+            <!--Left Head Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="1"   voice="255" gestureState="1"  orientState="255" distanceState="1"   interferenceState="255" gameState="255" whiteState="255" bt3 ="255" uwb="1" outMode="3" outMode1="1" />
+            <!--Right Single Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="2"  orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="1"   bt3 ="255" uwb="1" outMode="4" outMode1="1" />
+            <!--Left Single Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="1"  orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="1"   bt3 ="255" uwb="1" outMode="5" outMode1="1" />
+            <!--default -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="255"  orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="255"   bt3 ="255" uwb="1" outMode="6" outMode1="1" />
+        <!--uwb off -->
+            <!--Free Space -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="-1" orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="255" bt3 ="255" uwb="255" outMode="0" outMode1="0" />
+            <!--Both Hand && Game -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="12" orientState="255" distanceState="255" interferenceState="255" gameState="1"   whiteState="255" bt3 ="255" uwb="255" outMode="1" outMode1="0" />
+            <!--Right Head Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="1"   voice="255" gestureState="2"  orientState="255" distanceState="1"   interferenceState="255" gameState="255" whiteState="255" bt3 ="255" uwb="255" outMode="2" outMode1="0" />
+            <!--Left Head Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="1"   voice="255" gestureState="1"  orientState="255" distanceState="1"   interferenceState="255" gameState="255" whiteState="255" bt3 ="255" uwb="255" outMode="3" outMode1="0" />
+            <!--Right Single Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="2"  orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="1"   bt3 ="255" uwb="255" outMode="4" outMode1="0" />
+            <!--Left Single Hand -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="1"  orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="1"   bt3 ="255" uwb="255" outMode="5" outMode1="0" />
+            <!--default -->
+            <GestureModeMapItem usb="255" flip="255" receiver="255" voice="255" gestureState="255"  orientState="255" distanceState="255" interferenceState="255" gameState="255" whiteState="255"   bt3 ="255" uwb="255" outMode="6" outMode1="0" />
+        </GestureModeMapConfig>
+
+        <!--coexist: switch,hiking,oos,sim,airplane for offline call -->
+        <OffLineCallMapConfig>
+              <OffLineCallConfigItem switch="1"  sim="0" service="1" dial="255" uiActivity="255" hiking="255" airplane="255" timeout="255" outMode="3"/>
+              <OffLineCallConfigItem switch="1"  sim="255" service="255" dial="1" uiActivity="255" hiking="255" airplane="255" timeout="255" outMode="1"/>
+              <OffLineCallConfigItem switch="1"  sim="255" service="255" dial="255" uiActivity="1" hiking="255" airplane="255" timeout="255" outMode="1"/>
+              <OffLineCallConfigItem switch="1"  sim="255" service="255" dial="255"  uiActivity="255"  hiking="255" airplane="255" timeout="255" outMode="2"/>
+              <OffLineCallConfigItem switch="255"  sim="255" service="255" dial="255" uiActivity="255"  hiking="255" airplane="255" timeout="255" outMode="0"/>
+        </OffLineCallMapConfig>
+
+        <!--coexist: wifi,bt,ntn,celluar for T1 -->
+        <NWCoexistMapConfig>
+            <!--offline call -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="255" offlineCallOptimize = "1" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="5"/>
+            <!--offline call oos -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="255" offlineCallOptimize = "3" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="1"/>
+            <!--offline call open switch + weak -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="255" offlineCallOptimize = "2" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="1"/>
+            <!--offline call oos -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="255" offlineCallOptimize = "2" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="2"/>
+            <!--uwb + wifi 5G L-->
+            <NWCoexistMapItem uwb="1" wifi="255" sigweak="255"  bt1="255"  wififrequency="7" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="6"/>
+            <!--uwb + wifi 5G H-->
+            <NWCoexistMapItem uwb="1" wifi="255" sigweak="255"  bt1="255"  wififrequency="8" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="7"/>
+            <!--uwb + wifi 2.4G + 5G H-->
+            <NWCoexistMapItem uwb="1" wifi="255" sigweak="255"  bt1="255"  wififrequency="5" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="7"/>
+            <!--uwb + wifi 2.4G -->
+            <NWCoexistMapItem uwb="1" wifi="255" sigweak="255"  bt1="255"  wififrequency="1" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="7"/>
+            <!--uwb + BT -->
+            <NWCoexistMapItem uwb="1" wifi="255" sigweak="255"  bt1="1"  wififrequency="255" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="7"/>
+            <!--uwb -->
+            <NWCoexistMapItem uwb="1" wifi="255" sigweak="255"  bt1="255"  wififrequency="255" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="7"/>
+            <!--weak + wifi 5G -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="7" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="2"/>
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="8" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="3"/>
+            <!--weak + wifi 5G L + 5G H-->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="9" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="2"/>
+            <!--weak + wifi 2.4G + wifi 5G L-->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="4" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="2"/>
+            <!--weak + wifi 2.4G + wifi 5G H-->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="5" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="3"/>
+            <!--weak + wifi 2.4G -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="1" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="3"/>
+            <!--weak + BT -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="1"  wififrequency="255" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="3"/>
+            <!--weak -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="1"  bt1="255"  wififrequency="255" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="1"/>
+            <!--wifi 5G L -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="7" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="4"/>
+            <!--wifi 5G H -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="8" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="5"/>
+            <!--wifi 5G L + 5G H-->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="9" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="4"/>
+            <!--wifi 2.4G + wifi 5G L-->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="4" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="4"/>
+            <!--wifi 2.4G + wifi 5G H-->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="5" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="5"/>
+            <!--wifi 2.4G -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="1" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="5"/>
+            <!--BT -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="1"  wififrequency="255" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "1"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="5"/>
+            <!--weak -->
+            <!--default cellular -->
+            <NWCoexistMapItem uwb="255" wifi="255" sigweak="255"  bt1="255"  wififrequency="255" offlineCallOptimize = "255" gps = "255"  tchipCloudControlFlag = "255"  bt="255" ntn="255" voice="255" weak1="255" hotspot="255"  outMode="1"/>
+        </NWCoexistMapConfig>
+        <NWCoexistControlMapConfig>
+            <NWCoexistControlMapItem  mode="1" outGPIO0="0"    outGPIO1="0"    outGPIO2="0"    outGPIO3="0"    outGPIO4="0"    outGPIO5="0"    outGPIO6="0"    outGPIO7="0"/>
+            <NWCoexistControlMapItem  mode="2" outGPIO0="0"    outGPIO1="0"    outGPIO2="0"    outGPIO3="1"    outGPIO4="0"    outGPIO5="1"    outGPIO6="1"    outGPIO7="0"/>
+            <NWCoexistControlMapItem  mode="3" outGPIO0="0"    outGPIO1="0"    outGPIO2="1"    outGPIO3="1"    outGPIO4="0"    outGPIO5="1"    outGPIO6="0"    outGPIO7="0"/>
+            <NWCoexistControlMapItem  mode="4" outGPIO0="0"    outGPIO1="0"    outGPIO2="0"    outGPIO3="1"    outGPIO4="1"    outGPIO5="1"    outGPIO6="1"    outGPIO7="0"/>
+            <NWCoexistControlMapItem  mode="5" outGPIO0="0"    outGPIO1="0"    outGPIO2="1"    outGPIO3="1"    outGPIO4="1"    outGPIO5="1"    outGPIO6="0"    outGPIO7="0"/>
+            <NWCoexistControlMapItem  mode="6" outGPIO0="0"    outGPIO1="0"    outGPIO2="1"    outGPIO3="0"    outGPIO4="0"    outGPIO5="1"    outGPIO6="1"    outGPIO7="0"/>
+            <NWCoexistControlMapItem  mode="7" outGPIO0="0"    outGPIO1="0"    outGPIO2="1"    outGPIO3="0"    outGPIO4="0"    outGPIO5="1"    outGPIO6="0"    outGPIO7="0"/>
+        </NWCoexistControlMapConfig>
+        <PowerMapConfigBitMask bitMask="4095" />
+        <PowerMapConfig>
+              <!--sleep mode -->
+              <PowerMapConfigItem sleep_abnormal="1"  screen="255" sleep_mod="1" voice="0" data="0" nw_search="0" monitor_timer="255" user_experience="0" mp_device="1" outAction="4"/>
+              <PowerMapConfigItem sleep_abnormal="1"  screen="255" sleep_mod="1" voice="0" data="0" nw_search="0" monitor_timer="255" user_experience="1" mp_device="1" outAction="5"/>
+             <PowerMapConfigItem sleep_abnormal="1"  screen="255" sleep_mod="1" voice="0" data="0" nw_search="0" monitor_timer="255" user_experience="255" mp_device="0" outAction="6"/>
+              <!--non-sleep  screen-off -->
+              <PowerMapConfigItem sleep_abnormal="1"  screen="0" sleep_mod="0" voice="0" data="0" nw_search="0" monitor_timer="1" user_experience="255" mp_device="0" outAction="3"/>
+              <!--non-sleep  screen-on -->
+              <PowerMapConfigItem sleep_abnormal="1"  screen="1" sleep_mod="0" voice="0" data="0" nw_search="0" monitor_timer="1" user_experience="255" mp_device="0" outAction="3"/>
+           </PowerMapConfig>
+           <LockMonitorMapConfig>
+              <!--sleep mode lock_id: lockid;   thresh_times: lock times every ten minute;  thresh_time:lock time percentage-->
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="0" lock_id="4" thresh_times="200" thresh_time="6000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="0" lock_id="0" thresh_times="200" thresh_time="3000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="0" lock_id="1" thresh_times="20" thresh_time="2000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="0" lock_id="2" thresh_times="60" thresh_time="6000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="0" lock_id="3" thresh_times="200" thresh_time="6000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="1" lock_id="4" thresh_times="200" thresh_time="6000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="1" lock_id="0" thresh_times="200" thresh_time="3000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="1" lock_id="1" thresh_times="20" thresh_time="2000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="1" lock_id="2" thresh_times="60" thresh_time="6000" outAction="3"/>
+              <LockMonitoMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="0" user_experience="255" mp_device="1" lock_id="3" thresh_times="200" thresh_time="6000" outAction="3"/>
+           </LockMonitorMapConfig>
+           <PowerMassDataMapConfig>
+              <!--sleep mode lock_id: lockid;   thresh_times: lock times every ten minute;  thresh_time:lock time percentage-->
+              <PowerMassDataMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="255" user_experience="255" mp_device="0" outAction="11" outScene="3" outTriggerType="6"/>
+              <PowerMassDataMapConfigItem sleep_mod="0"  screen="0"  voice="0"  data="0" user_experience="255" mp_device="0" outAction="1" outScene="2" outTriggerType="1"/>
+              <PowerMassDataMapConfigItem sleep_mod="255"  screen="255"  voice="255"  data="255" user_experience="255" mp_device="0" outAction="0" outScene="255" outTriggerType="0"/>
+              <PowerMassDataMapConfigItem sleep_mod="1"  screen="255"  voice="255"  data="255" user_experience="255" mp_device="1" outAction="11" outScene="3" outTriggerType="6"/>
+              <PowerMassDataMapConfigItem sleep_mod="0"  screen="0"  voice="0"  data="0" user_experience="255" mp_device="1" outAction="1" outScene="2" outTriggerType="1"/>
+              <PowerMassDataMapConfigItem sleep_mod="255"  screen="255"  voice="255"  data="255" user_experience="255" mp_device="1" outAction="0" outScene="255" outTriggerType="0"/>
+           </PowerMassDataMapConfig>
+    </deviceConfig>
+    <!--default -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="pandora">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="default" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0"  sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="17" hw_support="0"  sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+</MESubFeatureConfig>
+<!-- END Modem_ModemEnhance -->

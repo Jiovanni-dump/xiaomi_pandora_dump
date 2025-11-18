@@ -1,0 +1,15 @@
+{
+    "asd": {
+        "framework_info": {
+            "production": "Q200"
+        },
+        "model_enable": {
+            "model_init_sync": true,
+            "activate_custom_model": false,
+            "activate_classify_model": true,
+            "activate_indoors_model": true,
+            "activate_concert_model": true,
+            "activate_concert_nobody_model": true
+        }
+    }
+}

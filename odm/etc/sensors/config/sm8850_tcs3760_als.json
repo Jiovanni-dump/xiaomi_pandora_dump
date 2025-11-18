@@ -1,0 +1,467 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["660"]
+  },
+  "tcs3760_0":{
+    "owner": "sns_tcs3760",
+    ".als":{
+      "owner": "sns_tcs3760",
+      ".config":{
+        "owner": "sns_tcs3760",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tcs3760",
+      ".config":{
+        "owner": "sns_tcs3760",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "tcs3760_0_platform":{
+    "owner": "sns_tcs3760",
+    ".config":{
+      "owner": "sns_tcs3760",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "57"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "151"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "1",
+        "data": "3"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "L1B_E0"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "L8B_E0"
+      },
+      "clk_in_rail":{ "type": "str", "ver": "0",
+        "data": "L11B_E0"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_tcs3760",
+      ".ch_fac_cal":{
+        "owner": "sns_tcs3760",
+        "scale_ch0":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch1":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch2":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch3":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch4":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      },
+      ".ch_fac_cal_original":{
+        "owner": "sns_tcs3760",
+        "scale_ch0":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch1":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch2":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch3":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch4":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      },
+      ".custom_cal":{
+          "owner": "sns_tcs3760",
+          "lux_coeff_mtx_0_0_0":{ "type": "flt", "ver": "2","data": "0.6202634",
+                                  "comments": "CCT_HIGH_IR_COEF:GREEN_X"
+                        },
+          "lux_coeff_mtx_0_1_0":{ "type": "flt", "ver": "0","data": "1.0",
+                                  "comments": "CCT_HIGH_IR_COEF:GREEN_Y"
+                        },
+          "lux_coeff_mtx_0_2_0":{ "type": "flt", "ver": "2","data": "2.538136",
+                                  "comments": "CCT_HIGH_IR_COEF:GREEN_Z"
+                        },
+          "lux_coeff_mtx_0_0_1":{ "type": "flt", "ver": "2","data": "0.097863",
+                                  "comments": "CCT_HIGH_IR_COEF:RED_X"
+                        },
+          "lux_coeff_mtx_0_1_1":{ "type": "flt", "ver": "0","data": "0.0",
+                                  "comments": "CCT_HIGH_IR_COEF:RED_Y"
+                        },
+          "lux_coeff_mtx_0_2_1":{ "type": "flt", "ver": "2","data": "-1.463245",
+                                  "comments": "CCT_HIGH_IR_COEF:RED_Z"
+                        },
+          "lux_coeff_mtx_0_0_2":{ "type": "flt", "ver": "2","data": "0.234612",
+                                  "comments": "CCT_HIGH_IR_COEF:BLUE_X"         
+                        },
+          "lux_coeff_mtx_0_1_2":{ "type": "flt", "ver": "0","data": "0.0",
+                                  "comments": "CCT_HIGH_IR_COEF:BLUE_Y"
+                        },
+          "lux_coeff_mtx_0_2_2":{ "type": "flt", "ver": "2","data": "-0.218450",
+                                  "comments": "CCT_HIGH_IR_COEF:BLUE_Z"
+                        },
+          "lux_coeff_mtx_0_0_3":{ "type": "flt", "ver": "2","data": "0.083143",
+                                  "comments": "CCT_HIGH_IR_COEF:WHITE_X"          
+                        },
+          "lux_coeff_mtx_0_1_3":{ "type": "flt", "ver": "0","data": "0.0",
+                                  "comments": "CCT_HIGH_IR_COEF:WHITE_Y"
+                        },
+          "lux_coeff_mtx_0_2_3":{ "type": "flt", "ver": "2","data": "-0.188456",
+                                  "comments": "CCT_HIGH_IR_COEF:WHITE_Z"
+                        },
+          "lux_coeff_mtx_1_0_0":{ "type": "flt", "ver": "1","data": "0.871169",
+                                  "comments": "CCT_LOW_IR_COEF:GREEN_X"
+                        },
+          "lux_coeff_mtx_1_1_0":{ "type": "flt", "ver": "0","data": "1.0",
+                                  "comments": "CCT_LOW_IR_COEF:GREEN_Y"
+                        },
+          "lux_coeff_mtx_1_2_0":{ "type": "flt", "ver": "1","data": "0.131366",
+                                  "comments": "CCT_LOW_IR_COEF:GREEN_Z"
+                        },
+          "lux_coeff_mtx_1_0_1":{ "type": "flt", "ver": "1","data": "0.454405",
+                                  "comments": "CCT_LOW_IR_COEF:RED_X"
+                        },
+          "lux_coeff_mtx_1_1_1":{ "type": "flt", "ver": "0","data": "0.0",
+                                  "comments": "CCT_LOW_IR_COEF:RED_Y"
+                        },
+          "lux_coeff_mtx_1_2_1":{ "type": "flt", "ver": "1","data": "-0.689056",
+                                  "comments": "CCT_LOW_IR_COEF:RED_Z"
+                        },
+          "lux_coeff_mtx_1_0_2":{ "type": "flt", "ver": "1","data": "-0.399305",
+                                  "comments": "CCT_LOW_IR_COEF:BLUE_X"
+                        },
+          "lux_coeff_mtx_1_1_2":{ "type": "flt", "ver": "0","data": "0.0",
+                                  "comments": "CCT_LOW_IR_COEF:BLUE_Y"
+                        },
+          "lux_coeff_mtx_1_2_2":{ "type": "flt", "ver": "1","data": "3.095128",
+                                  "comments": "CCT_LOW_IR_COEF:BLUE_Z"
+                        },
+          "lux_coeff_mtx_1_0_3":{ "type": "flt", "ver": "1","data": "-0.090960",
+                                  "comments": "CCT_LOW_IR_COEF:WHITE_X"
+                        },
+          "lux_coeff_mtx_1_1_3":{ "type": "flt", "ver": "0","data": "0.0",
+                                  "comments": "CCT_LOW_IR_COEF:WHITE_Y"
+                        },
+          "lux_coeff_mtx_1_2_3":{ "type": "flt", "ver": "1","data": "0.049144",
+                                  "comments": "CCT_LOW_IR_COEF:WHITE_Z"
+                        },
+          "als_dgf_0":{ "type": "flt", "ver": "1",
+                      "data": "64"
+                    },
+          "lux_eq_0_0":{ "type": "flt", "ver": "2", "data": "0.060541",
+                        "comments":"LUX_HIGH_IR_COEF:GREEN"
+                        },
+          "lux_eq_0_1":{ "type": "flt", "ver": "2","data": "0.0007089",
+                        "comments":"LUX_HIGH_IR_COEF:RED"
+                        },
+          "lux_eq_0_2":{ "type": "flt", "ver": "2","data": "-0.032838",
+                        "comments":"LUX_HIGH_IR_COEF:BLUE"
+                        },
+          "lux_eq_0_3":{ "type": "flt", "ver": "2","data": "-0.005680",
+                        "comments":"LUX_HIGH_IR_COEF:WHITE"
+                       },
+          "als_dgf_1":{ "type": "flt", "ver": "1",
+                      "data": "64"
+                    },
+          "lux_eq_1_0":{ "type": "flt", "ver": "1","data": "0.057041",
+                        "comments":"LUX_LOW_IR_COEF:GREEN"
+                        },
+          "lux_eq_1_1":{ "type": "flt", "ver": "1","data": "0.012423",
+                        "comments":"LUX_LOW_IR_COEF:RED"
+                        },
+          "lux_eq_1_2":{ "type": "flt", "ver": "1","data": "-0.045535",
+                        "comments":"LUX_LOW_IR_COEF:BLUE"
+                        },
+          "lux_eq_1_3":{ "type": "flt", "ver": "1","data": "0.000102",
+                        "comments":"LUX_LOW_IR_COEF:WHITE"
+                        },
+          "ir_ratio_th":{ "type": "flt", "ver": "1",
+                              "data": "0.8"
+          }
+      },
+      ".def_config":{
+          "owner": "sns_tcs3760",
+          "sample_time_us":{ "type": "int", "ver": "0",
+                     "data": "500"
+                   },
+          "als_th_pers":{ "type": "int", "ver": "0",
+                     "data": "0"
+                   },
+          "gains_sel_gain_0_0":{ "type": "int", "ver": "0",
+                     "data": "6"
+                   },
+          "gpio_sync_in_ena":{ "type": "int", "ver": "0",
+                     "data": "1"
+                   },
+          "sync_emulation_mode":{ "type": "int", "ver": "0",
+                     "data": "0"
+                   },
+          "als_fifo_data_we":{ "type": "int", "ver": "0",
+                          "data": "0"
+                  },
+          "vsync_num":{ "type": "int", "ver": "0",
+                  "data": "77"
+                  },
+          "vsync_pull_type":{ "type": "int", "ver": "0",
+                  "data": "3"
+                },
+           "vsync_is_chip_pin":{ "type": "int", "ver": "0",
+                  "data": "1"
+                },
+          "vsync_drive_strength":{ "type": "int", "ver": "0",
+                  "data": "0"
+                },
+            "vsync_trigger_type":{ "type": "int", "ver": "0",
+                  "data": "1"
+                }
+      },
+      ".cal_target":{
+          "owner": "sns_tcs3760",
+          "lux_cal_target":{ "type": "flt", "ver": "0",
+                             "data": "300.0"
+                           },
+          "lux_cal_target_tolerance":{ "type": "flt", "ver": "0",
+                                       "data": "20.0"
+                                     }
+      }
+    },
+    ".prox":
+    {
+      "owner": "sns_tcs3760",
+       ".fac_cal":
+       {
+        "owner": "sns_tcs3760",
+        "near_threshold":{ "type": "flt", "ver": "0",
+                           "data": "330.0"
+                         },
+        "far_threshold":{ "type": "flt", "ver": "0",
+                          "data": "243.0"
+                        },
+        "crosstalk":{ "type": "flt", "ver": "0",
+                          "data": "200.0"
+                        }
+       },
+       ".fac_cal_original":
+       {
+        "owner": "sns_tcs3760",
+        "near_threshold":{ "type": "flt", "ver": "0",
+                           "data": "330.0"
+                         },
+        "far_threshold":{ "type": "flt", "ver": "0",
+                          "data": "243.0"
+                        },
+        "crosstalk":{ "type": "flt", "ver": "0",
+                          "data": "200.0"
+                        }
+       },
+       ".def_config":
+       {
+         "owner": "sns_tcs3760",
+         "sample_time_us":{ "type": "int", "ver": "0",
+                         "data": "0"
+                       },
+         "prx_interval":{ "type": "int", "ver": "0",
+                         "data": "0"
+                       },
+         "ldr_isink0":{ "type": "int", "ver": "0",
+                         "data": "14"
+                       },
+         "ldr_isink1":{ "type": "int", "ver": "0",
+                         "data": "14"
+                       },
+         "th_pers":{ "type": "int", "ver": "0",
+                         "data": "2"
+                       },
+         "prx_mode":{ "type": "int", "ver": "0",
+                       "data": "1"
+                     },
+         "prx_mod_gain":{ "type": "int", "ver": "0",
+                       "data": "6"
+                     },
+         "prx_mod_gain_amb":{ "type": "int", "ver": "0",
+                       "data": "2"
+                     },
+         "prx_mod_gain_od":{ "type": "int", "ver": "0",
+                       "data": "3"
+                     },
+         "precon_current_time":{ "type": "int", "ver": "0",
+                       "data": "0"
+                     },
+         "precon_current_val":{ "type": "int", "ver": "0",
+                       "data": "3"
+                     },
+         "prx_amb_ir_th":{ "type": "int", "ver": "0",
+                       "data": "10000"
+                     },
+         "th_low":{ "type": "int", "ver": "0",
+                         "data": "200"
+                       },
+         "th_high":{ "type": "int", "ver": "0",
+                         "data": "300"
+                       },
+         "prx_pulse_time":{ "type": "int", "ver": "1",
+                         "data": "70"
+                       },
+         "prx_pulse_num":{ "type": "int", "ver": "0",
+                         "data": "1"
+                       },
+         "prx_iptat":{ "type": "int", "ver": "0",
+                         "data": "20"
+                       },
+         "prx_sync_delay":{ "type": "int", "ver": "0",
+                         "data": "1234"
+                       },
+         "prx_sync_delay_1hz":{ "type": "int", "ver": "1",
+                         "data": "5300"
+                       },
+         "prx_sync_delay_10hz":{ "type": "int", "ver": "1",
+                         "data": "5440"
+                       },
+         "prx_sync_delay_24hz":{ "type": "int", "ver": "1",
+                         "data": "5740"
+                       },
+         "prx_sync_delay_30hz":{ "type": "int", "ver": "1",
+                         "data": "5740"
+                       },
+         "prx_sync_delay_60hz":{ "type": "int", "ver": "1",
+                         "data": "5440"
+                       },
+         "prx_sync_delay_90hz":{ "type": "int", "ver": "1",
+                         "data": "8440"
+                       },
+         "prx_sync_delay_120hz":{ "type": "int", "ver": "1",
+                         "data": "5440"
+                       },
+         "prx_sync_delay_144hz":{ "type": "int", "ver": "0",
+                         "data": "1144"
+                       },
+         "prx_sync_ignore":{ "type": "int", "ver": "0",
+                          "data": "48000"
+                       },
+         "prx_sync_repetition":{ "type": "int", "ver": "0",
+                          "data": "0"
+                       },
+         "sync_timeout_us":{ "type": "int", "ver": "0",
+                          "data": "1100000"
+                       },
+         "prx_under_sun_th_0":{ "type": "int", "ver": "0",
+                         "data": "30000"
+                       },
+         "prx_under_sun_th_1":{ "type": "int", "ver": "0",
+                         "data": "20000"
+                       },
+         "prx_under_sun_th_2":{ "type": "int", "ver": "0",
+                         "data": "0"
+                       },
+         "prx_under_sun_th_3":{ "type": "int", "ver": "0",
+                         "data": "0"
+                       }
+       }
+    },
+    ".placement":{
+        "owner": "sns_tcs3760",
+        "0":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "1":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "2":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "3":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "4":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "5":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "6":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "7":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "8":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "9":{ "type": "flt", "ver": "0",
+              "data": "0.0"
+            },
+        "10":{ "type": "flt", "ver": "0",
+                "data": "0.0"
+              },
+        "11":{ "type": "flt", "ver": "0",
+                "data": "0.0"
+              }
+    }
+  }
+}

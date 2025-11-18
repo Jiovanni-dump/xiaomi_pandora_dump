@@ -1,0 +1,10 @@
+device_name:Q200
+process_timeout_ms:7000
+error_code_origin:-50011,-50010,5005
+error_code_mapper:1400,1400,1400
+error_code_remap_algo:203,204
+error_code_remap_origin:1006,1300,1400,1010,1011
+error_code_remap_mapper:1801,1802,1803,1701,1702
+enable_xdr_callback:0
+city_night_enable:1
+city_night_lux_range:280,460

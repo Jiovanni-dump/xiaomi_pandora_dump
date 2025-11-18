@@ -1,0 +1,108 @@
+{
+    "Description": "Xiaomi SmartAE config file - Arbitrator",
+    "phone_code": "O1",
+    "jsonVersion": "SNSC_HDR-V2.0-20241011",
+
+    "SNSC_HDR_EV_CAL": {
+        "Description": "SNSC CHECKER config",
+        "UW": {
+            "face_overexposed_luma": 239,
+            "face_overexposed_ratio1": 0.02,
+            "face_overexposed_ratio2": 0.04,
+            "ADRC_GAIN_NODE": [ 1.1, 1.25, 1.4, 1.6, 1.8, 2.0, 3.0 ],
+            "EVN_LIST": [ -24, -24, -24, -24, -24, -24, -24, -24 ],
+            "EVN_FACE": [ -24, -24, -24, -24, -24, -24, -24, -24 ],
+            "EVN_FACE_OVEREXP": [ -24, -24, -24, -24, -24, -24, -24, -24 ]
+        },
+        "WIDE": {
+            "face_overexposed_luma": 239,
+            "face_overexposed_ratio1": 0.02,
+            "face_overexposed_ratio2": 0.04,
+            "ADRC_GAIN_NODE": [ 1.1, 1.25, 1.4, 1.6, 1.8, 2.0, 4.0 ],
+            "EVN_LIST": [ -24, -24, -24, -24, -24, -24, -24, -24 ],
+            "EVN_FACE": [ -24, -24, -24, -24, -24, -24, -24, -24 ],
+            "EVN_FACE_OVEREXP": [ -24, -24, -24, -24, -24, -24, -24, -24 ]
+        },
+        "ULTRATELE": {
+            "face_overexposed_luma": 239,
+            "face_overexposed_ratio1": 0.02,
+            "face_overexposed_ratio2": 0.04,
+            "ADRC_GAIN_NODE": [ 1.1, 1.25, 1.4, 1.6, 1.8, 2.0, 4.0 ],
+            "EVN_LIST": [ -24, -24, -24, -24, -24, -24, -24, -24 ],
+            "EVN_FACE": [ -24, -24, -24, -24, -24, -24, -24, -24 ],
+            "EVN_FACE_OVEREXP": [ -24, -24, -24, -24, -24, -24, -24, -24 ]
+        }
+    },
+
+
+
+    "AlgoType_SNSC_HDR": {
+        "CHECKER": {
+            "UW": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 1 ]
+                    }
+                ]
+
+            },
+            "WIDE": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 1 ]
+                    }
+                ]
+            },
+            "ULTRATELE": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 1 ]
+                    }
+                ]
+            }
+
+        },
+        "LIST": [
+            {
+                "Description": "V_0",
+                "frames": 7,
+                "ev_value": [ 0, 0, 0, 0, 0, 0, -1 ],
+                "capture_mode": [ 0, 0, 0, 0, 0, 0, 1 ],
+                "adrc_on": [ 1, 1, 1, 1, 1, 1, 1 ],
+                "sensor_mode": [ -1, -1, -1, -1, -1, -1, -1 ],
+                "ois_sync": [ 0, 0, 0, 0, 0, 0, 0 ],
+                "motion_exp_type": [ 0, 0, 0, 0, 0, 0, 1 ],
+                "min_exp_check": false,
+                "change_to_index": null
+            }
+        ]
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

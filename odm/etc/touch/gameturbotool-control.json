@@ -1,0 +1,26 @@
+{
+    "config_name":"super_core_config",
+    "version":"2024120200",
+    "product":"pandora",
+
+    "SUPER CORE": {
+        "FIRSTFRAME_DURATION_ENABLE": true,
+        "SUPERTOUCH_ENABLE": false,
+        "VSYNCBUFFER_ENABLE": true,
+        "PENDINGBUFFER_ENABLE": false,
+        "FIRSTFRAME_BOOST_ENABLE": true,
+        "DYNAMIC_DROPBUFFER_ENABLE": false,
+        "FIRSTFRAME_DURATION_LEVEL": 1,
+        "SUPERTOUCH_LEVEL": 1,
+        "PENDINGBUFFER_LEVEL": 1,
+        "FIRSTFRAME_BOOST_LEVEL": 2,
+        "DYNAMIC_DROPBUFFER_LEVEL": 3,
+        "SUPERTOUCH_ENABLE_APP": [
+            "com.tencent.lolm",
+            "com.tencent.tmgp.cf",
+            "com.tencent.tmgp.sgame"
+        ],
+        "PENDINGBUFFER_ENABLE_APP": [
+        ]
+    }
+}

@@ -1,0 +1,1671 @@
+/**
+ * @file        bokehsettings.json
+ * @brief
+ * @details
+ * @author
+ * @date        2025.03.05
+ * @version     0.1
+ * @note        https://xiaomi.f.mioffice.cn/docx/doxk4ZT9zdMrj1hZEltkcn9sTdd
+ * @warning
+ * @par
+ * 1,文件中可以使用注释，但不能在有效json段内部写入任何注释。
+ * 2,可以使用接口的dump功能生成一份默认值的json文件。
+ * sensorSettingType 参考 CameraRoleId in chi-cdk\api\common\chioemcommon.h
+ * AecLuxIndex越大亮度越暗，AecLuxIndex越小亮度越亮，当AecLuxIndex >= 阈值时，FallBack到暗光场景。所以关闭Fallback时就是设置一个很大的阈值；如果默认一直Fallback可以设置0
+ */
+
+
+/*com.xiaomi.camera.bokehCaps.info.start*/
+{
+	"MASK":	23130,
+	"version":	1,
+	"length":	0,
+	"crc32":	0,
+	"numMax":	6,
+	"num":	6,
+	"defaultZoomRatio":	2.0,
+	"zoomFocalStart":[1.0,      1.2,      1.5,      2.0,      3.20,     5.0],
+	"zoomFocalEnd":	 [1.199999, 1.499999, 1.999999, 3.199999, 4.999999, 5.0],
+	"equivalentFocalLength135":	[23, 28, 35, 46, 75, 115],
+	"zoomFocalGroup":	[23, 28, 35, 46, 75, 120],
+	"isSupportZoom":	[0, 0, 0, 0, 0, 0],
+	"madridModeListMax":	6,
+	"madridModeList":	[
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1]
+	],
+	"madridModeDefault": [0, 0, 0, 0, 0, 0],
+	"apertureListMax":	30,
+	"apertureList":	[
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0]
+	],
+	"apertureDefault":	[
+		[1000, 2.8, 1.4, 1.4, 1.4, 1.4, 0],
+		[1000, 2.8, 1.4, 1.4, 1.4, 1.4, 0],
+		[1000, 2.8, 1.4, 1.4, 1.4, 1.4, 0],
+		[1000, 4.5, 2.8, 2.8, 2.8, 2.8, 0],
+		[1000, 4.5, 2.8, 2.8, 2.8, 2.8, 0],
+		[1000, 4.5, 2.8, 2.8, 2.8, 2.8, 0]
+	],
+	"previewSize":	[
+		[[1280, 960], [1280, 720], [1568, 720], [0, 0]],
+		[[1280, 960], [1280, 720], [1568, 720], [0, 0]],
+		[[1280, 960], [1280, 720], [1568, 720], [0, 0]],
+		[[1280, 960], [1280, 720], [1568, 720], [0, 0]],
+		[[1280, 960], [1280, 720], [1568, 720], [0, 0]],
+		[[1280, 960], [1280, 720], [1568, 720], [0, 0]]
+	],
+	"depthOutSize":	[
+		[4096, 1536],
+		[4096, 1536],
+		[4096, 1536],
+		[4096, 1536],
+		[4096, 1536],
+		[4096, 1536]
+	],
+	"algoVendorID":	[0, 0, 0],
+	"availableTargetFpsRanges":	[12, 24],
+	"hdrSupportMask":	7,
+	"beautySupportMask":	7,
+	"reserve2SupportMask":	0,
+	"reserve3SupportMask":	0,
+	"sizeofBokehConfigStreamInfoList":	128,
+	"sizeofBokehRequestInfoList":	124,
+	"SensorCalibrationList":	[
+		[1, 23, 0]
+	],
+	"stylizationTypeMask":	6,
+	"backSingleBokehSupported":	0,
+	"supportHalCompressBuffer": 1,
+	"supportSmartAperture": 0,
+	"supportCloseRangeHint":0,
+	"flashSupportMask": 1,
+	"apertureExifShow":	[0, 0, 0, 0, 0, 0],
+	"focalLensExifShow":[0, 0, 0, 0, 0, 0],
+	"info": [
+	{
+		"fullbackThreshold":
+		{
+			"lightLux":	0,
+			"aecluxIndex":	10000,
+			"aecluxIndexUp":	0,
+			"aecluxIndexDown":	0
+		},
+		"SensorRole": [
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 1.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 0.6,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844 ], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		}]
+	},
+	{
+		"fullbackThreshold":
+		{
+			"lightLux":	0,
+			"aecluxIndex":	10000,
+			"aecluxIndexUp":	0,
+			"aecluxIndexDown":	0
+		},
+		"SensorRole": [
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 1.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[3354, 2516], [3354, 1888], [3354, 1600], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[3354, 2516], [3354, 1888], [3354, 1600], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 0.6,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[3520, 2640], [3520, 1980], [3520, 1584], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[3520, 2640], [3520, 1980], [3520, 1584], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844 ], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		}]
+	},
+	{
+		"fullbackThreshold":
+		{
+			"lightLux":	0,
+			"aecluxIndex":	10000,
+			"aecluxIndexUp":	0,
+			"aecluxIndexDown":	0
+		},
+		"SensorRole": [
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 1.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2684, 2016], [2684, 1512], [2684, 1232], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[2684, 2016], [2684, 1512], [2684, 1232], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	8,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 0.6,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[2880, 2160],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2880, 2160], [2880, 1620], [2880, 1320], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[2880, 2160], [2880, 1620], [2880, 1320], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844 ], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		}]
+	},
+	{
+		"fullbackThreshold":
+		{
+			"lightLux":	0,
+			"aecluxIndex":	440,
+			"aecluxIndexUp":	0,
+			"aecluxIndexDown":	0
+		},
+		"SensorRole": [
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	2,
+			"sensorSettingType":	6,
+			"sensorSettingDefaultZoomRatio": 2.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_QUAD_CFA",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	10,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 0.6,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[2080, 1560],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2080, 1560], [2080, 1172], [2080, 956], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720], [0, 0]],
+			"captureCropSize":	[[2080, 1560], [2080, 1172], [2080, 956], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 1.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2048, 1536], [2048, 1152], [2048,  940], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568,  720], [0, 0]],
+			"captureCropSize":	[[2048, 1536], [2048, 1152], [2048,  940], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	10,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 0.6,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[2080, 1560],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2080, 1560], [2080, 1172], [2080, 956], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720], [0, 0]],
+			"captureCropSize":	[[2080, 1560], [2080, 1172], [2080, 956], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		}]
+	},
+	{
+		"fullbackThreshold":
+		{
+			"lightLux":	0,
+			"aecluxIndex":	440,
+			"aecluxIndexUp":	0,
+			"aecluxIndexDown":	0
+		},
+		"SensorRole": [
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	2,
+			"sensorSettingType":	6,
+			"sensorSettingDefaultZoomRatio": 2.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_QUAD_CFA",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2504, 1878], [2504, 1408], [2504, 1148], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[2504, 1878], [2504, 1408], [2504, 1148], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	9,
+			"sensorSettingType":	6,
+			"sensorSettingDefaultZoomRatio": 1.2,
+			"sensorSettingTypeString":	"SENSOR_MODE_QUAD_CFA",
+			"sensorOutSize":	[2880, 2160],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2880, 2160], [2880, 1620], [2880, 1320], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[2880, 2160], [2880, 1620], [2880, 1320], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844 ], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 1.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[1252, 940 ], [1252, 704 ], [1252, 576 ], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[1252, 940 ], [1252, 704 ], [1252, 576 ], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	8,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 0.6,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[2880, 2160],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[1440, 1080], [1440, 810 ], [1440, 660], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720], [0, 0]],
+			"captureCropSize":	[[1440, 1080], [1440, 810 ], [1440, 660], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		}]
+	},
+	{
+		"fullbackThreshold":
+		{
+			"lightLux":	0,
+			"aecluxIndex":	560,
+			"aecluxIndexUp":	0,
+			"aecluxIndexDown":	0
+		},
+		"SensorRole": [
+		{
+			"enable":	1,
+			"sensorType":	23,
+			"sensorTypeString":	"UltraTele",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 5.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [2, 1, 0, 0],
+			"sensorGainThreshCheck": [1024.0, 0, 0, 1024.0, 0, 596.0, 0, 0, 1024.0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	32,
+			"sensorSettingType":	6,
+			"sensorSettingDefaultZoomRatio": 2.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_QUAD_CFA",
+			"sensorOutSize":	[2880, 2160],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[2880, 2160], [2880, 1620], [2880, 1320], [0, 0]],
+			"previewResizeize":	[[1280, 960 ], [1280, 720 ], [1568, 720 ], [0, 0]],
+			"captureCropSize":	[[2880, 2160], [2880, 1620], [2880, 1320], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844 ], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+
+		{
+			"enable":	1,
+			"sensorType":	0,
+			"sensorTypeString":	"Wide",
+			"sensorSettingId":	1,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 1.0,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[ 816,  612], [ 816,  460], [ 816,  376], [0, 0]],
+			"previewResizeize":	[[1280,  960], [1280,  720], [1568,  720], [0, 0]],
+			"captureCropSize":	[[ 816,  612], [ 816,  460], [ 816,  376], [0, 0]],
+			"captureResizeSize":[[4096, 3072], [4096, 2304], [4096, 1880], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 256.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		},
+		{
+			"enable":	1,
+			"sensorType":	21,
+			"sensorTypeString":	"UltraWide",
+			"sensorSettingId":	8,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 0.6,
+			"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+			"sensorOutSize":	[2880, 2160],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[ 960,  720], [ 960,  540], [ 960, 440], [0, 0]],
+			"previewResizeize":	[[1280,  960], [1280,  720], [1568, 720], [0, 0]],
+			"captureCropSize":	[[ 960,  720], [ 960,  540], [ 960, 440], [0, 0]],
+			"captureResizeSize":[[1840, 1380], [1840, 1036], [1840, 844], [0, 0]],
+			"bayerPattern": [0, 3, 0, 0],
+			"sensorGainThreshCheck": [256.0, 0, 0, 256.0, 0, 512.0, 0, 0, 256.0, 256.0, 0, 0, 0, 0, 0, 0, 0, 0]
+		}]
+	}],
+	"sensorOISEnableList":	[21, 0, 23, -1, -1, -1, -1, -1],
+	"bokehSuperNightDepthType":	3,
+	"bokehSensorPloicyEnable":	[
+		[0, 0],
+		[0, 0],
+ 		[0, 0],
+ 		[1, 1],
+ 		[1, 1],
+ 		[0, 0]
+ 	],
+	"usePolicyMask":	2
+}
+/*com.xiaomi.camera.bokehCaps.info.end*/
+/*com.xiaomi.camera.bokehCaps.stream.start*/
+{
+	"MASK":	23130,
+	"version":	1,
+	"length":	0,
+	"crc32":	0,
+	"num":	6,
+	"StreamInfo":	[
+	{
+		"zoomFocalStart":	1.0,
+		"zoomFocalEnd":	1.199999,
+		"num":	3,
+		"stream": [
+		{
+			"bokehSensorRole":	0,
+			"roleId":	61,
+			"width":	0,
+			"height":	0,
+			"usage":	259,
+			"useCase":	0,
+			"space":	0,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	35,
+			"streamType":	0,
+			"streamProp":	17,
+			"isPhysicalStream":	0,
+			"isZSL":	0,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	0,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	1,
+			"roleId":	21,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		}]
+	},
+	{
+		"zoomFocalStart":	1.2,
+		"zoomFocalEnd":	1.499999,
+		"num":	3,
+		"stream": [
+		{
+			"bokehSensorRole":	0,
+			"roleId":	61,
+			"width":	0,
+			"height":	0,
+			"usage":	259,
+			"useCase":	0,
+			"space":	0,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	35,
+			"streamType":	0,
+			"streamProp":	17,
+			"isPhysicalStream":	0,
+			"isZSL":	0,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	0,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	1,
+			"roleId":	21,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		}]
+	},
+	{
+		"zoomFocalStart":	1.5,
+		"zoomFocalEnd":	1.999999,
+		"num":	3,
+		"stream": [
+		{
+			"bokehSensorRole":	0,
+			"roleId":	61,
+			"width":	0,
+			"height":	0,
+			"usage":	259,
+			"useCase":	0,
+			"space":	0,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	35,
+			"streamType":	0,
+			"streamProp":	17,
+			"isPhysicalStream":	0,
+			"isZSL":	0,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	0,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	1,
+			"roleId":	21,
+			"width":	2880,
+			"height":	2160,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	2,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	3,
+			"roleId":	21,
+			"width":	2080,
+			"height":	1560,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		}]
+	},
+	{
+		"zoomFocalStart":	2.0,
+		"zoomFocalEnd":	3.199999,
+		"num":	5,
+		"stream": [
+		{
+			"bokehSensorRole":	0,
+			"roleId":	61,
+			"width":	0,
+			"height":	0,
+			"usage":	259,
+			"useCase":	0,
+			"space":	0,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	35,
+			"streamType":	0,
+			"streamProp":	17,
+			"isPhysicalStream":	0,
+			"isZSL":	0,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	0,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	1,
+			"roleId":	21,
+			"width":	2080,
+			"height":	1560,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	2,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	3,
+			"roleId":	21,
+			"width":	2080,
+			"height":	1560,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		}]
+	},
+	{
+		"zoomFocalStart":	3.20,
+		"zoomFocalEnd":	4.999999,
+		"num":	5,
+		"stream": [
+		{
+			"bokehSensorRole":	0,
+			"roleId":	61,
+			"width":	0,
+			"height":	0,
+			"usage":	259,
+			"useCase":	0,
+			"space":	0,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	35,
+			"streamType":	0,
+			"streamProp":	17,
+			"isPhysicalStream":	0,
+			"isZSL":	0,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	0,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	1,
+			"roleId":	21,
+			"width":	2880,
+			"height":	2160,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	2,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	3,
+			"roleId":	21,
+			"width":	2880,
+			"height":	2160,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		}]
+	},
+	{
+		"zoomFocalStart":	5.0,
+		"zoomFocalEnd":	5.0,
+		"num":	5,
+		"stream": [
+		{
+			"bokehSensorRole":	0,
+			"roleId":	61,
+			"width":	0,
+			"height":	0,
+			"usage":	259,
+			"useCase":	0,
+			"space":	0,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	35,
+			"streamType":	0,
+			"streamProp":	17,
+			"isPhysicalStream":	0,
+			"isZSL":	0,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	0,
+			"roleId":	23,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	1,
+			"roleId":	0,
+			"width":	2880,
+			"height":	2160,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	2,
+			"roleId":	0,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		},
+		{
+			"bokehSensorRole":	3,
+			"roleId":	21,
+			"width":	2880,
+			"height":	2160,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	37,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		}]
+	}]
+}
+/*com.xiaomi.camera.bokehCaps.stream.end*/
+/*com.xiaomi.camera.bokehCaps.info.front.start*/
+{
+	"MASK":	23130,
+	"version":	1,
+	"length":	0,
+	"crc32":	0,
+	"numMax":	6,
+	"num":	1,
+	"defaultZoomRatio":	1,
+	"zoomFocalStart":	[0, 0, 0, 0, 0, 0],
+	"zoomFocalEnd":	[100, 0, 0, 0, 0, 0],
+	"equivalentFocalLength135":	[23, 0, 0, 0, 0, 0],
+	"zoomFocalGroup":	[23, 0, 0, 0, 0, 0],
+	"isSupportZoom":	[0, 0, 0, 0, 0, 0],
+	"madridModeListMax":	6,
+	"madridModeList":	[
+		[1000, 0, 2, 4, 5, 6, -1],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0]
+	],
+	"madridModeDefault":	[0, 0, 0, 0, 0, 0],
+	"apertureListMax":	30,
+	"apertureList":	[
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	],
+	"apertureDefault":	[
+		[1000, 2.8, 2.8, 2.8, 2.8, 2.8, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0]
+	],
+	"previewSize":	[
+		[[0, 0], [0, 0], [0, 0], [0, 0]],
+		[[0, 0], [0, 0], [0, 0], [0, 0]],
+		[[0, 0], [0, 0], [0, 0], [0, 0]],
+		[[0, 0], [0, 0], [0, 0], [0, 0]],
+		[[0, 0], [0, 0], [0, 0], [0, 0]],
+		[[0, 0], [0, 0], [0, 0], [0, 0]]
+	],
+	"depthOutSize":	[
+		[4096, 1536],
+		[0, 0],
+		[0, 0],
+		[0, 0],
+		[0, 0],
+		[0, 0]
+	],
+	"algoVendorID":	[133, 0, 0],
+	"availableTargetFpsRanges":	[10, 30],
+	"hdrSupportMask":	7,
+	"beautySupportMask":	7,
+	"reserve2SupportMask":	0,
+	"reserve3SupportMask":	0,
+	"sizeofBokehConfigStreamInfoList":	128,
+	"sizeofBokehRequestInfoList":	124,
+	"SensorCalibrationList":	[
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0]
+	],
+	"stylizationTypeMask":	0,
+	"backSingleBokehSupported":	0,
+	"supportHalCompressBuffer": 1,
+	"supportSmartAperture": 1,
+	"flashSupportMask": 0,
+	"apertureExifShow":	[0, 0, 0, 0, 0, 0],
+	"focalLensExifShow":	[0, 0, 0, 0, 0, 0],
+	"info":	[
+	{
+		"fullbackThreshold":
+		{
+			"lightLux":	0,
+			"aecluxIndex":	10000,
+			"aecluxIndexUp":	0,
+			"aecluxIndexDown":	0
+		},
+		"SensorRole":[
+		{
+			"enable":	1,
+			"sensorType":	1,
+			"sensorTypeString":	"",
+			"sensorSettingId":	23,
+			"sensorSettingType":	0,
+			"sensorSettingDefaultZoomRatio": 1.0,
+			"sensorSettingTypeString":	"",
+			"sensorOutSize":	[4096, 3072],
+			"sensorOutformat":	10,
+			"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1844], [0, 0]],
+			"previewResizeize":	[[1280, 960], [1280, 720], [1600, 720], [0, 0]],
+			"captureCropSize":	[[4096, 3072], [4096, 2304], [4096, 1844], [0, 0]],
+			"captureResizeSize":	[[4096, 3072], [4096, 2304], [4096, 1844], [0, 0]]
+		}]
+	}],
+	"sensorOISEnableList":	[0, 0, 0, 0, 0, 0, 0, 0],
+	"bokehSuperNightDepthType":	0,
+	"bokehSensorPloicyEnable":	[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
+	"useRoiTranslatorMask":	1
+}
+/*com.xiaomi.camera.bokehCaps.info.front.end*/
+/*com.xiaomi.camera.bokehCaps.stream.front.start*/
+{
+	"MASK":	23130,
+	"version":	1,
+	"length":	0,
+	"crc32":	0,
+	"num":	1,
+	"StreamInfo": [
+	{
+		"zoomFocalStart":	0,
+		"zoomFocalEnd":	100,
+		"num":	1,
+		"stream": [
+		{
+			"bokehSensorRole":	0,
+			"roleId":	1,
+			"width":	4096,
+			"height":	3072,
+			"usage":	3,
+			"useCase":	0,
+			"space":	146931712,
+			"dynamicRangeProfile":	1,
+			"ratio":	1.33,
+			"format":	9001,
+			"streamType":	0,
+			"streamProp":	0,
+			"isPhysicalStream":	1,
+			"isZSL":	1,
+			"isFakeSat":	0,
+			"isRemosaic":	0,
+			"isUltraHDR":	0
+		}]
+	}]
+}
+/*com.xiaomi.camera.bokehCaps.stream.front.end*/
+/*com.xiaomi.camera.bokehCaps.info.wide.start*/
+{
+	"MASK":	23130,
+	"version":	1,
+	"length":	0,
+	"crc32":	0,
+	"numMax":	6,
+	"num":	5,
+	"defaultZoomRatio":	0.70,
+	"zoomFocalStart":	[0.70, 1, 1.2, 1.5, 2.0, 0],
+	"zoomFocalEnd":  	[0.70, 1, 1.2, 1.5, 2.0, 0],
+	"equivalentFocalLength135":	[17, 23, 28, 35, 46, 0],
+	"zoomFocalGroup":	[17, 23, 28, 35, 46, 0],
+	"isSupportZoom":	[0, 0, 0, 0, 0, 0],
+	"madridModeListMax":	6,
+	"madridModeList":	[
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[1000, 0, 2, 4, 5, 6, -1],
+		[0, 0, 0, 0, 0, 0]
+	],
+	"madridModeDefault":	[0, 0, 0, 0, 0, 0],
+	"apertureListMax":	30,
+	"apertureList":	[
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0.95, 1.1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.5, 2.8, 3.2, 3.5, 4, 4.5, 5, 5.6, 6.3, 7.1, 8, 9, 10, 11, 13, 14, 16, 1000, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	],
+	"apertureDefault":	[
+		[1000, 2.8, 1.4, 1.4, 1.4, 1.4, 0],
+		[1000, 2.8, 1.4, 1.4, 1.4, 1.4, 0],
+		[1000, 2.8, 1.4, 1.4, 1.4, 1.4, 0],
+		[1000, 2.8, 2.8, 2.8, 2.8, 2.8, 0],
+		[1000, 4.5, 2.8, 2.8, 2.8, 2.8, 0],
+		[0, 0, 0, 0, 0, 0]
+	],
+	"previewSize":	[
+		[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+		[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+		[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+		[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+		[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+		[[0, 0], [0, 0], [0, 0], [0, 0]]
+	],
+	"depthOutSize":	[
+		[4096, 1536],
+		[4096, 1536],
+		[4096, 1536],
+		[4096, 1536],
+		[4096, 1536],
+		[0, 0]
+	],
+	"algoVendorID":	[5, 0, 0],
+	"availableTargetFpsRanges":	[10, 24],
+	"hdrSupportMask":	7,
+	"beautySupportMask":	7,
+	"reserve2SupportMask":	0,
+	"reserve3SupportMask":	0,
+	"sizeofBokehConfigStreamInfoList":	128,
+	"sizeofBokehRequestInfoList":	124,
+	"SensorCalibrationList":	[
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0]
+	],
+	"stylizationTypeMask":	6,
+	"backSingleBokehSupported":	0,
+	"supportHalCompressBuffer": 1,
+	"supportSmartAperture": 0,
+	"flashSupportMask": 0,
+	"apertureExifShow":	[0, 0, 0, 0, 0, 0],
+	"focalLensExifShow":	[0, 0, 0, 0, 0, 0],
+	"info":	[
+		{
+			"fullbackThreshold":	{
+				"lightLux":	0,
+				"aecluxIndex":	10000,
+				"aecluxIndexUp":	0,
+				"aecluxIndexDown":	0
+			},
+			"SensorRole":	[
+				{
+					"enable":	1,
+					"sensorType":	21,
+					"sensorTypeString":	"UltraWide",
+					"sensorSettingId":	1,
+					"sensorSettingType":	0,
+					"sensorSettingDefaultZoomRatio": 0.6,
+					"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+					"sensorOutSize":	[4096, 3072],
+					"sensorOutformat":	10,
+					"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1844], [0, 0]],
+					"previewResizeize":	[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+					"captureCropSize":	[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]],
+					"captureResizeSize":[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]]
+				}]
+		},
+		{
+			"fullbackThreshold":	{
+				"lightLux":	0,
+				"aecluxIndex":	10000,
+				"aecluxIndexUp":	0,
+				"aecluxIndexDown":	0
+			},
+			"SensorRole":	[
+				{
+					"enable":	1,
+					"sensorType":	0,
+					"sensorTypeString":	"Wide",
+					"sensorSettingId":	1,
+					"sensorSettingType":	0,
+					"sensorSettingDefaultZoomRatio": 1.0,
+					"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+					"sensorOutSize":	[4096, 3072],
+					"sensorOutformat":	10,
+					"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1844], [0, 0]],
+					"previewResizeize":	[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+					"captureCropSize":	[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]],
+					"captureResizeSize":[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]]
+				}]
+		},
+		{
+			"fullbackThreshold":	{
+				"lightLux":	0,
+				"aecluxIndex":	10000,
+				"aecluxIndexUp":	0,
+				"aecluxIndexDown":	0
+			},
+			"SensorRole":	[
+				{
+					"enable":	1,
+					"sensorType":	0,
+					"sensorTypeString":	"Wide",
+					"sensorSettingId":	1,
+					"sensorSettingType":	0,
+					"sensorSettingDefaultZoomRatio": 1.0,
+					"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+					"sensorOutSize":	[4096, 3072],
+					"sensorOutformat":	10,
+					"previewCropSize":	[[3354, 2516], [3354, 1888], [3354, 1600], [0, 0]],
+					"previewResizeize":	[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+					"captureCropSize":	[[3354, 2516], [3354, 1888], [3354, 1600], [0, 0]],
+					"captureResizeSize":[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]]
+				}]
+		},
+		{
+			"fullbackThreshold":	{
+				"lightLux":	0,
+				"aecluxIndex":	10000,
+				"aecluxIndexUp":	0,
+				"aecluxIndexDown":	0
+			},
+			"SensorRole":	[
+				{
+					"enable":	1,
+					"sensorType":	0,
+					"sensorTypeString":	"Wide",
+					"sensorSettingId":	1,
+					"sensorSettingType":	0,
+					"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+					"sensorOutSize":	[4096, 3072],
+					"sensorOutformat":	10,
+					"previewCropSize":      [[2684, 2016], [2684, 1512], [2684, 1208], [0, 0]],
+					"previewResizeize":	[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+					"captureCropSize":      [[2684, 2016], [2684, 1512], [2684, 1208], [0, 0]],
+					"captureResizeSize":[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]]
+				}]
+		},
+		{
+			"fullbackThreshold":	{
+				"lightLux":	0,
+				"aecluxIndex":	460,
+				"aecluxIndexUp":	0,
+				"aecluxIndexDown":	0
+			},
+			"SensorRole":	[
+				{
+					"enable":	1,
+					"sensorType":	0,
+					"sensorTypeString":	"Wide",
+					"sensorSettingId":	2,
+					"sensorSettingType":	6,
+					"sensorSettingDefaultZoomRatio": 2.0,
+					"sensorSettingTypeString":	"SENSOR_MODE_QUAD_CFA",
+					"sensorOutSize":	[4096, 3072],
+					"sensorOutformat":	10,
+					"previewCropSize":	[[4096, 3072], [4096, 2304], [4096, 1844], [0, 0]],
+					"previewResizeize":	[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+					"captureCropSize":	[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]],
+					"captureResizeSize":[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]]
+				},
+				{
+					"enable":	0,
+					"sensorType":	0,
+					"sensorTypeString":	"",
+					"sensorSettingId":	0,
+					"sensorSettingType":	0,
+					"sensorSettingDefaultZoomRatio": 0,
+					"sensorSettingTypeString":	"",
+					"sensorOutSize":	[0, 0],
+					"sensorOutformat":	0,
+					"previewCropSize":	[[0, 0], [0, 0], [0, 0], [0, 0]],
+					"previewResizeize":	[[0, 0], [0, 0], [0, 0], [0, 0]],
+					"captureCropSize":	[[0, 0], [0, 0], [0, 0], [0, 0]],
+					"captureResizeSize":	[[0, 0], [0, 0], [0, 0], [0, 0]]
+				},
+				{
+					"enable":	1,
+					"sensorType":	0,
+					"sensorTypeString":	"Wide",
+					"sensorSettingId":	1,
+					"sensorSettingType":	0,
+					"sensorSettingDefaultZoomRatio": 1.0,
+					"sensorSettingTypeString":	"SENSOR_MODE_BINNING_NOEMAL",
+					"sensorOutSize":	[4096, 3072],
+					"sensorOutformat":	10,
+					"previewCropSize":	[[2048, 1536], [2048, 1152], [2048,  924], [0, 0]],
+					"previewResizeize":	[[1440, 1080], [1920, 1080], [572, 904], [0, 0]],
+					"captureCropSize":	[[2048, 1536], [2048, 1152], [2048,  924], [0, 0]],
+					"captureResizeSize":[[4096, 3072], [4096, 2304], [2590, 4096], [0, 0]]
+				},
+				{
+					"enable":	0,
+					"sensorType":	0,
+					"sensorTypeString":	"",
+					"sensorSettingId":	0,
+					"sensorSettingType":	0,
+					"sensorSettingDefaultZoomRatio": 0,
+					"sensorSettingTypeString":	"",
+					"sensorOutSize":	[0, 0],
+					"sensorOutformat":	0,
+					"previewCropSize":	[[0, 0], [0, 0], [0, 0], [0, 0]],
+					"previewResizeize":	[[0, 0], [0, 0], [0, 0], [0, 0]],
+					"captureCropSize":	[[0, 0], [0, 0], [0, 0], [0, 0]],
+					"captureResizeSize":[[0, 0], [0, 0], [0, 0], [0, 0]]
+				}
+			]
+		}
+	],
+	"sensorOISEnableList":	[21, 0, -1, -1, -1, -1, -1, -1],
+	"bokehSuperNightDepthType":	0,
+	"bokehSensorPloicyEnable":	[[0, 0], [0, 0], [0, 0], [0, 0], [1, 0], [0, 0]],
+	"usePolicyMask":	2
+}
+/*com.xiaomi.camera.bokehCaps.info.wide.end*/
+/*com.xiaomi.camera.bokehCaps.stream.wide.start*/
+{
+	"MASK":	23130,
+	"version":	1,
+	"length":	0,
+	"crc32":	0,
+	"num":	5,
+	"StreamInfo":	[
+		{
+			"zoomFocalStart":	0.70,
+			"zoomFocalEnd":	0.70,
+			"num":	2,
+			"stream":	[
+				{
+					"bokehSensorRole":	0,
+					"roleId":	21,
+					"width":	0,
+					"height":	0,
+					"usage":	256,
+					"useCase":	0,
+					"space":	0,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	35,
+					"streamType":	0,
+					"streamProp":	17,
+					"isPhysicalStream":	0,
+					"isZSL":	0,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				},
+				{
+					"bokehSensorRole":	0,
+					"roleId":	21,
+					"width":	4096,
+					"height":	3072,
+					"usage":	3,
+					"useCase":	0,
+					"space":	146931712,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	37,
+					"streamType":	0,
+					"streamProp":	0,
+					"isPhysicalStream":	0,
+					"isZSL":	1,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				}
+			]
+		},
+		{
+			"zoomFocalStart":	1.00,
+			"zoomFocalEnd":	1.00,
+			"num":	2,
+			"stream":	[
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	0,
+					"height":	0,
+					"usage":	256,
+					"useCase":	0,
+					"space":	0,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	35,
+					"streamType":	0,
+					"streamProp":	17,
+					"isPhysicalStream":	0,
+					"isZSL":	0,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				},
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	4096,
+					"height":	3072,
+					"usage":	3,
+					"useCase":	0,
+					"space":	146931712,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	37,
+					"streamType":	0,
+					"streamProp":	0,
+					"isPhysicalStream":	0,
+					"isZSL":	1,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				}
+			]
+		},
+		{
+			"zoomFocalStart":	1.20,
+			"zoomFocalEnd":	1.20,
+			"num":	2,
+			"stream":	[
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	0,
+					"height":	0,
+					"usage":	256,
+					"useCase":	0,
+					"space":	0,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	35,
+					"streamType":	0,
+					"streamProp":	17,
+					"isPhysicalStream":	0,
+					"isZSL":	0,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				},
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	4096,
+					"height":	3072,
+					"usage":	3,
+					"useCase":	0,
+					"space":	146931712,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	37,
+					"streamType":	0,
+					"streamProp":	0,
+					"isPhysicalStream":	0,
+					"isZSL":	1,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				}
+			]
+		},
+		{
+			"zoomFocalStart":	1.50,
+			"zoomFocalEnd":	1.50,
+			"num":	2,
+			"stream":	[
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	0,
+					"height":	0,
+					"usage":	256,
+					"useCase":	0,
+					"space":	0,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	35,
+					"streamType":	0,
+					"streamProp":	17,
+					"isPhysicalStream":	0,
+					"isZSL":	0,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				},
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	4096,
+					"height":	3072,
+					"usage":	3,
+					"useCase":	0,
+					"space":	146931712,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	37,
+					"streamType":	0,
+					"streamProp":	0,
+					"isPhysicalStream":	0,
+					"isZSL":	1,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				}
+			]
+		},
+		{
+			"zoomFocalStart":	2.0,
+			"zoomFocalEnd":	2.0,
+			"num":	3,
+			"stream":	[
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	0,
+					"height":	0,
+					"usage":	256,
+					"useCase":	0,
+					"space":	0,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	35,
+					"streamType":	0,
+					"streamProp":	17,
+					"isPhysicalStream":	0,
+					"isZSL":	0,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				},
+				{
+					"bokehSensorRole":	0,
+					"roleId":	0,
+					"width":	4096,
+					"height":	3072,
+					"usage":	3,
+					"useCase":	0,
+					"space":	146931712,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	37,
+					"streamType":	0,
+					"streamProp":	0,
+					"isPhysicalStream":	0,
+					"isZSL":	1,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				},
+				{
+					"bokehSensorRole":	2,
+					"roleId":	0,
+					"width":	4096,
+					"height":	3072,
+					"usage":	3,
+					"useCase":	0,
+					"space":	146931712,
+					"dynamicRangeProfile":	1,
+					"ratio":	1.33,
+					"format":	37,
+					"streamType":	0,
+					"streamProp":	0,
+					"isPhysicalStream":	0,
+					"isZSL":	1,
+					"isFakeSat":	0,
+					"isRemosaic":	0,
+					"isUltraHDR":	0
+				}
+			]
+		}
+	]
+}
+/*com.xiaomi.camera.bokehCaps.stream.wide.end*/

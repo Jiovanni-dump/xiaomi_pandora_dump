@@ -1,0 +1,100 @@
+{
+	"PolicyControlMaskLocal": "1111110",
+	"BootReclaimTarget": [
+		{
+			"MemorySize": 8000000,
+			"MemAvailable": 4710000,
+			"MemFree": 600000,
+			"MaxReclaimPages": 12500,
+			"MaxRefaultRatio": 0.2,
+ 			"ReservedAnon": 500000,
+ 			"ReservedCache": 4000000,
+ 			"MaxCompacted": 1500000,
+ 			"PollingCount": 30
+ 		},
+ 		{
+ 			"MemorySize": 12000000,
+ 			"MemAvailable": 8200000,
+ 			"MemFree": 800000,
+ 			"MaxReclaimPages": 12500,
+ 			"MaxRefaultRatio": 0.2,
+ 			"ReservedAnon": 500000,
+ 			"ReservedCache": 4000000,
+ 			"MaxCompacted": 1500000,
+ 			"PollingCount": 30
+ 		},
+ 		{
+ 			"MemorySize": 16000000,
+ 			"MemAvailable": 12300000,
+ 			"MemFree": 800000,
+ 			"MaxReclaimPages": 12500,
+ 			"MaxRefaultRatio": 0.2,
+ 			"ReservedAnon": 500000,
+ 			"ReservedCache": 4000000,
+ 			"MaxCompacted": 1500000,
+ 			"PollingCount": 30
+ 		}
+        ],
+	"memitem": [
+	{
+		"name": "anon_pages",
+		"path": "/proc/meminfo",
+		"item": [ "AnonPages:" ]
+	}
+	],
+	"actionitem": [
+	{
+		"name": "drop_cache",
+		"path": "/proc/sys/vm/drop_caches"
+	},
+	{
+		"name": "watermark_scale_factor",
+		"path": "/proc/sys/vm/watermark_scale_factor"
+	},
+	{
+		"name": "global_reclaim",
+		"path": "/proc/global_reclaim"
+	},
+	{
+		"name": "compact_memory",
+		"path": "/proc/sys/vm/compact_memory"
+	},
+ 	{
+ 		"name": "lru_gen",
+ 		"path": "/sys/kernel/mm/lru_gen/enabled"
+ 	}
+	],
+	"policy": [
+	{
+ 		"name": "disable_mglru",
+ 		"memitem":    [ "memitem_init" ],
+ 		"algo":       [ "equal" ],
+ 		"threshold":  [ "1" ],
+ 		"actionitem": [ "lru_gen" ],
+ 		"target":     [ "0" ],
+ 		"mem_size": "",
+ 		"type": "0"
+	},
+	{
+		"name":       "sleep_compact",
+		"memitem":    [ "memitem_misc" ],
+		"algo":       [ "equal" ],
+		"threshold":  [ "1" ],
+		"actionitem": [ "dropcache", "global_reclaim", "compact_memory"],
+		"target":     [ "1", "262144", "1" ],
+		"mem_size":   "",
+		"type":  "1"
+	},
+	{
+		"name":       "screen_off_reclaim",
+		"memitem":    [ "memitem_misc" , "meminfo_MemFree"],
+		"algo":       [ "equal" , "low"],
+		"threshold":  [ "2" , "600000"],
+		"actionitem": [ "global_reclaim", "global_reclaim"],
+		"target":     [ "30012500", "20001250" ],
+		"mem_size":   "",
+		"type":  "1"
+	}
+	],
+	"app_map": []
+}

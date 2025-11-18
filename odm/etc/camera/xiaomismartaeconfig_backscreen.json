@@ -1,0 +1,3518 @@
+{
+    "Description": "Xiaomi SmartAE config file",
+    "phone_code": "Q200",
+    "jsonVersion": "Vibrant_B_20250814_27e3",
+    "DAYLIGHT_TRIGGER": {
+        "daylight_thres": 350
+    },
+    "HD_SCENE_DETEC": {
+        "OUTDOOR": {
+            "luxindex": [ 200, 300, 400 ],
+            "OVEREXP_PIXEL": {
+                "Descrption": "yuv overexp pixel detection thresholds",
+                "y_min": [ 0.992, 0.992, 0.992 ],
+                "en_color_overexp": true,
+                "v_min": [ 0.999, 0.999, 0.999 ],
+                "s_max": [ 0.6, 0.6, 0.6 ],
+                "s_min": [ 0.00, 0.00, 0.00 ],
+                "en_hue_shift": true,
+                "hue_sft_v_min": [ 0.999, 0.999, 0.999 ],
+                "hue_sft_s_min": [ 0.9, 0.9, 0.9 ],
+                "hue_sft_g_min": [ 0.7, 0.65, 0.5 ]
+            },
+            "SOT_ASSIST": {
+                "Descrption": "SOT assist config",
+                "enable": true,
+                "erase_y_ratio_th": 0.005,
+                "sot_erase_list": [ 27, 28 ]
+            },
+            "RAW_OVEREXP": {
+                "Descrption": " raw data overexp threshold",
+                "raw_ratio_th": [ -1.0, -1.0, -1.0 ],
+                "overexp_th": [ 0.95, 0.95, 0.95 ],
+                "adrc_gain_th": [ 6.5, 6.5, 6.5 ]
+            },
+            "LOCAL_OVEREXP": {
+                "Descrption": " yuv local overexp threshold",
+                "blk_overexp_th": [ 0.01, 0.01, 0.01 ],
+                "spot_penalty": [ 0.1, 0.2, 0.5 ],
+                "plane_raw_penalty": [ -0.6, -0.6, -0.6 ],
+                "dis_decay_w": [ 2, 2, 2 ],
+                "dis_decay_s": [ 5, 5, 5 ]
+            },
+            "NORMAL_OVEREXP": {
+                "Descrption": " normal HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.06, 0.05, 0.04 ],
+                "y_dominate_th": [ 0.5, 0.5, 0.5 ]
+            },
+            "COLOR_OVEREXP": {
+                "Descrption": " color HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.10, 0.06, 0.05 ],
+                "color_dominate_th": [ 0.9, 0.9, 0.9 ]
+            },
+            "MIXED_OVEREXP": {
+                "Descrption": " mixed HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.08, 0.06, 0.05 ]
+            },
+            "STABLE": {
+                "local_ratio_in_th": [ 0, 0, 0 ],
+                "local_ratio_out_th": [ -0.3, -0.4, -0.5 ]
+            }
+        },
+        "INDOOR": {
+            "luxindex": [ 200, 300, 400 ],
+            "OVEREXP_PIXEL": {
+                "Descrption": "yuv overexp pixel detection thresholds",
+                "y_min": [ 0.992, 0.992, 0.992 ],
+                "en_color_overexp": true,
+                "v_min": [ 0.999, 0.999, 0.999 ],
+                "s_max": [ 0.6, 0.6, 0.6 ],
+                "s_min": [ 0.00, 0.00, 0.00 ],
+                "en_hue_shift": true,
+                "hue_sft_v_min": [ 0.999, 0.999, 0.999 ],
+                "hue_sft_s_min": [ 0.9, 0.9, 0.9 ],
+                "hue_sft_g_min": [ 0.7, 0.65, 0.5 ]
+            },
+            "RAW_OVEREXP": {
+                "Descrption": " raw data overexp threshold",
+                "raw_ratio_th": [ -1.0, -1.0, -1.0 ],
+                "overexp_th": [ 0.95, 0.95, 0.95 ],
+                "adrc_gain_th": [ 6.5, 6.5, 6.5 ]
+            },
+            "LOCAL_OVEREXP": {
+                "Descrption": " yuv local overexp threshold",
+                "blk_overexp_th": [ 0.01, 0.01, 0.01 ],
+                "spot_penalty": [ 0.1, 0.2, 0.5 ],
+                "plane_raw_penalty": [ -0.6, -0.6, -0.6 ],
+                "dis_decay_w": [ 2, 2, 2 ],
+                "dis_decay_s": [ 5, 5, 5 ]
+            },
+            "NORMAL_OVEREXP": {
+                "Descrption": " normal HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.06, 0.05, 0.04 ],
+                "y_dominate_th": [ 0.5, 0.5, 0.5 ]
+            },
+            "COLOR_OVEREXP": {
+                "Descrption": " color HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.10, 0.06, 0.05 ],
+                "color_dominate_th": [ 0.9, 0.9, 0.9 ]
+            },
+            "MIXED_OVEREXP": {
+                "Descrption": " mixed HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.08, 0.06, 0.05 ]
+            },
+            "STABLE": {
+                "local_ratio_in_th": [ 0, 0, 0 ],
+                "local_ratio_out_th": [ -0.3, -0.4, -0.5 ]
+            }
+        },
+        "CONCERT": {
+            "luxindex": [ 200, 300, 400 ],
+            "OVEREXP_PIXEL": {
+                "Descrption": "yuv overexp pixel detection thresholds",
+                "y_min": [ 0.992, 0.992, 0.992 ],
+                "en_color_overexp": true,
+                "v_min": [ 0.999, 0.999, 0.999 ],
+                "s_max": [ 0.6, 0.6, 0.6 ],
+                "s_min": [ 0.00, 0.00, 0.00 ],
+                "en_hue_shift": true,
+                "hue_sft_v_min": [ 0.999, 0.999, 0.999 ],
+                "hue_sft_s_min": [ 0.9, 0.9, 0.9 ],
+                "hue_sft_g_min": [ 0.7, 0.65, 0.5 ]
+            },
+            "RAW_OVEREXP": {
+                "Descrption": " raw data overexp threshold",
+                "raw_ratio_th": [ -1.0, -1.0, -1.0 ],
+                "overexp_th": [ 0.95, 0.95, 0.95 ],
+                "adrc_gain_th": [ 6.5, 6.5, 6.5 ]
+            },
+            "LOCAL_OVEREXP": {
+                "Descrption": " yuv local overexp threshold",
+                "blk_overexp_th": [ 0.01, 0.01, 0.01 ],
+                "spot_penalty": [ 0.1, 0.2, 0.5 ],
+                "plane_raw_penalty": [ -0.6, -0.6, -0.6 ],
+                "dis_decay_w": [ 2, 2, 2 ],
+                "dis_decay_s": [ 5, 5, 5 ]
+            },
+            "NORMAL_OVEREXP": {
+                "Descrption": " normal HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.06, 0.05, 0.04 ],
+                "y_dominate_th": [ 0.5, 0.5, 0.5 ]
+            },
+            "COLOR_OVEREXP": {
+                "Descrption": " color HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.10, 0.06, 0.05 ],
+                "color_dominate_th": [ 0.9, 0.9, 0.9 ]
+            },
+            "MIXED_OVEREXP": {
+                "Descrption": " mixed HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.08, 0.06, 0.05 ]
+            },
+            "STABLE": {
+                "local_ratio_in_th": [ 0, 0, 0 ],
+                "local_ratio_out_th": [ -0.5, -0.5, -0.5 ]
+            },
+            "ADDITIONAL": {
+                "WIDE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "UW": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "ULTRATELE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "F_WIDE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                }
+            }
+
+        },
+        "FIRE": {
+            "luxindex": [ 200, 300, 400 ],
+            "OVEREXP_PIXEL": {
+                "Descrption": "yuv overexp pixel detection thresholds",
+                "y_min": [ 0.992, 0.992, 0.992 ],
+                "en_color_overexp": true,
+                "v_min": [ 0.999, 0.999, 0.999 ],
+                "s_max": [ 0.6, 0.6, 0.6 ],
+                "s_min": [ 0.00, 0.00, 0.00 ],
+                "en_hue_shift": true,
+                "hue_sft_v_min": [ 0.999, 0.999, 0.999 ],
+                "hue_sft_s_min": [ 0.9, 0.9, 0.9 ],
+                "hue_sft_g_min": [ 0.7, 0.65, 0.5 ]
+            },
+            "RAW_OVEREXP": {
+                "Descrption": " raw data overexp threshold",
+                "raw_ratio_th": [ -1.0, -1.0, -1.0 ],
+                "overexp_th": [ 0.95, 0.95, 0.95 ],
+                "adrc_gain_th": [ 6.5, 6.5, 6.5 ]
+            },
+            "LOCAL_OVEREXP": {
+                "Descrption": " yuv local overexp threshold",
+                "blk_overexp_th": [ 0.01, 0.01, 0.01 ],
+                "spot_penalty": [ 0.1, 0.2, 0.5 ],
+                "plane_raw_penalty": [ -0.6, -0.6, -0.6 ],
+                "dis_decay_w": [ 2, 2, 2 ],
+                "dis_decay_s": [ 5, 5, 5 ]
+            },
+            "NORMAL_OVEREXP": {
+                "Descrption": " normal HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.06, 0.05, 0.04 ],
+                "y_dominate_th": [ 0.5, 0.5, 0.5 ]
+            },
+            "COLOR_OVEREXP": {
+                "Descrption": " color HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.10, 0.06, 0.05 ],
+                "color_dominate_th": [ 0.9, 0.9, 0.9 ]
+            },
+            "MIXED_OVEREXP": {
+                "Descrption": " mixed HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.08, 0.06, 0.05 ]
+            },
+            "STABLE": {
+                "local_ratio_in_th": [ 0, 0, 0 ],
+                "local_ratio_out_th": [ -0.5, -0.5, -0.5 ]
+            },
+            "ADDITIONAL": {
+                "WIDE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "UW": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "ULTRATELE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "F_WIDE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                }
+            }
+
+        },
+        "FIREWORKS": {
+            "luxindex": [ 200, 300, 400 ],
+            "OVEREXP_PIXEL": {
+                "Descrption": "yuv overexp pixel detection thresholds",
+                "y_min": [ 0.992, 0.992, 0.992 ],
+                "en_color_overexp": true,
+                "v_min": [ 0.999, 0.999, 0.999 ],
+                "s_max": [ 0.6, 0.6, 0.6 ],
+                "s_min": [ 0.00, 0.00, 0.00 ],
+                "en_hue_shift": true,
+                "hue_sft_v_min": [ 0.999, 0.999, 0.999 ],
+                "hue_sft_s_min": [ 0.9, 0.9, 0.9 ],
+                "hue_sft_g_min": [ 0.7, 0.65, 0.5 ]
+            },
+            "RAW_OVEREXP": {
+                "Descrption": " raw data overexp threshold",
+                "raw_ratio_th": [ -1.0, -1.0, -1.0 ],
+                "overexp_th": [ 0.95, 0.95, 0.95 ],
+                "adrc_gain_th": [ 6.5, 6.5, 6.5 ]
+            },
+            "LOCAL_OVEREXP": {
+                "Descrption": " yuv local overexp threshold",
+                "blk_overexp_th": [ 0.01, 0.01, 0.01 ],
+                "spot_penalty": [ 0.1, 0.2, 0.5 ],
+                "plane_raw_penalty": [ -0.6, -0.6, -0.6 ],
+                "dis_decay_w": [ 2, 2, 2 ],
+                "dis_decay_s": [ 5, 5, 5 ]
+            },
+            "NORMAL_OVEREXP": {
+                "Descrption": " normal HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.06, 0.05, 0.04 ],
+                "y_dominate_th": [ 0.5, 0.5, 0.5 ]
+            },
+            "COLOR_OVEREXP": {
+                "Descrption": " color HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.10, 0.06, 0.05 ],
+                "color_dominate_th": [ 0.9, 0.9, 0.9 ]
+            },
+            "MIXED_OVEREXP": {
+                "Descrption": " mixed HDR overexp threshold",
+                "global_ratio_th": [ 0.1, 0.1, 0.1 ],
+                "local_ratio_th": [ 0.08, 0.06, 0.05 ]
+            },
+            "STABLE": {
+                "local_ratio_in_th": [ 0, 0, 0 ],
+                "local_ratio_out_th": [ -0.5, -0.5, -0.5 ]
+            },
+            "ADDITIONAL": {
+                "WIDE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "UW": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "ULTRATELE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                },
+                "F_WIDE": {
+                    "NORMAL_OVEREXP": {
+                        "Descrption": " normal HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_y_dominate_th": 0
+                    },
+                    "COLOR_OVEREXP": {
+                        "Descrption": " color HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0,
+                        "addi_color_dominate_th": 0
+                    },
+                    "MIXED_OVEREXP": {
+                        "Descrption": " mixed HDR overexp additional threshold",
+                        "addi_global_ratio_th": 0,
+                        "addi_local_ratio_th": 0
+                    }
+                }
+            }
+
+        }
+
+
+    },
+    "NEW_HDR_TRIGGER": {
+        "max_valid_zoom": 120.0,
+        "BOKEH": {
+            "NON-MOTION": {
+                "WIDE": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.25,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "UW": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "ULTRATELE": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "F_WIDE": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                }
+            },
+            "MOTION": {
+                "WIDE": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.25,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "UW": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "ULTRATELE": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "F_WIDE": {
+                    "OUTDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR": {
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                }
+            }
+        },
+        "NORMAL": {
+            "NON-MOTION": {
+                "WIDE": {
+                    "OUTDOOR": {
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":{
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.25,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "UW": {
+                    "OUTDOOR": {
+                        "FACE":{
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":  {
+                        "FACE":{
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "ULTRATELE": {
+                    "OUTDOOR": {
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":{
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "F_WIDE":  {
+                    "OUTDOOR": {
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":{
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                }
+            },
+            "MOTION":  {
+                "WIDE": {
+                    "OUTDOOR": {
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":{
+                        "FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.25,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": -0.45
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "UW": {
+                    "OUTDOOR": {
+                        "FACE":{
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":  {
+                        "FACE":{
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": -0.5,
+                                        "addi_local_ratio_th": -0.5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 1,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "ULTRATELE": {
+                    "OUTDOOR": {
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":{
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 7,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0.5,
+                                        "addi_local_ratio_th": 5
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                },
+                "F_WIDE":  {
+                    "OUTDOOR": {
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    },
+                    "INDOOR":{
+                        "FACE":  {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        },
+                        "NON-FACE": {
+                            "zoom_ratio": [ 0.5 ],
+                            "ZOOM_SECTION": [
+                                {
+                                    "NORMAL_OVEREXP": {
+                                        "Descrption": " normal HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_y_dominate_th": 0
+                                    },
+                                    "COLOR_OVEREXP": {
+                                        "Descrption": " color HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0,
+                                        "addi_color_dominate_th": 0
+                                    },
+                                    "MIXED_OVEREXP": {
+                                        "Descrption": " mixed HDR overexp additional threshold",
+                                        "addi_global_ratio_th": 0,
+                                        "addi_local_ratio_th": 0
+                                    },
+                                    "DEAD_DARK_DETECT": {
+                                        "dead_dark_enable": true,
+                                        "dark_pixel_thres": 10,
+                                        "dark_boost_gain_thres": 1.5,
+                                        "dark_lux_thres": 300,
+                                        "dark_ratio_thres": 0.05
+                                    }
+                                }
+
+                            ]
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+    },
+
+    "SE_TRIGGER": {
+        "Description": "SE Trigger config",
+        "BOKEH": {
+            "NON-MOTION": {
+                "WIDE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 465, 510 ],
+                    "indoor_thres": 419,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 395,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 425,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.005
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 360,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.56,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 382,
+                            "light_thres": 22,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.64,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 440,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.002
+                        }
+                    ]
+                },
+                "UW": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 465, 510 ],
+                    "indoor_thres": 419,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 400,
+                            "light_thres": 14,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 349,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.23,
+                            "middle_ratio_thres": 0.59,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 380,
+                            "light_thres": 12,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.28,
+                            "middle_ratio_thres": 0.55,
+                            "bright_ratio_thres": 0.003
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 420,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ]
+                },
+                "ULTRATELE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 460, 460 ],
+                    "indoor_thres": 440,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 384,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 420,
+                            "light_thres": 15,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.1,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.21,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 405,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.2,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 435,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.24,
+                            "middle_ratio_thres": 0.46,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                },
+                "F_WIDE": {
+                    "extreme_dark_zoom": [ 0.5 ],
+                    "extreme_dark_lux_index_thres": [ 475 ],
+                    "indoor_thres": 0,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                }
+            },
+
+            "MOTION": {
+                "WIDE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 465, 510 ],
+                    "indoor_thres": 419,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 395,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 425,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.005
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 360,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.56,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 382,
+                            "light_thres": 22,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.64,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 440,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.002
+                        }
+                    ]
+                },
+                "UW": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 401, 510 ],
+                    "indoor_thres": 390,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 400,
+                            "light_thres": 14,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 349,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.23,
+                            "middle_ratio_thres": 0.59,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 380,
+                            "light_thres": 12,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.28,
+                            "middle_ratio_thres": 0.55,
+                            "bright_ratio_thres": 0.003
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 420,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ]
+                },
+                "ULTRATELE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 460, 460 ],
+                    "indoor_thres": 440,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 384,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 420,
+                            "light_thres": 15,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.1,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.21,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 405,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.2,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 435,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.24,
+                            "middle_ratio_thres": 0.46,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                },
+                "F_WIDE": {
+                    "extreme_dark_zoom": [ 0.5 ],
+                    "extreme_dark_lux_index_thres": [ 475 ],
+                    "indoor_thres": 0,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                }
+            }
+        },
+        "NORMAL": {
+            "NON-MOTION": {
+                "WIDE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 465, 510 ],
+                    "indoor_thres": 419,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 395,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 425,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.005
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 360,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.56,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 382,
+                            "light_thres": 22,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.64,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 440,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.002
+                        }
+                    ]
+                },
+                "UW": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 465, 510 ],
+                    "indoor_thres": 419,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 400,
+                            "light_thres": 14,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 349,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.23,
+                            "middle_ratio_thres": 0.59,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 380,
+                            "light_thres": 12,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.28,
+                            "middle_ratio_thres": 0.55,
+                            "bright_ratio_thres": 0.003
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 420,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ]
+                },
+                "ULTRATELE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 460, 460 ],
+                    "indoor_thres": 440,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 384,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 420,
+                            "light_thres": 15,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.1,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.21,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 405,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.2,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 435,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.24,
+                            "middle_ratio_thres": 0.46,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                },
+                "F_WIDE": {
+                    "extreme_dark_zoom": [ 0.5 ],
+                    "extreme_dark_lux_index_thres": [ 475 ],
+                    "indoor_thres": 0,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                }
+            },
+
+            "MOTION": {
+                "WIDE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 465, 510 ],
+                    "indoor_thres": 419,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 395,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 425,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.005
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 360,
+                            "light_thres": 25,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.56,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 382,
+                            "light_thres": 22,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.13,
+                            "middle_ratio_thres": 0.64,
+                            "bright_ratio_thres": 0.004
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 440,
+                            "light_thres": 20,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.002
+                        }
+                    ]
+                },
+                "UW": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 401, 510 ],
+                    "indoor_thres": 390,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 400,
+                            "light_thres": 14,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.68,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 349,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.23,
+                            "middle_ratio_thres": 0.59,
+                            "bright_ratio_thres": 0.005
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 380,
+                            "light_thres": 12,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.28,
+                            "middle_ratio_thres": 0.55,
+                            "bright_ratio_thres": 0.003
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 420,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.14,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.003
+                        }
+                    ]
+                },
+                "ULTRATELE": {
+                    "extreme_dark_zoom": [ 0.6, 10 ],
+                    "extreme_dark_lux_index_thres": [ 460, 460 ],
+                    "indoor_thres": 440,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 384,
+                            "light_thres": 21,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.08,
+                            "middle_ratio_thres": 0.5,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 420,
+                            "light_thres": 15,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.1,
+                            "middle_ratio_thres": 0.65,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 370,
+                            "light_thres": 26,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.21,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 405,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.2,
+                            "middle_ratio_thres": 0.52,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 2",
+                            "force_trigger_adrc": 3,
+                            "lux_index_thres": 435,
+                            "light_thres": 10,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.24,
+                            "middle_ratio_thres": 0.46,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                },
+                "F_WIDE": {
+                    "extreme_dark_zoom": [ 0.5 ],
+                    "extreme_dark_lux_index_thres": [ 475 ],
+                    "indoor_thres": 0,
+                    "face_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ],
+                    "nonface_check": [
+                        {
+                            "Description": "range 0",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 435,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        },
+                        {
+                            "Description": "range 1",
+                            "force_trigger_adrc": 4.5,
+                            "lux_index_thres": 800,
+                            "light_thres": 16,
+                            "real_adrc_thres": 0.9,
+                            "dead_dark_thres": 40,
+                            "mid_tone_thres0": 80,
+                            "mid_tone_thres1": 200,
+                            "over_exp_thres": 234,
+                            "dark_ratio_thres": 0.15,
+                            "middle_ratio_thres": 0.6,
+                            "bright_ratio_thres": 0.01
+                        }
+                    ]
+                }
+            }
+        }
+
+    },
+    "ELL_TRIGGER": {
+        "Description": "ELL Trigger config",
+
+        "WIDE": {
+            "lux_index_thres": 590
+        },
+        "UW": {
+            "lux_index_thres": 560
+        },
+        "ULTRATELE": {
+            "lux_index_thres": 570
+        },
+        "F_WIDE": {
+            "lux_index_thres": 590
+        }
+    },
+    "TRIGGER_STABLE": {
+        "stable_control_en": true,
+        "dark_pixel_thres": 40,
+        "dark_ratio_thres": 0.08,
+        "to_se_pid_thres": -0.5,
+        "to_hdr_pid_thres": 0.2,
+        "pid_max": 1.5,
+        "pid_min": -2,
+        "hysteresis": 10,
+        "pid_kp": 1.5,
+        "pid_ki": 1.0,
+        "pid_kd": 2
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

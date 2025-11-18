@@ -1,0 +1,313 @@
+{
+    "HOOK_GROUP": [
+        {
+            "group_id"  : 0,
+            "group_name": "SensorProbeI2CError",
+            "case"      : [0]
+        },
+        {
+            "group_id"  : 1,
+            "group_name" : "OISI2CError",
+            "case"      : [1]
+        },
+        {
+            "group_id"  : 2,
+            "group_name" : "ActuatorI2CError",
+            "case"      : [2]
+        },
+        {
+            "group_id"  : 3,
+            "group_name" : "FlashOnInitializeFail",
+            "case"      : [3]
+        },
+        {
+            "group_id"  : 4,
+            "group_name" : "NCSSensorProbeFail",
+            "case"      : [4]
+        },
+        {
+            "group_id"  : 5,
+            "group_name" : "OisRegisterProviderFail",
+            "case"      : [5]
+        },
+        {
+            "group_id"  : 6,
+            "group_name" : "PostGyroDataFail",
+            "case"      : [6]
+        },
+        {
+            "group_id"  : 7,
+            "group_name" : "ReadLensPositionDataFail",
+            "case"      : [7]
+        },
+        {
+            "group_id"  : 8,
+            "group_name" : "ProbeEEPROMFail",
+            "case"      : [8]
+        },
+        {
+            "group_id"  : 9,
+            "group_name" : "APOisI2CFail",
+            "case"      : [9]
+        },
+        {
+            "group_id"  : 10,
+            "group_name" : "CSLIoctlFail",
+            "case"      : [10]
+        },
+        {
+            "group_id"  : 11,
+            "group_name" : "CSLMessageHandler",
+            "case"      : [11]
+        },
+        {
+            "group_id"  : 12,
+            "group_name" : "OISStuck",
+            "case"      : [12]
+        },
+        {
+            "group_id"  : 13,
+            "group_name" : "OISHallInvalid",
+            "case"      : [13]
+        },
+        {
+            "group_id"  : 14,
+            "group_name" : "EEPROMVerifyChecksumFail",
+            "case"      : [14]
+        },
+        {
+            "group_id"  : 15,
+            "group_name" : "ZoomProbeFail",
+            "case"      : [15]
+        }
+    ],
+    "HOOK_CASE" : [
+        {
+            "case_id"   : 0,
+            "case_name" : "SensorProbeI2CError",
+            "hook_function" : ["SensorProbeHook"]
+        },
+        {
+            "case_id"   : 1,
+            "case_name" : "OISI2CError",
+            "hook_function" : ["OISCreateI2CInfoCmdHook"]
+        },
+        {
+            "case_id"   : 2,
+            "case_name" : "ActuatorI2CError",
+            "hook_function" : ["ActuatorDataHook"]
+        },
+        {
+            "case_id"  : 3,
+            "case_name" : "FlashOnInitializeFail",
+            "hook_function" : ["FlashOnInitializeHook"]
+        },
+        {
+            "case_id"  : 4,
+            "case_name" : "NCSSensorProbeFail",
+            "hook_function" : ["NCSSensorProbeHook"]
+        },
+        {
+            "case_id"  : 5,
+            "case_name" : "OisRegisterProviderFail",
+            "hook_function" : ["RegisterOISProviderHook"]
+        },
+        {
+            "case_id"  : 6,
+            "case_name" : "PostGyroDataFail",
+            "hook_function" : ["PostGyroDataHook"]
+        },
+        {
+            "case_id"  : 7,
+            "case_name" : "ReadLensPositionDataFail",
+            "hook_function" : ["ReadLensPositionDataHook"]
+        },
+        {
+            "case_id"  : 8,
+            "case_name" : "ProbeEEPROMFail",
+            "hook_function" : ["ProbeEEPROMHook"]
+        },
+        {
+            "case_id"  : 9,
+            "case_name" : "APOisI2CFail",
+            "hook_function" : ["SendOisModeRequestHook"]
+        },
+        {
+            "case_id"  : 10,
+            "case_name" : "CSLIoctlFail",
+            "hook_function" : ["CSLHwInternalDefaultIoctlHook"]
+        },
+        {
+            "case_id"   : 11,
+            "case_name" : "CSLMessageHandler",
+            "hook_function" : ["CSLMessageHandlerHook"]
+        },
+        {
+            "case_id"   : 12,
+            "case_name" : "OISStuck",
+            "hook_function" : ["ConfigureOISModeHook"]
+        },
+        {
+            "case_id"   : 13,
+            "case_name" : "OISHallInvalid",
+            "hook_function" : ["FormatLensPositionDataHook"]
+        },
+        {
+            "case_id"   : 14,
+            "case_name" : "EEPROMVerifyChecksumFail",
+            "hook_function" : ["EEPROMVerifyChecksumHook"]
+        },
+        {
+            "case_id"   : 15,
+            "case_name" : "ZoomProbeFail",
+            "hook_function" : ["ZoomDataConstructorHook"]
+        }
+    ],
+    "HOOK_FUNCTION":
+    [
+        {
+            "hook_name": "SensorProbeHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol": "_ZN4CamX21ImageSensorModuleData5ProbeEPiS1_",
+            "target_function_symbol": "_ZN4CamX15SensorProbeHookEPvPiS1_",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "OISCreateI2CInfoCmdHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX7OISData16CreateI2CInfoCmdEP13CSLOISI2CInfoi",
+            "target_function_symbol" : "_ZN4CamX23OISCreateI2CInfoCmdHookEPvP13CSLOISI2CInfoi",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "ActuatorDataHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX12ActuatorDataC2EPNS_18ActuatorDriverDataEi",
+            "target_function_symbol" : "_ZN4CamX16ActuatorDataHookEPvPNS_18ActuatorDriverDataEi",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "FlashOnInitializeHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX5Flash18InitializeHardwareEPNS_22InitializeHardwareDataE",
+            "target_function_symbol" : "_ZN4CamX21FlashOnInitializeHookEPvPNS_22InitializeHardwareDataE",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "NCSSensorProbeHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol": "_ZN4CamX16NCSDirectChannel28GetSuidThroughGenericChannelERNS_15ChannelResourceEPNSt3__16vectorINS3_4pairImmEENS3_9allocatorIS6_EEEE",
+            "target_function_symbol": "_ZN4CamX18NCSSensorProbeHookEPvRNS_15ChannelResourceEPNSt3__16vectorINS3_4pairImmEENS3_9allocatorIS6_EEEE",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "RegisterOISProviderHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX7OISData19RegisterOISProviderEj",
+            "target_function_symbol" : "_ZN4CamX23RegisterOISProviderHookEPvj",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "PostGyroDataHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX12NCSIntfQSEE212PostGyroDataENS_13NCSSensorTypeERNSt3__16vectorIP15sensors_event_tNS2_9allocatorIS5_EEEE",
+            "target_function_symbol" : "_ZN4CamX16PostGyroDataHookEPvNS_13NCSSensorTypeERNSt3__16vectorIP15sensors_event_tNS2_9allocatorIS5_EEEE",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "ReadLensPositionDataHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX3OIS20ReadLensPositionDataEv",
+            "target_function_symbol" : "_ZN4CamX24ReadLensPositionDataHookEPv",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "ProbeEEPROMHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol": "_ZN4CamX21ImageSensorModuleData11ProbeEEPROMEPNS_12HwSensorInfoEPKNS_16HwDeviceTypeInfoEPv",
+            "target_function_symbol": "_ZN4CamX15ProbeEEPROMHookEPvPNS_12HwSensorInfoEPKNS_16HwDeviceTypeInfoES0_",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "SendOisModeRequestHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol": "_ZN4CamX16NCSDirectChannel18SendOisModeRequestENS_13NCSSensorTypeERNS_9SensorUidEPNS_10OisMgrModeE",
+            "target_function_symbol": "_ZN4CamX22SendOisModeRequestHookEPvNS_13NCSSensorTypeERNS_9SensorUidEPNS_10OisMgrModeE",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "CSLHwInternalDefaultIoctlHook",
+            "source_lib_name": "/vendor/lib64/libcamxcslhw.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol": "_Z25CSLHwInternalDefaultIoctlPK11CSLHwDevicemPv",
+            "target_function_symbol": "_ZN4CamX29CSLHwInternalDefaultIoctlHookEPK11CSLHwDevicemPv",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "CSLMessageHandlerHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol": "_ZN4CamX8Pipeline17CSLMessageHandlerEPvP10CSLMessage",
+            "target_function_symbol": "_ZN4CamX21CSLMessageHandlerHookEPvP10CSLMessage",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "ConfigureOISModeHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX3OIS16ConfigureOISModeENS_7OISModeE",
+            "target_function_symbol" : "_ZN4CamX20ConfigureOISModeHookEPvNS_7OISModeE",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "FormatLensPositionDataHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX7OISData22FormatLensPositionDataEPNS_19OISLensPositionDataEPhm",
+            "target_function_symbol" : "_ZN4CamX26FormatLensPositionDataHookEPvPNS_19OISLensPositionDataEPhm",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "EEPROMVerifyChecksumHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX10EEPROMData20EEPROMVerifyChecksumEPhi",
+            "target_function_symbol" : "_ZN4CamX24EEPROMVerifyChecksumHookEPvPhi",
+            "function_type": 1,
+            "hook_type" : 2
+        },
+        {
+            "hook_name" : "ZoomDataConstructorHook",
+            "source_lib_name": "/vendor/lib64/hw/camera.qcom.core.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.camx.so",
+            "source_function_symbol" : "_ZN4CamX8ZoomDataC1EPNS_14ZoomDriverDataEPNS_12HwSensorInfoEPKNS_16HwDeviceTypeInfoEi",
+            "target_function_symbol" : "_ZN4CamX23ZoomDataConstructorHookEPvPNS_14ZoomDriverDataEPNS_12HwSensorInfoEPKNS_16HwDeviceTypeInfoEi",
+            "function_type": 2,
+            "hook_type" : 2
+        }
+    ]
+}

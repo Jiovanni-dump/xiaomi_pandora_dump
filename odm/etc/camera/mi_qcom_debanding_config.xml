@@ -1,0 +1,19 @@
+<configuration>
+    <dump_path>../data/output/</dump_path> <!-- 添加 dump_path 参数 -->
+    <dump_enable>0</dump_enable> <!-- 添加 dump_enable 参数 -->
+    <num_strips>8</num_strips> <!-- 添加 num_strips 参数 -->
+    <resize_ratio>64.0</resize_ratio> <!-- 添加 resize_ratio 参数 -->
+    <kernel_size>3</kernel_size> <!-- 添加 kernel_size 参数 -->
+    <gaussian_sigma>1.0</gaussian_sigma> <!-- 添加 gaussian_sigma 参数 -->
+    <diff_thresh>50</diff_thresh> <!-- 添加 diff_thresh 参数 -->
+    <highlight_thresh>220</highlight_thresh> <!-- 添加 highlight_thresh 参数 -->
+    <lowlight_thresh>3</lowlight_thresh> <!-- 添加 lowlight_thresh 参数 -->
+    <ratio_g_thresh>1.8</ratio_g_thresh> <!-- 添加 ratio_g_thresh 参数 -->
+    <ratio_g_thresh_low>0.3</ratio_g_thresh_low> <!-- 添加 ratio_g_thresh_low 参数 -->
+    <ratio_b_thresh>1.8</ratio_b_thresh> <!-- 添加 ratio_b_thresh 参数 -->
+    <ratio_b_thresh_low>0.3</ratio_b_thresh_low> <!-- 添加 ratio_b_thresh_low 参数 -->
+    <ratio_r_thresh>1.8</ratio_r_thresh> <!-- 添加 ratio_r_thresh 参数 -->
+    <ratio_r_thresh_low>0.3</ratio_r_thresh_low> <!-- 添加 ratio_r_thresh_low 参数 -->
+    <ratio_threshold_percent>0.1</ratio_threshold_percent> <!-- 添加 ratio_threshold_percent 参数 -->
+    <ratio_threshold>4</ratio_threshold> <!-- 添加 ratio_threshold 参数 -->
+</configuration>

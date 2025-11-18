@@ -1,0 +1,134 @@
+{
+    "PipelineName": "quickviewsnapshot",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.swjpegencode",
+            "NodeInstance": "SwJpegInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.movieeffect",
+            "NodeInstance": "MovieEffectInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.yuvresize",
+            "NodeInstance": "QuickviewYuvResizeInstance0",
+            "NodeProperty":[
+                {
+                  "NodePropertyName":"NodeMask",
+                  "NodePropertyValue":4 //SCALE_MODE
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.gpu",
+            "NodeInstance": "QuickviewGPUFlipInstance",
+            "NodeProperty":[
+                {
+                  "NodePropertyName":"pluginMode",
+                  "NodePropertyValue":0 //GPUFlip
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.watermark",
+            "NodeInstance": "QuickviewWatermarkInstance0",
+            "NodeProperty":[
+                {
+                  "NodePropertyName":"NodeMask",
+                  "NodePropertyValue":128 //CUSTOMSIZE_MODE
+                },
+                {
+                    "NodePropertyName": "pluginMode",
+                    "NodePropertyValue": 1 //QuickviewMode
+                }
+              ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.filter",
+            "NodeInstance": "QuickviewFilterInstance0"
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+          {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewFilterInstance0",
+                "BufferType": "Gralloc"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewFilterInstance0",
+                "BufferType": "Gralloc"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MovieEffectInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MovieEffectInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewGPUFlipInstance",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewGPUFlipInstance",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewYuvResizeInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewYuvResizeInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewWatermarkInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "QuickviewWatermarkInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+              "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SwJpegInstance0",
+                  "PortFormat": "YUV420_NV12"
+              }
+          },
+          {
+              "SrcPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SwJpegInstance0",
+                  "PortFormat": "BLOB"
+              },
+              "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SinkBuffer"
+              }
+          }
+        ]
+    }
+}

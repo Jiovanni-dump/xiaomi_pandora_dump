@@ -1,0 +1,41 @@
+{
+    "name":"SMotion",
+    "version":"1.0",
+    "product":"pandora",
+
+    "SUPER CORE": {
+        "MODE":10001,
+        "ALL_DEFAULT_ENABLE":true,
+	    "DEFAULT":true,
+        "APP":[
+        ],
+        "LEVEL":1  // range[1, 2, 3]
+    },
+
+    "SUPER CHIP": {
+        "MODE":10002,
+        "ALL_DEFAULT_ENABLE":false,
+	    "DEFAULT":true,
+        "APP":[
+        ]
+    },
+
+    "SUPER ALGO": {
+        "MODE":10003,
+        "ALL_DEFAULT_ENABLE":false,
+        "DEFAULT":true,
+        "APP":[
+        ],
+        "LEVEL":2  // range[1, 2, 3]
+    },
+
+    "SUPER_MISTOUCH": {
+        "MODE":10004,
+        "ALL_DEFAULT_ENABLE":true,
+        "DEFAULT":true,
+        "APP":[
+        ],
+        "LEVEL":2  // range[1, 2, 3]
+    }
+}
+

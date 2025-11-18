@@ -1,0 +1,817 @@
+{
+	"veri": {
+		"vericode": "6b224d1a"
+	},
+	"version": {
+		"version": "1.0.0.2025090101_#24251-1"
+	},
+    "parameters": {
+		"front_parameters": {
+			"ABS_KEY_AI_EFFECT": {
+				"ABS_AIBEAUTY_EFFECT_NATIVE": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"default_value": 30
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"default_value": 20
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"default_value": 20
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"default_value": 60
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"default_value": 30
+					},
+					"ABS_KEY_SHAPE_HEAD_SHRINK": {
+						"default_value": 20
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"default_value": 20
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"default_value": 40
+					}
+				},
+				"ABS_AIBEAUTY_EFFECT_MOISTENING": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"default_value": 45
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"default_value": 30
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"default_value": 20
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"default_value": 60
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"default_value": 30
+					},
+					"ABS_KEY_SHAPE_HEAD_SHRINK": {
+						"default_value": 20
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"default_value": 20
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"default_value": 40
+					}
+				},
+				"ABS_AIBEAUTY_EFFECT_PROTOGENIC": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"default_value": 40
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"default_value": 20
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"default_value": 20
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"default_value": 60
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"default_value": 30
+					},
+					"ABS_KEY_SHAPE_HEAD_SHRINK": {
+						"default_value": 20
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"default_value": 10
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"default_value": 40
+					}
+				},
+				"ABS_AIBEAUTY_EFFECT_METROSEXUAL": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"default_value": 35
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"default_value": 0
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"default_value": 40
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"default_value": 40
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"default_value": 20
+					},
+					"ABS_KEY_SHAPE_HEAD_SHRINK": {
+						"default_value": 0
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"default_value": 10
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"default_value": 40
+					}
+				},
+				"ABS_AIBEAUTY_EFFECT_YOUTH": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"default_value": 45
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"default_value": 0
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"default_value": 40
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"default_value": 40
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"default_value": 30
+					},
+					"ABS_KEY_SHAPE_HEAD_SHRINK": {
+						"default_value": 10
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"default_value": 20
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"default_value": 40
+					}
+				}
+			},
+			"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+				"default_value": 40,
+				"male_value": 30
+			},
+			"ABS_KEY_MAKEUP_DENSITY": {
+				"male_ratio": 0.5
+			},
+			"ABS_KEY_SHAPE_FACE_SLENDER": {
+				"formula_ratio": 0.5
+			},
+			"ABS_KEY_BASIC_TEETH_WHITEN": {
+				"formula_ratio": 0.8
+			},
+			"front_cap_parameters": {
+				"ABS_KEY_BASIC_ANTI_SHINE": {
+					"luxindex_threshold_mid":300,
+					"luxindex_threshold_max":350,
+					"value_mid":0,
+					"value_max":100
+				},
+				"ABS_KEY_BASIC_SKIN_SOFTEN": {
+					"slider_mid":40,
+					"value_mid":20,
+					"value_max":80,
+					"male_ratio":0.7
+				},
+				"ABS_KEY_BASIC_DE_BLEMISH": {
+					"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+					"slider_mid":40,
+					"value_mid":60,
+					"value_max":100,
+					"male_ratio":0.4
+				},
+				"ABS_KEY_BASIC_REMOVE_NECK_WRINKLES": {
+					"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+					"slider_mid":1,
+					"value_mid":100,
+					"value_max":100,
+					"male_ratio":0.5
+				},
+				"ABS_KEY_BASIC_WRINKLE_REDUCTION": {
+					"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+					"formula_ratio": 1
+				},
+				"ABS_KEY_BASIC_SKIN_TONE_COLOR_EVEN": {
+					"depend_key": "ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE",
+					"formula_ratio": 1
+				}
+			},
+			"front_pre_parameters": {
+				"ABS_KEY_BASIC_SKIN_SOFTEN": {
+					"slider_mid":40,
+					"value_mid":20,
+					"value_max":80,
+					"male_ratio":0.7
+				}
+			}
+		},
+		"rear_parameters": {
+			"rear_slider_parameters": {
+				"rear_slider_cap_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":100,
+						"male_ratio":0.3
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":10,
+						"value_max":100,
+						"male_ratio":0.4
+					},
+					"ABS_KEY_BASIC_ANTI_SHINE": {
+						"luxindex_threshold_mid":300,
+						"luxindex_threshold_max":350,
+						"value_mid":0,
+						"value_max":100
+					}
+				},
+				"rear_slider_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":15,
+						"value_mid":0,
+						"value_max":100,
+						"male_ratio":0.5
+					}
+				}
+			},
+			"rear_portrait_parameters_native": {
+				"rear_portrait_cap_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":100,
+						"male_ratio":0.3
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.4
+					},
+					"ABS_KEY_BASIC_REMOVE_NECK_WRINKLES": {
+						"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+						"slider_mid":1,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+						"default_value":40,
+						"male_value":30
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.4
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":50,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_SHAPE_FACE_SHRINK_GLOBAL": {
+						"slider_mid":30,
+						"value_mid":30,
+						"value_max":60,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"formula_ratio":1,
+						"is_makeup": 1
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":60,
+						"male_ratio":0.5,
+						"is_makeup": 1
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_BASIC_BLACKHEAD_REMOVAL": {
+						"default_value":100,
+						"male_value":50
+					},
+					"ABS_KEY_BASIC_ANTI_SHINE": {
+						"luxindex_threshold_mid":300,
+						"luxindex_threshold_max":350,
+						"value_mid":0,
+						"value_max":100
+					}
+				},
+				"rear_portrait_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":15,
+						"value_mid":0,
+						"value_max":100,
+						"male_ratio":0.5
+					}
+				}
+			},
+			"rear_portrait_parameters_classic": {
+				"rear_portrait_cap_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":100,
+						"male_ratio":0.3
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.2
+					},
+					"ABS_KEY_BASIC_REMOVE_NECK_WRINKLES": {
+						"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+						"slider_mid":1,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+						"default_value":40,
+						"male_value":30
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.2
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":30,
+						"male_ratio":0.6
+					},
+					"ABS_KEY_SHAPE_FACE_SHRINK_GLOBAL": {
+						"slider_mid":30,
+						"value_mid":20,
+						"value_max":40,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"formula_ratio":1,
+						"is_makeup": 1
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":60,
+						"male_ratio":0.5,
+						"is_makeup": 1
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_BASIC_BLACKHEAD_REMOVAL": {
+						"default_value":100,
+						"male_value":50
+					},
+					"ABS_KEY_BASIC_ANTI_SHINE": {
+						"luxindex_threshold_mid":300,
+						"luxindex_threshold_max":350,
+						"value_mid":0,
+						"value_max":100
+					}
+				},
+				"rear_portrait_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":15,
+						"value_mid":0,
+						"value_max":100,
+						"male_ratio":0.5
+					}
+				}
+			},
+			"rear_recording_slider_parameters": {
+				"rear_recording_slider_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":100,
+						"male_ratio":0.3
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"slider_mid":30,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":30,
+						"value_mid":30,
+						"value_max":30
+					}
+				}
+			}
+		},
+		"SecondaryScreen_parameters": {
+			"SecondaryScreen_default_parameters_native": {
+				"SecondaryScreen_default_cap_parameters": {
+					"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+						"default_value":40,
+						"male_value":30
+					},
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.4
+					},
+					"ABS_KEY_BASIC_REMOVE_NECK_WRINKLES": {
+						"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+						"slider_mid":1,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_WRINKLE_REDUCTION": {
+						"formula_ratio":1,
+						"male_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"formula_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_COLOR_EVEN": {
+						"formula_ratio":1
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.4
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":50,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_SHAPE_FACIAL_EDGE_SMOOTH": {
+						"slider_mid":30,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"formula_ratio":1,
+						"is_makeup": 1
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":60,
+						"male_ratio":0.5,
+						"is_makeup": 1
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_BASIC_BLACKHEAD_REMOVAL": {
+						"default_value":100,
+						"male_value":50
+					},
+					"ABS_KEY_BASIC_ANTI_SHINE": {
+						"luxindex_threshold_mid":300,
+						"luxindex_threshold_max":350,
+						"value_mid":0,
+						"value_max":60
+					}
+				},
+				"SecondaryScreen_default_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.7
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.4
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"formula_ratio":0.5
+					}
+				}
+			},
+			"SecondaryScreen_default_parameters_classic": {
+				"SecondaryScreen_default_cap_parameters": {
+					"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+						"default_value":40,
+						"male_value":30
+					},
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.2
+					},
+					"ABS_KEY_BASIC_REMOVE_NECK_WRINKLES": {
+						"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+						"slider_mid":1,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_WRINKLE_REDUCTION": {
+						"formula_ratio":1,
+						"male_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"formula_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_COLOR_EVEN": {
+						"formula_ratio":1
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.2
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":30,
+						"male_ratio":0.6
+					},
+					"ABS_KEY_SHAPE_FACIAL_EDGE_SMOOTH": {
+						"slider_mid":30,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"formula_ratio":1,
+						"is_makeup": 1
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":60,
+						"male_ratio":0.5,
+						"is_makeup": 1
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_BASIC_BLACKHEAD_REMOVAL": {
+						"default_value":100,
+						"male_value":50
+					},
+					"ABS_KEY_BASIC_ANTI_SHINE": {
+						"luxindex_threshold_mid":300,
+						"luxindex_threshold_max":350,
+						"value_mid":0,
+						"value_max":60
+					}
+				},
+				"SecondaryScreen_default_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.7
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.2
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"formula_ratio":0.3
+					}
+				}
+			},
+			"SecondaryScreen_portrait_parameters_native": {
+				"SecondaryScreen_portrait_cap_parameters": {
+					"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+						"default_value":40,
+						"male_value":30
+					},
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.4
+					},
+					"ABS_KEY_BASIC_REMOVE_NECK_WRINKLES": {
+						"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+						"slider_mid":1,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_WRINKLE_REDUCTION": {
+						"formula_ratio":1,
+						"male_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"formula_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_COLOR_EVEN": {
+						"formula_ratio":1
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.4
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":50,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_SHAPE_FACIAL_EDGE_SMOOTH": {
+						"slider_mid":30,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"formula_ratio":1,
+						"is_makeup": 1
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":60,
+						"male_ratio":0.5,
+						"is_makeup": 1
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_BASIC_BLACKHEAD_REMOVAL": {
+						"default_value":100,
+						"male_value":50
+					},
+					"ABS_KEY_BASIC_ANTI_SHINE": {
+						"luxindex_threshold_mid":300,
+						"luxindex_threshold_max":350,
+						"value_mid":0,
+						"value_max":60
+					}
+				},
+				"SecondaryScreen_portrait_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.7
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.4
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"formula_ratio":0.5
+					}
+				}
+			},
+			"SecondaryScreen_portrait_parameters_classic": {
+				"SecondaryScreen_portrait_cap_parameters": {
+					"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+						"default_value":40,
+						"male_value":30
+					},
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.2
+					},
+					"ABS_KEY_BASIC_REMOVE_NECK_WRINKLES": {
+						"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+						"slider_mid":1,
+						"value_mid":100,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_BASIC_WRINKLE_REDUCTION": {
+						"formula_ratio":1,
+						"male_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_FILTER_STYLE": {
+						"formula_ratio":0.6
+					},
+					"ABS_KEY_BASIC_SKIN_TONE_COLOR_EVEN": {
+						"formula_ratio":1
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.2
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":30,
+						"male_ratio":0.6
+					},
+					"ABS_KEY_SHAPE_FACIAL_EDGE_SMOOTH": {
+						"slider_mid":30,
+						"value_mid":60,
+						"value_max":100,
+						"male_ratio":0.5
+					},
+					"ABS_KEY_FACIAL_GLOSS": {
+						"formula_ratio":1,
+						"is_makeup": 1
+					},
+					"ABS_KEY_MAKEUP_DENSITY": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":60,
+						"male_ratio":0.5,
+						"is_makeup": 1
+					},
+					"ABS_KEY_BASIC_TEETH_WHITEN": {
+						"slider_mid":40,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_BASIC_BLACKHEAD_REMOVAL": {
+						"default_value":100,
+						"male_value":50
+					},
+					"ABS_KEY_BASIC_ANTI_SHINE": {
+						"luxindex_threshold_mid":300,
+						"luxindex_threshold_max":350,
+						"value_mid":0,
+						"value_max":60
+					}
+				},
+				"SecondaryScreen_portrait_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":40,
+						"value_mid":20,
+						"value_max":80,
+						"male_ratio":0.7
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"formula_ratio":0.2
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"formula_ratio":0.3
+					}
+				}
+			},
+			"SecondaryScreen_recording_slider_parameters": {
+				"SecondaryScreen_recording_slider_cap_parameters": {
+					"ABS_KEY_BASIC_EYE_BRIGHTEN": {
+						"default_value":40,
+						"male_value":30
+					},
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":30,
+						"value_mid":50,
+						"value_max":100,
+						"male_ratio":0.3
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":30,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"slider_mid":30,
+						"value_mid":30,
+						"value_max":30
+					}
+				},
+				"SecondaryScreen_recording_slider_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":30,
+						"value_mid":50,
+						"value_max":100,
+						"male_ratio":0.3
+					},
+					"ABS_KEY_SHAPE_FACE_SLENDER": {
+						"slider_mid":30,
+						"value_mid":30,
+						"value_max":30
+					},
+					"ABS_KEY_SHAPE_EYE_ENLARGEMENT": {
+						"slider_mid":30,
+						"value_mid":30,
+						"value_max":30
+					}
+				}
+			}
+		}
+	}
+}
