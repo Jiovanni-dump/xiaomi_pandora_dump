@@ -1,0 +1,12 @@
+ro.com.google.clientidbase=android-xiaomi
+ro.com.google.clientidbase.ms=android-xiaomi
+ro.miui.support.system.app.uninstall.v2=true
+ro.product.mod_device=pandora
+ro.thermal.iec.enable=true
+ro.mi.os.custfeatureresolve=true
+ro.miui.build.region=cn
+persist.vendor.camera.gesture.emoji.support=1
+ro.mi.os.version.publish=true
+ro.mi.os.version.code=3
+ro.mi.os.version.name=OS3.0
+ro.mi.os.version.incremental=OS3.0.30.0.WBLCNXM

@@ -1,0 +1,14 @@
+# missi-user 16 BP2A.250605.031.A3 OS3.0.30.0.WBLCNXM release-keys
+- manufacturer: xiaomi
+- platform: canoe
+- codename: pandora
+- flavor: missi-user
+- release: 16
+- id: BP2A.250605.031.A3
+- incremental: OS3.0.30.0.WBLCNXM
+- tags: release-keys
+- fingerprint: Xiaomi/pandora/pandora:16/BQ2A.250705.001-BP2A.250605.031.A3/OS3.0.30.0.WBLCNXM:user/release-keys
+- is_ab: true
+- brand: Xiaomi
+- branch: missi-user-16-BP2A.250605.031.A3-OS3.0.30.0.WBLCNXM-release-keys
+- repo: xiaomi_pandora_dump

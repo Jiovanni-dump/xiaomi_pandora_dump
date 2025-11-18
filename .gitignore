@@ -1,0 +1,16 @@
+odm/etc/camera/sd_unet.minn
+odm/etc/camera/ellc.bin
+odm/firmware_qtvm/system.img
+odm/lib64/libarcsoft_raw_sr.so
+odm/lib64/libarcsoft_turbo_hdr_raw.so
+system_ext/priv-app/Settings/Settings.apk
+product/app/VoiceAssistAndroidT/VoiceAssistAndroidT.apk
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+product/data-app/MiMediaEditor/MiMediaEditor.apk
+product/priv-app/MIUIBrowser/MIUIBrowser.apk
+product/priv-app/MIUIAICR/MIUIAICR.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/NewCall/NewCall.apk
+recovery.img
+fs_config_dirs
