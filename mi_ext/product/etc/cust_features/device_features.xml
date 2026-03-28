@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cust_features>
+    <cust_feature>
+        <bool name="support_tp_mqs_cn_report">true</bool>
+        <bool name="wifi_tx_boost_allowed">true</bool>
+        <bool name="thermal_ninety_fps_thermal_limit_enabled">true</bool>
+        <bool name="thermal_cgame_qq_intent_enabled">true</bool>
+        <bool name="thermal_cgame_wechat_intent_enabled">true</bool>
+        <bool name="support_tp_mqs_report_once_a_day">true</bool>
+        <bool name="support_tp_proximity_mode">true</bool>
+        <float name="nfc_mitouch_version">1</float>
+        <bool name="support_bt_dbam">true</bool>
+        <bool name="scroff_alarm_align_enable">true</bool>
+        <bool name="ffu_support_enable">true</bool>
+        <bool name="support_audio_share_ui">true</bool>
+        <bool name="support_mihandle">true</bool>
+        <bool name="persist.vendor.bluetooth.lhdc_v5.supported">true</bool>
+        <bool name="persist.vendor.bluetooth.lhdc_v4.supported">true</bool>
+        <bool name="powerkeeper_SocOptimization2">true</bool>
+        <bool name="powerkeeper_ExtremeScenarioAware">true</bool>
+        <bool name="persist.vendor.bluetooth.bqr.supported">true</bool>
+        <bool name="support_virtual_call">true</bool>
+        <bool name="support_perfsense_dfs">true</bool>
+        <bool name="video_config_mi_aie_enable">true</bool>
+        <bool name="video_config_mi_ais_enable">true</bool>
+        <bool name="device_on_platform_8850">true</bool>
+        <bool name="config_support_cn_sar_st">true</bool>
+        <bool name="config_support_cn_sar">true</bool>
+        <bool name="haptic_config_bcl_support">true</bool>
+        <integer name="config_wifi_sar_pattern">10</integer>
+        <integer name="audiozoom_device_type">9</integer>
+        <bool name="digitalkey_qcom_uwb_device">true</bool>
+        <bool name="do_not_support_ime_for_backScreen">true</bool>
+        <bool name="low_temp_charge">true</bool>
+        <bool name="low_power_doze_enabled">true</bool>
+        <bool name="mishare_support_tapshare">true</bool>
+        <bool name="config_supported_aon_devices">true</bool>
+        <bool name="turbosched_check_is_special_topology">true</bool>
+        <bool name="ro.system_ext.game.support">true</bool>
+        <bool name="wifi_tvendor_disable_mlo1">true</bool>
+        <string-array name="miui_mtk_perf_boost_config">
+            <item>0x00400000</item>
+            <item>1000000</item>
+            <item>0x00400100</item>
+            <item>1000000</item>
+            <item>0x00c00000</item>
+            <item>39</item>
+        </string-array>
+        <bool name="input_scroller_optimization_normal_support">true</bool>
+    </cust_feature>
+</cust_features>

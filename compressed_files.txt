@@ -1,0 +1,13 @@
+recovery.img.zst
+product/priv-app/MIUIAICR/MIUIAICR.apk.zst
+product/priv-app/MiuiCamera/MiuiCamera.apk.zst
+product/priv-app/GmsCore/GmsCore.apk.zst
+product/priv-app/NewCall/NewCall.apk.zst
+product/priv-app/MIUIBrowser/MIUIBrowser.apk.zst
+product/data-app/SmartHome/SmartHome.apk.zst
+system_ext/priv-app/Settings/Settings.apk.zst
+product/data-app/MIUIGallery/MIUIGallery.apk.zst
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk.zst
+odm/etc/camera/ellc.bin.zst
+odm/etc/camera/aisn.bin.zst
+odm/firmware_qtvm/system.img.zst

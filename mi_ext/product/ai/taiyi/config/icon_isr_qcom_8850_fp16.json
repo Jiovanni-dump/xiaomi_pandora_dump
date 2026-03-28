@@ -1,0 +1,19 @@
+{
+  "parent" : "qcom_qnn_v2_36_0_v81",
+  "api" : "icon_isr",
+  "name" : "icon_isr_qcom_8850_fp16",
+  "version" : 4,
+  "models" : [ {
+    "id" : "icon_isr_model_qcom_8850",
+    "version" : 1,
+    "required" : true
+  } ],
+  "plugin" : {
+    "id" : "icon_isr",
+    "version" : 1,
+    "entry" : "com.xiaomi.taiyi.plugin.iconisr.IconIsrPlugin"
+  },
+  "isLLM" : false,
+  "disabled" : false,
+  "type" : 0
+}

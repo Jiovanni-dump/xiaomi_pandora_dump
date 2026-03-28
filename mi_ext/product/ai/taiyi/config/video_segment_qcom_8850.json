@@ -1,0 +1,19 @@
+{
+  "parent" : "qcom_qnn_v2_36_0_v81",
+  "api" : "video_segment",
+  "name" : "video_segment_qcom_8850",
+  "version" : 9,
+  "models" : [ {
+    "id" : "video_segment_model_qcom_8850",
+    "version" : 1,
+    "required" : true
+  } ],
+  "plugin" : {
+    "id" : "video_segment_qcom",
+    "version" : 5,
+    "entry" : "com.xiaomi.taiyi.plugin.videosegment.VideoSegmentPlugin"
+  },
+  "isLLM" : false,
+  "disabled" : false,
+  "type" : 0
+}

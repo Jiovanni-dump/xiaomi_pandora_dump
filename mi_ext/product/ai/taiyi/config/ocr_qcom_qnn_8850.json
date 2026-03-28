@@ -1,0 +1,19 @@
+{
+  "parent" : "qcom_qnn_v2_36_0_v81",
+  "api" : "ocr",
+  "name" : "ocr_qcom_qnn_8850",
+  "version" : 9,
+  "models" : [ {
+    "id" : "ocr_model_qnn_minn",
+    "version" : 1,
+    "required" : true
+  } ],
+  "plugin" : {
+    "id" : "ocr_qnn",
+    "version" : 1,
+    "entry" : "com.xiaomi.taiyi.plugin.ocr.OcrPlugin"
+  },
+  "isLLM" : false,
+  "disabled" : false,
+  "type" : 0
+}
