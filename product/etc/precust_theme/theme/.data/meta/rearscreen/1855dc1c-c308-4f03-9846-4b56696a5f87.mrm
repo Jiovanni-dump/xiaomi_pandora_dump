@@ -1,0 +1,92 @@
+{
+  "localId": "1855dc1c-c308-4f03-9846-4b56696a5f87",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "6284608024ec04506dd4ded988b8a5a7fcd1858d",
+  "platform": 15,
+  "size": 15884,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "自訂桌布",
+    "zh_TW": "自訂桌布",
+    "bo_CN": "རང་གིས་བཟོ་བའི་རྩིག་ཤོག",
+    "en_US": "Custom wallpaper",
+    "ug_CN": "تەگلىكنى ئىختىيارىي تەڭشەش",
+    "zh_CN": "自定义壁纸",
+    "fallback": "个性签名"
+  },
+  "descriptions": {
+    "zh_HK": "將喜歡的圖片設定在背螢幕顯示",
+    "zh_TW": "將喜歡的圖片設定在背螢幕顯示",
+    "bo_CN": "རང་ཉིད་དགའ་བའི་འདྲ་པར་རྒྱབ་ངོས་སུ་གཏན་འཁེལ་བྱས་ནས་འགྲེམ་སྟོན་བྱེད་དགོས།",
+    "en_US": "Use your favorite images on the rear display",
+    "ug_CN": "ياخشى كۆرىدىغان رەسىملەرنى ئارقا ئېكراندا كۆرسىتىش",
+    "zh_CN": "将喜欢的图片设定在背屏展示",
+    "fallback": "将喜欢的图片设定在背屏展示"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "9bb16ee7-845e-4d38-bbea-e8552dce953d",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/dda823cf3688014b9986b217e05457b560449646.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "signature",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "supportAon": false,
+  "wallpaperStyle": 0,
+  "isSingleResource": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

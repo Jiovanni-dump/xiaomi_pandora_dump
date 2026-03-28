@@ -1,0 +1,92 @@
+{
+  "localId": "26f4a446-8125-407d-a255-3dbcd8c12eae",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "30a68458a0bcb56bc70db78322cd43cf82825faa",
+  "platform": 15,
+  "size": 10623223,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "小蓋",
+    "zh_TW": "小蓋",
+    "bo_CN": "ཞའོ་ཀའེ",
+    "en_US": "Charlie",
+    "ug_CN": "قاپقاق",
+    "zh_CN": "小盖",
+    "fallback": "小盖"
+  },
+  "descriptions": {
+    "zh_HK": "引以為傲的就是那個「時尚」的髮型",
+    "zh_TW": "引以為傲的就是那個「時尚」的髮型",
+    "bo_CN": "ང་རྒྱལ་སྐྱེས་ཆོག་པ་ནི་“དར་སྲོལ་”གྱི་སྐྲ་ཚུགས་དེ་རེད།",
+    "en_US": "A little bird with a fashionable hairstyle",
+    "ug_CN": "پەخىرلىنىدىغان ئاشۇ «مودا» چاچ پاسونى",
+    "zh_CN": "引以为傲的就是那“时尚”的发型",
+    "fallback": "引以为傲的就是那“时尚”的发型"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "ed03f11f-0edd-43d5-977c-d0211ad51013",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/0a8cccfbda9983cde540816ef26f5ebdc25cc2df.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "cutePet",
+  "isRearScreenEditable": false,
+  "isThirdParties": false,
+  "supportAon": false,
+  "wallpaperStyle": 0,
+  "isSingleResource": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

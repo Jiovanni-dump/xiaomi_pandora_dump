@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package_config>
+    <package name="com.example.statusbarnotchscreenadaptationdemo">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.example.statusbarnotchscreenadaptationdemo.secondActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.example.statusbarnotchscreenadaptationdemo.secondActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+                <activity name="com.example.statusbarnotchscreenadaptationdemo.thirdActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.example.statusbarnotchscreenadaptationdemo.thirdActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.autonavi.minimap">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.autonavi.map.activity.SplashActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.autonavi.map.activity.SplashActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.qqmusic">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.tencent.qqmusic.activity.base.FragmentActivityWithMinibar">
+                    <analyzer bindingmode="activity" bindingvalue="com.tencent.qqmusic.activity.base.FragmentActivityWithMinibar" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.taobao.taobao">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.taobao.android.tbabilitykit.pop.StdPopActivityGroup">
+                    <analyzer bindingmode="activity" bindingvalue="com.taobao.android.tbabilitykit.pop.StdPopActivityGroup" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+                <activity name="com.taobao.themis.container.app.TMSActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.taobao.themis.container.app.TMSActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.lalamove.huolala.client">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.lalamove.huolala.module.userinfo.ui.activity.CustomerManagerWebActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.lalamove.huolala.module.userinfo.ui.activity.CustomerManagerWebActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.tieba">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.baidu.tieba.forum.ForumActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.baidu.tieba.forum.ForumActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.sankuai.meituan.dispatch.crowdsource">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.meituan.banma.main.activity.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.meituan.banma.main.activity.MainActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.xunmeng.pinduoduo">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.xunmeng.pinduoduo.activity.NewPageActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.xunmeng.pinduoduo.activity.NewPageActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.max.xiaoheihe">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.max.xiaoheihe.module.story.StoryActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.max.xiaoheihe.module.story.StoryActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+                <activity name="com.max.xiaoheihe.module.webview.WebActionActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.max.xiaoheihe.module.webview.WebActionActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+                <activity name="com.max.xiaoheihe.SplashActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.max.xiaoheihe.SplashActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.duer.superapp">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.baidu.duer.superapp.core.webview.CommonWebActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.baidu.duer.superapp.core.webview.CommonWebActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.hupu.games">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.hupu.android.bbs.page.rating.ratingDetail.RatingDetailActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.hupu.android.bbs.page.rating.ratingDetail.RatingDetailActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.msxf.ayh">
+        <module id="insets">
+            <policy id="insets">
+                <activity name="com.msxf.ayh.ui.html.HtmlActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.msxf.ayh.ui.html.HtmlActivity" id="status">
+                        <cbinfo attr="statusBarText" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+</package_config>

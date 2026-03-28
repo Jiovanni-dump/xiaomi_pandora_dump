@@ -1,0 +1,92 @@
+{
+  "localId": "fddebc53-2999-4309-a989-629b4865b8fb",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "d00f79c3456e8e9e05ebd713176b60d035c42fe6",
+  "platform": 15,
+  "size": 3824447,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "AI財神",
+    "zh_TW": "AI財神",
+    "bo_CN": "AIནོར་ལྷ་།",
+    "en_US": "AI Caishen",
+    "ug_CN": "AI پۇلچاق",
+    "zh_CN": "AI财神",
+    "fallback": "AI财神"
+  },
+  "descriptions": {
+    "zh_HK": "上傳人物照片，產生新春專屬AI財神",
+    "zh_TW": "上傳人物照片，產生新春專屬AI財神",
+    "bo_CN": "མི་སྣའི་འདྲ་པར་བརྒྱུད་སྐུར་བྱས་ནས་ལོ་གསར་གྱི་ཆེད་གཏོགས་AIནོར་ལྷ་གྲུབ།",
+    "en_US": "Upload a photo of a person to generate a New Year wallpaper",
+    "ug_CN": "ئادەم رەسىمىنى چىقىرىپ AI پۇلچاقنى ھاسىللاڭ",
+    "zh_CN": "上传人物照片，生成新春专属AI财神",
+    "fallback": "上传人物照片，生成新春专属AI财神"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "8da42b39-aa57-4b34-89b6-bef12325c1a5",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/635b7b7fc036472a63277cf13261876eef8527fb.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "spring",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "supportAon": false,
+  "wallpaperStyle": 0,
+  "isSingleResource": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}

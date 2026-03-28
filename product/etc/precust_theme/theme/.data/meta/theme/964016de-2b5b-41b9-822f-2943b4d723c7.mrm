@@ -1,0 +1,93 @@
+{
+  "localId": "964016de-2b5b-41b9-822f-2943b4d723c7",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "1da6af1b258aa5f034aded0c82564521f5b36368",
+  "platform": 15,
+  "size": 842134,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "豆瓣電影日曆",
+    "zh_TW": "豆瓣電影日曆",
+    "bo_CN": "豆瓣གློག་བརྙན་གྱི་ལོ་ཐོ།",
+    "en_US": "Douban movie calendar",
+    "ug_CN": "دوۋبەن كىنو كالېندارى",
+    "zh_CN": "豆瓣电影日历",
+    "fallback": "豆瓣电影日历"
+  },
+  "descriptions": {
+    "zh_HK": "豆瓣電影觀影指南，每天推薦一部豆瓣高分影視劇，讓您的每一天都留下獨一無二的光影印記",
+    "zh_TW": "豆瓣電影觀影指南，每天推薦一部豆瓣高分影視劇，讓您的每一天都留下獨一無二的光影印記",
+    "bo_CN": "豆瓣གློག་བརྙན་ལ་ལྟ་བའི་ཕྱོགས་སྟོན་དང་། ཉིན་རེར་སྲན་འདབ་ཀྱི་སྐར་མ་མཐོ་བའི་གློག་བརྙན་བརྙན་འཕྲིན་ཟློས་གར་ཞིག་ངོ་སྤྲོད་བྱས་ནས་ཁྱེད་ཀྱི་ཉིན་རེ་རེར་གཅིག་ལས་གཉིས་མེད་པའི་འོད་གྲིབ་རྟགས་ཐམ་རེ་འཇོག་དགོས།",
+    "en_US": "Get daily recommendations of popular movies and TV shows",
+    "ug_CN": "دوۋبەن كىنو كۆرۈش كۆرسەتمىسى، ھەر كۈنى دوۋبەننىڭ يۇقىرى نومۇرلۇق كىنو-تېلېۋىزىيە تىياتىرىدىن بىرنى تەۋسىيە قىلىپ، ھەر بىر كۈنىڭىزدە بىردىنبىر نۇر ئىزى قالدۇرۇڭ",
+    "zh_CN": "豆瓣电影观影指南，每天推荐一部豆瓣高分影视剧，让您的每一天都留下独一无二的光影印记",
+    "fallback": "豆瓣电影观影指南，每天推荐一部豆瓣高分影视剧，让您的每一天都留下独一无二的光影印记"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "2b48c783-cb4a-48f0-89de-1f7c305c9984",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "Fun",
+  "isRearScreenEditable": false,
+  "isThirdParties": false,
+  "supportAon": false,
+  "wallpaperStyle": 0,
+  "isSingleResource": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null,
+  "isRearScreenNeedLogin": true
+}

@@ -1,0 +1,49 @@
+{
+  "title": "小米汽车",
+  "cardType": 1,
+  "count": 6,
+  "slideCount": 6,
+  "randomOrder": false,
+  "wallpapers": [
+    {
+      "thumbPath": "./car01.jpg",
+      "originPath": "./car01.jpg",
+      "maskPath": "./car01_mask.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./car02.jpg",
+      "originPath": "./car02.jpg",
+      "maskPath": "./car02_mask.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./car03.jpg",
+      "originPath": "./car03.jpg",
+      "maskPath": "./car03_mask.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./car04.jpg",
+      "originPath": "./car04.jpg",
+      "maskPath": "./car04_mask.jpg",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./car05.jpg",
+      "originPath": "./car05.jpg",
+      "maskPath": "./car05_mask.jpg",
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./car06.jpg",
+      "originPath": "./car06.jpg",
+      "maskPath": "./car06_mask.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    }
+  ]
+}

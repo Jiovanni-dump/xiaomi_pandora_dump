@@ -1,0 +1,52 @@
+{
+  "title": "小米汽车",
+  "titleResId": "wallpaper_group_xiaomi_car_title",
+  "cardType": 1,
+  "count": 6,
+  "slideCount": 6,
+  "randomOrder": false,
+  "wallpapers": [
+    {
+      "thumbPath": "./XiaomiCar01.jpg",
+      "originPath": "./XiaomiCar01.jpg",
+      "maskPath": "./XiaomiCar01_MASK.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./XiaomiCar02.jpg",
+      "originPath": "./XiaomiCar02.jpg",
+      "maskPath": "./XiaomiCar02_MASK.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./XiaomiCar03.jpg",
+      "originPath": "./XiaomiCar03.jpg",
+      "maskPath": "./XiaomiCar03_MASK.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./XiaomiCar04.jpg",
+      "originPath": "./XiaomiCar04.jpg",
+      "maskPath": "./XiaomiCar04_MASK.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./XiaomiCar05.jpg",
+      "originPath": "./XiaomiCar05.jpg",
+      "maskPath": "./XiaomiCar05_MASK.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    },
+    {
+      "thumbPath": "./XiaomiCar06.jpg",
+      "originPath": "./XiaomiCar06.jpg",
+      "maskPath": "./XiaomiCar06_MASK.jpg",
+      "mattingMode": 2,
+      "type": "wallpaper"
+    }
+  ]
+}

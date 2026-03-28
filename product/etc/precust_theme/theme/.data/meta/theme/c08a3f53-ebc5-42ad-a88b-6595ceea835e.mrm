@@ -1,0 +1,92 @@
+{
+  "localId": "c08a3f53-ebc5-42ad-a88b-6595ceea835e",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "b059e03c0fe55e657ae22cff334467e820259574",
+  "platform": 15,
+  "size": 2547006,
+  "updatedTime": 0,
+  "version": "1",
+  "authors": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "designers": {
+    "zh_HK": "小米主題",
+    "zh_TW": "小米主題",
+    "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+    "en_US": "Xiaomi Themes",
+    "ug_CN": "شياۋمى ئۇسلۇبى",
+    "zh_CN": "小米主题",
+    "fallback": "小米主题"
+  },
+  "titles": {
+    "zh_HK": "AI全家福",
+    "zh_TW": "AI全家福",
+    "bo_CN": "AIཁྱིམ་ཚང་གི་འདྲ་པར།",
+    "en_US": "AI Family Portrait",
+    "ug_CN": "AI ئوپچە رەسىم",
+    "zh_CN": "AI全家福",
+    "fallback": "AI全家福"
+  },
+  "descriptions": {
+    "zh_HK": "上傳合照，產生新春專屬AI全家福。建議人物和寵物總數小於6個，產生效果較佳",
+    "zh_TW": "上傳合照，產生新春專屬AI全家福。建議人物和寵物總數小於6個，產生效果較佳",
+    "bo_CN": "མཉམ་པར་བསྐུར་ནས་ལོ་གསར་གྱི་ཆེད་གཏོགས་AIཁྱིམ་ཚང་གི་འདྲ་པར་གྲུབ། མི་སྣ་དང་གཅེས་དངོས་ཀྱི་བསྡོམས་གྲངས་6ལས་ཉུང་བ་དང་། གྲུབ་འབྲས་དེ་ལས་བཟང་།",
+    "en_US": "Upload a photo to generate a New Year family portrait with AI. For better results, make sure the selected photo includes up to 6 people or pets.",
+    "ug_CN": "رەسىمنى چىقارسىڭىز، مەخسۇس AI ئوپچە رەسىمىنى ھاسىللاپ بېرىدۇ. ئادەم بىلەن ئەرمەك ھايۋان سانى 6 دىن كىچىك بولسۇن، ئۈنۈمى تېخىمۇ ياخشى",
+    "zh_CN": "上传合照，生成新春专属AI全家福。建议人物和宠物总数小于6个，生成效果更好",
+    "fallback": "上传合照，生成新春专属AI全家福。建议人物和宠物总数小于6个，生成效果更好"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_rearscreen_0.png",
+      "preview_rearscreen_dark_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "16f68034-de9f-4901-a4e6-00dfa357b081",
+      "resourceCode": "rearscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": "/product/etc/precust_theme/theme/.data/rights/theme/b1643d1a428052afa700d2b1ca6508fc59ba15c7.mra",
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "subResourceType": "spring",
+  "isRearScreenEditable": true,
+  "isThirdParties": false,
+  "supportAon": false,
+  "wallpaperStyle": 0,
+  "isSingleResource": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": null
+}
